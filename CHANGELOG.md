@@ -3,6 +3,15 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Make Modules 1–9 web handouts follow the browser language (Codex)
+- **Browser multilingual proof:** updated `custom/local/csfr/handout.php` so the readable web-text portion of
+  Handouts 1–9 uses the existing reviewed English→Hindi/Marathi/Gujarati booklet map when a learner selects that
+  Moodle language. Topic headings, paragraphs, lists, tables, safety steps and case/remember boxes switch on page
+  load; no API key, external request, assessment logic or learner data is involved.
+- **Scope intentionally visible:** translated handout framing labels were added too. The separate learner-overview
+  metadata, original scanned pages, module checks and SCORM assessment packages remain the next multilingual work
+  streams, rather than being misleadingly labelled complete.
+
 ## 2026-11-04 — Give SCORM assessments a full course-page layout (Codex)
 - **Assessment presentation:** added `setup/scorm/presentation.php` and aligned both SCORM import scripts so every
   Module 1–9 assessment and the final assessment hides Moodle's redundant single-item table of contents, uses the

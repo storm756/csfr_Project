@@ -79,6 +79,10 @@ booklet_text.json, bank_booklet.json, modules.php, modules_ext.json  <- derived/
   + transcripts, streamed from the plugin.
 - **9 interactive lessons** (modules 1-9) + capstone + the booklet as **sharp web text** (the "Learn it: topics"
   section) with the original page one tap away. Brighter handbook UI.
+- **Web handout language switch:** the readable web-text body of Handouts 1–9 now uses the already-reviewed
+  booklet translations when Moodle is set to Hindi, Marathi or Gujarati. `handout.php` reads the selected Moodle
+  language; it does not need or expose a third-party translation API key. Overview metadata, checks and SCORM remain
+  separate work items.
 - **Assessments = the teammates' interactive games as graded SCORM** (section 6).
 - **Assessment presentation:** every single-SCO assessment uses the full course canvas, with Moodle's redundant TOC
   hidden (`setup/scorm/presentation.php` + theme SCSS). This is a presentation change only; do not remove the SCORM

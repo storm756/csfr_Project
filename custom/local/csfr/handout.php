@@ -31,21 +31,22 @@ require('../../config.php');
 require_once($CFG->libdir . '/filelib.php');
 
 /** Renders the curated handbook block structure used by the web handouts. */
-function csfr_handout_blocks(array $blocks): string {
-    $inner = function (array $items) use (&$inner): string {
+function csfr_handout_blocks(array $blocks, array $translations = [], array $labels = []): string {
+    $tr = static fn(string $text): string => $translations[$text] ?? $text;
+    $inner = function (array $items) use (&$inner, $tr, $labels): string {
         $html = '';
         foreach ($items as $block) {
             switch ($block['type']) {
                 case 'h':
-                    $html .= html_writer::tag('h3', s($block['text']), ['class' => 'csfr-handout__subhead']);
+                    $html .= html_writer::tag('h3', s($tr($block['text'])), ['class' => 'csfr-handout__subhead']);
                     break;
                 case 'p':
-                    $html .= html_writer::tag('p', s($block['text']), ['class' => 'csfr-handout__text']);
+                    $html .= html_writer::tag('p', s($tr($block['text'])), ['class' => 'csfr-handout__text']);
                     break;
                 case 'ul':
                     $html .= html_writer::start_tag('ul', ['class' => 'csfr-handout__list']);
                     foreach ($block['items'] as $item) {
-                        $html .= html_writer::tag('li', s($item));
+                        $html .= html_writer::tag('li', s($tr($item)));
                     }
                     $html .= html_writer::end_tag('ul');
                     break;
@@ -58,7 +59,7 @@ function csfr_handout_blocks(array $blocks): string {
                     if ($head) {
                         $html .= html_writer::start_tag('thead') . html_writer::start_tag('tr');
                         foreach ($head as $cell) {
-                            $html .= html_writer::tag('th', s($cell), ['scope' => 'col']);
+                            $html .= html_writer::tag('th', s($tr($cell)), ['scope' => 'col']);
                         }
                         $html .= html_writer::end_tag('tr') . html_writer::end_tag('thead');
                     }
@@ -68,7 +69,7 @@ function csfr_handout_blocks(array $blocks): string {
                         foreach ($row as $index => $cell) {
                             $tag = !$head && $index === 0 ? 'th' : 'td';
                             $attrs = $tag === 'th' ? ['scope' => 'row'] : [];
-                            $html .= html_writer::tag($tag, s($cell), $attrs);
+                            $html .= html_writer::tag($tag, s($tr($cell)), $attrs);
                         }
                         $html .= html_writer::end_tag('tr');
                     }
@@ -78,14 +79,14 @@ function csfr_handout_blocks(array $blocks): string {
                     $html .= html_writer::start_tag('ol', ['class' => 'csfr-handout__ssr']);
                     foreach (['Stop' => $block['stop'], 'Save' => $block['save'], 'Report' => $block['report']] as $label => $text) {
                         if (trim($text) !== '') {
-                            $html .= html_writer::tag('li', html_writer::tag('strong', $label) . html_writer::tag('p', s($text)));
+                            $html .= html_writer::tag('li', html_writer::tag('strong', $labels[$label] ?? $label) . html_writer::tag('p', s($tr($text))));
                         }
                     }
                     $html .= html_writer::end_tag('ol');
                     break;
                 case 'case':
                 case 'remember':
-                    $label = $block['type'] === 'case' ? 'A real case' : 'Remember';
+                    $label = $labels[$block['type'] === 'case' ? 'A real case' : 'Remember'] ?? ($block['type'] === 'case' ? 'A real case' : 'Remember');
                     $html .= html_writer::tag('aside', html_writer::tag('h4', $label) . $inner($block['blocks']),
                         ['class' => 'csfr-handout__note csfr-handout__note--' . $block['type']]);
                     break;
@@ -195,10 +196,23 @@ if ($course) {
 // original pages remain the authoritative and safe presentation until equivalent structured text is supplied.
 $webtopics = [];
 $webmeta = null;
+$handouttranslations = [];
+$handoutlabels = [];
 if ($usebook && ctype_digit($n) && (int)$n >= 1 && (int)$n <= 9) {
     $textfile = '/opt/csfr-setup/booklet_text.json';
     $alltext = is_readable($textfile) ? json_decode(file_get_contents($textfile), true) : null;
     $webtopics = is_array($alltext) ? ($alltext[(string)(int)$n] ?? []) : [];
+    // The browser language choice is Moodle's language preference. Reuse the reviewed booklet translations for the
+    // same structured web text, instead of making a live third-party request whenever a learner opens a handout.
+    $lang = current_language();
+    $i18nfile = '/opt/csfr-setup/i18n/booklet_i18n.json';
+    $handouti18n = is_readable($i18nfile) ? json_decode(file_get_contents($i18nfile), true) : [];
+    $handouttranslations = in_array($lang, ['hi', 'mr', 'gu'], true) ? ($handouti18n[$lang] ?? []) : [];
+    $handoutlabels = [
+        'hi' => ['Stop' => 'रुकें', 'Save' => 'सहेजें', 'Report' => 'रिपोर्ट करें', 'A real case' => 'एक वास्तविक मामला', 'Remember' => 'याद रखें', 'Readable web handout' => 'वेब हैंडआउट', 'Select, search and read this handout on any screen. The original page layout remains below.' => 'इस हैंडआउट को किसी भी स्क्रीन पर चुनें, खोजें और पढ़ें। मूल पृष्ठ लेआउट नीचे उपलब्ध है।', 'View the original handbook pages' => 'मूल हैंडबुक पृष्ठ देखें'],
+        'mr' => ['Stop' => 'थांबा', 'Save' => 'जतन करा', 'Report' => 'तक्रार करा', 'A real case' => 'एक वास्तविक प्रकरण', 'Remember' => 'लक्षात ठेवा', 'Readable web handout' => 'वेब हँडआउट', 'Select, search and read this handout on any screen. The original page layout remains below.' => 'हा हँडआउट कोणत्याही स्क्रीनवर निवडा, शोधा आणि वाचा. मूळ पानांची रचना खाली उपलब्ध आहे.', 'View the original handbook pages' => 'मूळ हँडबुकची पाने पहा'],
+        'gu' => ['Stop' => 'રોકો', 'Save' => 'સાચવો', 'Report' => 'ફરિયાદ કરો', 'A real case' => 'એક વાસ્તવિક કિસ્સો', 'Remember' => 'યાદ રાખો', 'Readable web handout' => 'વેબ હેન્ડઆઉટ', 'Select, search and read this handout on any screen. The original page layout remains below.' => 'આ હેન્ડઆઉટને કોઈપણ સ્ક્રીન પર પસંદ કરો, શોધો અને વાંચો. મૂળ પાનાંની રચના નીચે ઉપલબ્ધ છે.', 'View the original handbook pages' => 'મૂળ હેન્ડબુક પાનાં જુઓ'],
+    ][$lang] ?? [];
     $modulesfile = '/opt/csfr-setup/modules.php';
     $modules = is_readable($modulesfile) ? require($modulesfile) : [];
     $module = $modules[(int)$n] ?? null;
@@ -212,8 +226,8 @@ if ($usebook && ctype_digit($n) && (int)$n >= 1 && (int)$n <= 9) {
 echo $OUTPUT->header();
 echo html_writer::start_div('csfr-handout' . ($webtopics ? ' csfr-handout--web' : ''));
 if ($webtopics) {
-    echo html_writer::tag('p', 'Readable web handout', ['class' => 'csfr-handout__eyebrow']);
-    echo html_writer::tag('p', 'Select, search and read this handout on any screen. The original page layout remains below.',
+    echo html_writer::tag('p', $handoutlabels['Readable web handout'] ?? 'Readable web handout', ['class' => 'csfr-handout__eyebrow']);
+    echo html_writer::tag('p', $handoutlabels['Select, search and read this handout on any screen. The original page layout remains below.'] ?? 'Select, search and read this handout on any screen. The original page layout remains below.',
         ['class' => 'csfr-handout__intro']);
     if ($webmeta) {
         echo html_writer::start_tag('section', ['class' => 'csfr-handout__overview', 'aria-label' => 'Module overview']);
@@ -238,13 +252,13 @@ if ($webtopics) {
     echo html_writer::start_tag('article', ['class' => 'csfr-handout__paper']);
     foreach ($webtopics as $topic) {
         echo html_writer::start_tag('section', ['class' => 'csfr-handout__topic']);
-        echo html_writer::tag('h2', s($topic['title']));
-        echo csfr_handout_blocks($topic['blocks']);
+        echo html_writer::tag('h2', s($handouttranslations[$topic['title']] ?? $topic['title']));
+        echo csfr_handout_blocks($topic['blocks'], $handouttranslations, $handoutlabels);
         echo html_writer::end_tag('section');
     }
     echo html_writer::end_tag('article');
     echo html_writer::start_tag('details', ['class' => 'csfr-handout__original']);
-    echo html_writer::tag('summary', 'View the original handbook pages');
+    echo html_writer::tag('summary', $handoutlabels['View the original handbook pages'] ?? 'View the original handbook pages');
 }
 foreach ($list as $i => $p) {
     echo html_writer::empty_tag('img', [
