@@ -15,8 +15,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A module's handout: its pages of the HOD's participant handbook, shown as full-width pictures on the page, so
- * nothing needs opening or downloading. The PDF stays available as a link for printing.
+ * A module's handout: readable web text where the curated booklet text exists, with the source pages and PDF kept
+ * available for reference and printing. Modules without curated text remain safely on the original page view.
  *
  * Pages are drawn once with Ghostscript into moodledata (csfr-pages) and reused.
  *
@@ -29,6 +29,72 @@ use local_csfr\dashboard;
 
 require('../../config.php');
 require_once($CFG->libdir . '/filelib.php');
+
+/** Renders the curated handbook block structure used by the web handouts. */
+function csfr_handout_blocks(array $blocks): string {
+    $inner = function (array $items) use (&$inner): string {
+        $html = '';
+        foreach ($items as $block) {
+            switch ($block['type']) {
+                case 'h':
+                    $html .= html_writer::tag('h3', s($block['text']), ['class' => 'csfr-handout__subhead']);
+                    break;
+                case 'p':
+                    $html .= html_writer::tag('p', s($block['text']), ['class' => 'csfr-handout__text']);
+                    break;
+                case 'ul':
+                    $html .= html_writer::start_tag('ul', ['class' => 'csfr-handout__list']);
+                    foreach ($block['items'] as $item) {
+                        $html .= html_writer::tag('li', s($item));
+                    }
+                    $html .= html_writer::end_tag('ul');
+                    break;
+                case 'kv':
+                case 'cols':
+                    $rows = $block['rows'];
+                    $head = $block['type'] === 'cols' ? $block['head'] : [];
+                    $html .= html_writer::start_tag('div', ['class' => 'csfr-handout__tablewrap'])
+                        . html_writer::start_tag('table', ['class' => 'csfr-handout__table']);
+                    if ($head) {
+                        $html .= html_writer::start_tag('thead') . html_writer::start_tag('tr');
+                        foreach ($head as $cell) {
+                            $html .= html_writer::tag('th', s($cell), ['scope' => 'col']);
+                        }
+                        $html .= html_writer::end_tag('tr') . html_writer::end_tag('thead');
+                    }
+                    $html .= html_writer::start_tag('tbody');
+                    foreach ($rows as $row) {
+                        $html .= html_writer::start_tag('tr');
+                        foreach ($row as $index => $cell) {
+                            $tag = !$head && $index === 0 ? 'th' : 'td';
+                            $attrs = $tag === 'th' ? ['scope' => 'row'] : [];
+                            $html .= html_writer::tag($tag, s($cell), $attrs);
+                        }
+                        $html .= html_writer::end_tag('tr');
+                    }
+                    $html .= html_writer::end_tag('tbody') . html_writer::end_tag('table') . html_writer::end_tag('div');
+                    break;
+                case 'ssr':
+                    $html .= html_writer::start_tag('ol', ['class' => 'csfr-handout__ssr']);
+                    foreach (['Stop' => $block['stop'], 'Save' => $block['save'], 'Report' => $block['report']] as $label => $text) {
+                        if (trim($text) !== '') {
+                            $html .= html_writer::tag('li', html_writer::tag('strong', $label) . html_writer::tag('p', s($text)));
+                        }
+                    }
+                    $html .= html_writer::end_tag('ol');
+                    break;
+                case 'case':
+                case 'remember':
+                    $label = $block['type'] === 'case' ? 'A real case' : 'Remember';
+                    $html .= html_writer::tag('aside', html_writer::tag('h4', $label) . $inner($block['blocks']),
+                        ['class' => 'csfr-handout__note csfr-handout__note--' . $block['type']]);
+                    break;
+            }
+        }
+        return $html;
+    };
+    return $inner($blocks);
+}
 
 // 0 = whole handbook, help = help card, 1-11 = a module's handbook pages, ext4-ext6 = the extended notes for 4 to 6.
 $n = required_param('n', PARAM_ALPHANUM);
@@ -116,14 +182,41 @@ if ($course) {
     $PAGE->navbar->add(get_string('handouts', 'local_csfr'));
 }
 
+// The full booklet has clean, reviewed web-text data for Modules 1–9. Do not guess at Modules 10–11: their
+// original pages remain the authoritative and safe presentation until equivalent structured text is supplied.
+$webtopics = [];
+if ($usebook && ctype_digit($n) && (int)$n >= 1 && (int)$n <= 9) {
+    $textfile = '/opt/csfr-setup/booklet_text.json';
+    $alltext = is_readable($textfile) ? json_decode(file_get_contents($textfile), true) : null;
+    $webtopics = is_array($alltext) ? ($alltext[(string)(int)$n] ?? []) : [];
+}
+
 echo $OUTPUT->header();
-echo html_writer::start_div('csfr-handout');
+echo html_writer::start_div('csfr-handout' . ($webtopics ? ' csfr-handout--web' : ''));
+if ($webtopics) {
+    echo html_writer::tag('p', 'Readable web handout', ['class' => 'csfr-handout__eyebrow']);
+    echo html_writer::tag('p', 'Select, search and read this handout on any screen. The original page layout remains below.',
+        ['class' => 'csfr-handout__intro']);
+    echo html_writer::start_tag('article', ['class' => 'csfr-handout__paper']);
+    foreach ($webtopics as $topic) {
+        echo html_writer::start_tag('section', ['class' => 'csfr-handout__topic']);
+        echo html_writer::tag('h2', s($topic['title']));
+        echo csfr_handout_blocks($topic['blocks']);
+        echo html_writer::end_tag('section');
+    }
+    echo html_writer::end_tag('article');
+    echo html_writer::start_tag('details', ['class' => 'csfr-handout__original']);
+    echo html_writer::tag('summary', 'View the original handbook pages');
+}
 foreach ($list as $i => $p) {
     echo html_writer::empty_tag('img', [
         'src' => (new moodle_url('/local/csfr/handout.php', ['n' => $n, 'img' => $p]))->out(false),
         'alt' => get_string('handout_page', 'local_csfr', ['n' => $i + 1, 'of' => count($list)]),
-        'loading' => $i < 2 ? 'eager' : 'lazy', 'width' => 1075, 'height' => 1521,
+        'loading' => $webtopics || $i >= 2 ? 'lazy' : 'eager', 'width' => 1075, 'height' => 1521,
     ]);
+}
+if ($webtopics) {
+    echo html_writer::end_tag('details');
 }
 echo html_writer::tag('p', html_writer::link(new moodle_url('/local/csfr/handout.php', ['n' => $n, 'pdf' => 1]),
     get_string('handout_print', 'local_csfr')), ['class' => 'csfr-handout__print']);

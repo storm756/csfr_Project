@@ -704,3 +704,75 @@ table.csfr-table,
     font-size: .9375rem;
     text-align: center;
 }
+
+/* Readable handbook view: the same paper, ink and accent palette as the lesson, but selectable and responsive. */
+.csfr-handout--web {
+    max-width: 54rem;
+    gap: 1rem;
+}
+.csfr-handout__eyebrow {
+    margin: 0;
+    color: var(--csfr-terra);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.csfr-handout__intro {
+    margin: 0 auto .5rem;
+    max-width: 42rem;
+    color: var(--csfr-muted);
+    text-align: center;
+}
+.csfr-handout__paper {
+    overflow: hidden;
+    border: .55rem solid var(--csfr-mustard);
+    border-radius: .75rem;
+    background: var(--csfr-card);
+    box-shadow: var(--csfr-shadow);
+}
+.csfr-handout__topic {
+    padding: 2.25rem 2.5rem;
+}
+.csfr-handout__topic + .csfr-handout__topic {
+    border-top: 1px solid var(--csfr-rule);
+}
+.csfr-handout__topic > h2 {
+    margin: 0 0 1.4rem;
+    color: var(--csfr-ink);
+    font-size: clamp(1.55rem, 1.2rem + 1.4vw, 2.2rem);
+    line-height: 1.1;
+}
+.csfr-handout__subhead {
+    margin: 1.7rem 0 .55rem;
+    color: var(--csfr-plum);
+    font-size: 1.12rem;
+}
+.csfr-handout__subhead:first-child { margin-top: 0; }
+.csfr-handout__text { margin: 0 0 .85rem; line-height: 1.62; }
+.csfr-handout__list { margin: .4rem 0 1.15rem; padding-left: 1.35rem; }
+.csfr-handout__list li { margin-bottom: .45rem; }
+.csfr-handout__tablewrap { overflow-x: auto; margin: .9rem 0 1.35rem; }
+.csfr-handout__table { width: 100%; min-width: 31rem; border-collapse: collapse; font-size: .94rem; }
+.csfr-handout__table th, .csfr-handout__table td { padding: .58rem .7rem; border: 1px solid var(--csfr-rule); text-align: left; vertical-align: top; }
+.csfr-handout__table thead th { background: var(--csfr-plum); color: #fff; }
+.csfr-handout__table tbody th { width: 32%; color: var(--csfr-plum); background: var(--csfr-paper); font-weight: 700; }
+.csfr-handout__ssr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; margin: 1.15rem 0; padding: 0; list-style: none; counter-reset: none; }
+.csfr-handout__ssr li { padding: .9rem; border-radius: .5rem; background: var(--csfr-paper); border-top: .25rem solid var(--csfr-terra); }
+.csfr-handout__ssr li:nth-child(2) { border-top-color: var(--csfr-mustard); }
+.csfr-handout__ssr li:nth-child(3) { border-top-color: var(--csfr-teal); }
+.csfr-handout__ssr strong { display: block; color: var(--csfr-ink); }
+.csfr-handout__ssr p { margin: .3rem 0 0; font-size: .93rem; line-height: 1.45; }
+.csfr-handout__note { margin: 1.25rem 0; padding: 1rem 1.15rem; border-radius: .55rem; background: var(--csfr-mustard-soft); border-left: .3rem solid var(--csfr-mustard); }
+.csfr-handout__note--case { background: var(--csfr-teal-soft); border-left-color: var(--csfr-teal); }
+.csfr-handout__note h4 { margin: 0 0 .5rem; color: var(--csfr-ink); font-size: 1rem; }
+.csfr-handout__note p:last-child { margin-bottom: 0; }
+.csfr-handout__original { padding: .8rem 1rem; border: 1px dashed var(--csfr-rule); border-radius: .55rem; }
+.csfr-handout__original summary { color: var(--csfr-sky); font-weight: 700; cursor: pointer; }
+.csfr-handout__original img { margin-top: .9rem; }
+@media (max-width: 40rem) {
+    .csfr-handout__paper { border-width: .35rem; }
+    .csfr-handout__topic { padding: 1.35rem 1rem; }
+    .csfr-handout__ssr { grid-template-columns: 1fr; }
+}

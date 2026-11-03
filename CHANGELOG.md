@@ -3,6 +3,22 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Readable web handouts for Modules 1–9 (Codex)
+- **Handouts:** changed `custom/local/csfr/handout.php` to render the curated `setup/booklet_text.json` content as
+  selectable, responsive web text for Modules 1–9. Each now keeps an expandable original-page view and the existing
+  printable PDF download, so the faithful source layout is never lost.
+- **Presentation:** added the handbook-style web-handout layout to `custom/local/csfr/styles.css` (paper surface,
+  mustard border, heading hierarchy, responsive tables, stop/save/report cards and callouts). This replaces page
+  images as the default reading experience without altering the lesson pages or source PDFs.
+- **Scope safeguard:** Modules 10–11 stay on the existing original-page view because equivalent structured text is
+  not available; this avoids guessed formatting or accidental exposure of assessment-only material.
+
+## 2026-11-04 — Local stack started (Codex)
+- **Operations:** started the local Docker Compose stack from `D:\csfr-lms` at the owner's request, so the Moodle
+  learning platform and public landing page can be viewed locally. No application source or configuration was changed.
+- **Change-record convention:** this file is now the permanent log for future work; every change will state the date,
+  what changed, the affected files or service, and the reason.
+
 ## 2026-11-04 — Initial push + multilingual + assessments + gating (Claude, Opus)
 - **GitHub:** first push of the whole project to `storm756/csfr_Project`. Added `HANDOFF.md`, this changelog,
   `.gitignore` (excludes `.env`, big media, caches).

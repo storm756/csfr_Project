@@ -133,8 +133,10 @@ booklet_text.json, bank_booklet.json, modules.php, modules_ext.json  <- derived/
    `setup/files/videos/`; the plugin can serve per-language once wired.
 3. **Booklet / handout PDFs** — translated PDFs per language, same page order, in `setup/files/`.
 4. **Native-speaker review** of ALL machine/draft translations before go-public (safety-critical wording).
-5. **Standalone Handout page -> web text** — the "Handout, Module N" activity still shows page images; the
-   in-lesson topics are already web text. Reuse `csfr_booklet_blocks()`.
+5. **Standalone Handout page -> web text** — completed for Modules 1–9 in `local/csfr/handout.php`, using
+   `booklet_text.json` with handbook-style responsive CSS. The original pages remain behind an expandable reference
+   section and the printable PDF remains available. Modules 10–11 still use the original pages because equivalent
+   structured text is not available; do not infer it from assessment material.
 6. After the demo, a full `build.php` rebuild switches the module checks to the 405-item booklet bank and the
    improved attempt simulator (deliberately left off so demo dashboards don't break).
 
