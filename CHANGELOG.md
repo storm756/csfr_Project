@@ -3,6 +3,14 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Protect trainer answer keys in handouts (Codex)
+- **Access control:** changed `custom/local/csfr/handout.php` so learners cannot view or download Module 1 p.43
+  or Module 2 p.70, both explicitly labelled trainer answer keys. The restriction applies to the displayed original
+  pages, a direct image request, and the generated handout PDF. Course staff with activity-management access retain
+  access for facilitation.
+- **Why:** the handout coverage audit found that the full booklet page ranges accidentally exposed these answers to
+  normal learners.
+
 ## 2026-11-04 — Readable web handouts for Modules 1–9 (Codex)
 - **Handouts:** changed `custom/local/csfr/handout.php` to render the curated `setup/booklet_text.json` content as
   selectable, responsive web text for Modules 1–9. Each now keeps an expandable original-page view and the existing

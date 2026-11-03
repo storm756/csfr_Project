@@ -136,6 +136,15 @@ $courses = dashboard::courses();
 $course = reset($courses);
 require_login($course ?: null, false);
 
+// These are answer keys, not participant material. Exclude them from every learner response (including a directly
+// requested image or generated PDF), while allowing course staff to retain the reference they need for facilitation.
+$traineronly = ['1' => [43], '2' => [70]];
+$context = $course ? context_course::instance($course->id) : null;
+$canviewtrainer = $context && has_capability('moodle/course:manageactivities', $context);
+if (!$canviewtrainer && isset($traineronly[$n])) {
+    $list = array_values(array_diff($list, $traineronly[$n]));
+}
+
 $source = $usebook ? '/opt/csfr-setup/files/booklet.pdf' : $modfile ?? ('/opt/csfr-setup/files/' . ($extended ? 'modules-4-6-extended.pdf' : 'participant-handbook.pdf'));
 $prefix = $usebook ? 'booklet' : ($modfile ? "module$n" : ($extended ? 'extended' : 'handbook'));
 $dir = $CFG->dataroot . '/csfr-pages';

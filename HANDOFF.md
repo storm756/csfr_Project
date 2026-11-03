@@ -136,7 +136,8 @@ booklet_text.json, bank_booklet.json, modules.php, modules_ext.json  <- derived/
 5. **Standalone Handout page -> web text** — completed for Modules 1–9 in `local/csfr/handout.php`, using
    `booklet_text.json` with handbook-style responsive CSS. The original pages remain behind an expandable reference
    section and the printable PDF remains available. Modules 10–11 still use the original pages because equivalent
-   structured text is not available; do not infer it from assessment material.
+   structured text is not available; do not infer it from assessment material. Learners are excluded from the Module
+   1 and 2 trainer answer-key pages (booklet pp.43 and 70); course staff may still view them.
 6. After the demo, a full `build.php` rebuild switches the module checks to the 405-item booklet bank and the
    improved attempt simulator (deliberately left off so demo dashboards don't break).
 
