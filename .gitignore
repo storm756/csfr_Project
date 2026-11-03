@@ -8,6 +8,9 @@
 node_modules/
 *.log
 
+# local point-in-time platform snapshots (database and Docker volumes); never commit learner/demo data
+backups/
+
 # large source media — kept on D: (see HANDOFF.md §3). Derived JSON (booklet_text.json etc.) IS committed.
 setup/files/videos/*.mp4
 setup/files/*.pdf

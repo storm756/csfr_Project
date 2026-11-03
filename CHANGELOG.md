@@ -3,6 +3,12 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Protect pre-multilingual/assessment-layout baseline (Codex)
+- **Rollback:** added `.gitignore` protection for local platform snapshots and `BACKUP_AND_ROLLBACK.md` with the
+  two-layer rollback process: a pushed Git tag for source and a local Docker/database snapshot for live Moodle
+  state. This baseline is created before assessment UI or multilingual changes so those changes can be reversed
+  without losing the current platform.
+
 ## 2026-11-04 — Add learner module overviews to web handouts (Codex)
 - **Handouts:** updated `custom/local/csfr/handout.php` to add a consistent learner-facing overview to all web
   handouts for Modules 1–9: module title, notional hours, plain-language learning outcomes and a collapsible topic
