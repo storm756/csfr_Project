@@ -80,6 +80,9 @@ booklet_text.json, bank_booklet.json, modules.php, modules_ext.json  <- derived/
 - **9 interactive lessons** (modules 1-9) + capstone + the booklet as **sharp web text** (the "Learn it: topics"
   section) with the original page one tap away. Brighter handbook UI.
 - **Assessments = the teammates' interactive games as graded SCORM** (section 6).
+- **Assessment presentation:** every single-SCO assessment uses the full course canvas, with Moodle's redundant TOC
+  hidden (`setup/scorm/presentation.php` + theme SCSS). This is a presentation change only; do not remove the SCORM
+  player/bridge, because it records score, pass/fail and completion.
 - **Dashboards / Programme-admin page, batches, certificate** (customcert).
 - **Multilingual layer** (section 7): Moodle UI, framework labels, full booklet text, and the gate bar are in
   hi/mr/gu. (Module-authored lesson text + films are not yet — section 8.)

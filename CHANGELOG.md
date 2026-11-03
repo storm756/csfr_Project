@@ -3,6 +3,14 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Give SCORM assessments a full course-page layout (Codex)
+- **Assessment presentation:** added `setup/scorm/presentation.php` and aligned both SCORM import scripts so every
+  Module 1–9 assessment and the final assessment hides Moodle's redundant single-item table of contents, uses the
+  available course width and gets a tall, responsive player frame. The package itself, SCORM API bridge, attempts,
+  grades, pass status and gating are untouched.
+- **Theme:** added the matching `#page-mod-scorm-player` layout rules in `custom/theme/csfr/scss/post.scss` to remove
+  the cramped embedded-window appearance while retaining the Moodle frame required for safe SCORM tracking.
+
 ## 2026-11-04 — Protect pre-multilingual/assessment-layout baseline (Codex)
 - **Rollback:** added `.gitignore` protection for local platform snapshots and `BACKUP_AND_ROLLBACK.md` with the
   two-layer rollback process: a pushed Git tag for source and a local Docker/database snapshot for live Moodle

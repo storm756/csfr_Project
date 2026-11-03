@@ -55,6 +55,10 @@ $cm = $gen->create_module('scorm', [
     'maxgrade' => 100,
     'whatgrade' => 0,              // HIGHESTATTEMPT
     'idnumber' => 'csfr_assess1',
+    'hidetoc' => SCORM_TOC_HIDDEN, // one SCO per assessment: Moodle's separate TOC is redundant
+    'width' => 100,
+    'height' => 850,
+    'nav' => 0,
     'completion' => COMPLETION_TRACKING_AUTOMATIC,
     'completionstatusrequired' => 4,   // require lesson_status "passed"
 ]);

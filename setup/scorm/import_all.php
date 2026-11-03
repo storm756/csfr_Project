@@ -56,6 +56,10 @@ foreach ($plan as $code => [$idnumber, $section, $name, $intro]) {
         'scormtype' => 'local', 'packagefile' => $draftid,
         'grademethod' => 1, 'maxgrade' => 100, 'whatgrade' => 0,
         'idnumber' => $idnumber,
+        'hidetoc' => SCORM_TOC_HIDDEN,
+        'width' => 100,
+        'height' => 850,
+        'nav' => 0,
         'completion' => COMPLETION_TRACKING_AUTOMATIC, 'completionstatusrequired' => 4,
     ]);
     cli_writeln("$code: created '$name' cmid={$cm->cmid} in section $section");
