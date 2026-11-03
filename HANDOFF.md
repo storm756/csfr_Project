@@ -86,6 +86,8 @@ booklet_text.json, bank_booklet.json, modules.php, modules_ext.json  <- derived/
 - **Course-index language switch:** Modules 1–9 labels now also switch in the Moodle course page, breadcrumb,
   activity header and left course drawer through a narrow CSFR theme layer. It is display-only: activity URLs,
   completion rules, scores and grades retain their original Moodle records.
+- **LinkedIn showcase:** learner home has a controlled awareness/achievement draft, Copy button and a link to
+  LinkedIn's share flow. It is deliberately not an automatic post; see `CHANGELOG.md` for the production OAuth path.
 - **Assessments = the teammates' interactive games as graded SCORM** (section 6).
 - **Assessment presentation:** every single-SCO assessment uses the full course canvas, with Moodle's redundant TOC
   hidden (`setup/scorm/presentation.php` + theme SCSS). This is a presentation change only; do not remove the SCORM

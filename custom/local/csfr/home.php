@@ -81,6 +81,42 @@ echo html_writer::div(
         'csfr-next'),
     'csfr-home__head');
 
+// Showcase the learner-controlled share journey without storing a LinkedIn account or claiming that CSFR can post
+// silently. A real deployment replaces the public-awareness URL with the public CSFR/certificate-verification URL
+// and adds LinkedIn OAuth after institutional approval.
+$sharetext = 'I am building cyber-safety skills with the Cyber First Responder Academy. I have completed '
+    . ui::hours($row->totalhours) . ' of 60 learning hours. One reminder for everyone: never share your OTP, UPI PIN or password. '
+    . '#CyberSafety #DigitalSafety #CyberFirstResponder';
+$shareurl = 'https://cybercrime.gov.in/';
+$shareid = 'csfr-linkedin-post';
+$sharecard = html_writer::tag('p', 'Showcase feature · learner-controlled sharing', ['class' => 'csfr-linkedin__eyebrow'])
+    . html_writer::tag('h2', 'Share a cyber-safety achievement', ['id' => 'csfr-linkedin-title'])
+    . html_writer::tag('p', 'Review the suggested post, copy it, then choose whether to share it on LinkedIn. CSFR never posts or accesses your LinkedIn account without your approval.')
+    . html_writer::tag('textarea', s($sharetext), ['id' => $shareid, 'class' => 'csfr-linkedin__draft', 'rows' => 5,
+        'aria-label' => 'Suggested LinkedIn post'])
+    . html_writer::div(
+        html_writer::tag('button', 'Copy suggested post', ['type' => 'button', 'class' => 'btn btn-outline-primary',
+            'data-action' => 'csfr-copy-linkedin', 'data-target' => $shareid])
+        . html_writer::link(new moodle_url('https://www.linkedin.com/sharing/share-offsite/', ['url' => $shareurl]),
+            'Open LinkedIn sharing', ['class' => 'btn btn-primary', 'target' => '_blank', 'rel' => 'noopener noreferrer'])
+        . html_writer::span('A demo opens LinkedIn’s sharing screen; the learner still reviews and publishes the post there.',
+            'csfr-linkedin__note'), 'csfr-linkedin__actions');
+echo html_writer::tag('section', $sharecard, ['class' => 'csfr-section csfr-linkedin', 'aria-labelledby' => 'csfr-linkedin-title']);
+echo <<<'JS'
+<script>
+document.addEventListener('click', function (event) {
+  var button = event.target.closest('[data-action="csfr-copy-linkedin"]');
+  if (!button) { return; }
+  var draft = document.getElementById(button.dataset.target);
+  if (!draft) { return; }
+  var done = function () { button.textContent = 'Copied'; window.setTimeout(function () { button.textContent = 'Copy suggested post'; }, 1800); };
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(draft.value).then(done); return; }
+  draft.focus(); draft.select();
+  if (document.execCommand('copy')) { done(); }
+});
+</script>
+JS;
+
 echo html_writer::div(
     html_writer::div(sections::modules($learner, true) . sections::assessments($learner), 'csfr-cols__main') .
     html_writer::div(sections::practicum($learner, true) . sections::attendance($learner) .

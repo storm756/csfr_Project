@@ -3,6 +3,15 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Add learner-controlled LinkedIn sharing showcase (Codex)
+- **Showcase feature:** added a LinkedIn awareness/achievement card to `custom/local/csfr/home.php`, with a
+  personalised, editable draft based on the learner's completed hours, a copy button, and a safe external link to
+  LinkedIn's share flow. `custom/local/csfr/styles.css` supplies the responsive presentation.
+- **Safety and production path:** the demo never requests LinkedIn credentials, holds no access token and never
+  publishes automatically. It uses the public cybercrime.gov.in awareness page as the demo share URL. A production
+  version needs a registered LinkedIn app, OAuth consent and `w_member_social`, plus a public CSFR/certificate URL
+  with share-preview metadata.
+
 ## 2026-11-04 — Complete the shared left-drawer labels in three languages (Codex)
 - **Left navigation:** extended the CSFR course-label dictionary in `custom/theme/csfr/classes/hook_callbacks.php`
   to include the course title, Collapse all, Start here, its visible orientation activities, attendance and the

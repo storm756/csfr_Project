@@ -793,6 +793,13 @@ table.csfr-table,
 .csfr-handout__original { padding: .8rem 1rem; border: 1px dashed var(--csfr-rule); border-radius: .55rem; }
 .csfr-handout__original summary { color: var(--csfr-sky); font-weight: 700; cursor: pointer; }
 .csfr-handout__original img { margin-top: .9rem; }
+.csfr-linkedin { margin: 1.4rem 0; border-top: .32rem solid #0a66c2; }
+.csfr-linkedin__eyebrow { margin: 0 0 .35rem; color: #0a66c2; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.csfr-linkedin h2 { margin: 0 0 .45rem; }
+.csfr-linkedin > p { max-width: 52rem; color: var(--csfr-muted); }
+.csfr-linkedin__draft { width: 100%; max-width: 52rem; margin: .55rem 0 .8rem; padding: .8rem; border: 1px solid var(--csfr-rule); border-radius: .5rem; background: var(--csfr-paper); color: var(--csfr-ink); line-height: 1.45; resize: vertical; }
+.csfr-linkedin__actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; }
+.csfr-linkedin__note { flex: 1 1 17rem; color: var(--csfr-muted); font-size: .88rem; line-height: 1.35; }
 @media (max-width: 40rem) {
     .csfr-handout__paper { border-width: .35rem; }
     .csfr-handout__topic { padding: 1.35rem 1rem; }
