@@ -13,7 +13,7 @@ All learners, grades and dates are **dummy data**.
 | Test mailbox (catches every email the site sends) | http://localhost:8025 |
 | Sample certificate PDF | `D:\csfr-lms\sample-certificate.pdf` |
 
-**Start:** open Docker Desktop and wait for "Engine running", then in PowerShell: `cd D:\csfr-lms; docker compose up -d`
+**Start:** open Docker Desktop and wait for "Engine running", then double-click `START-SITE.bat` in this folder. It waits briefly for Docker, starts the services, and opens Moodle at http://localhost:8000 and the landing page at http://localhost:8090. The PowerShell equivalent is `cd D:\csfr-lms; docker compose up -d`.
 **Stop:** `docker compose stop` (data is kept). Delete everything: `docker compose down -v`.
 
 Commands below are for PowerShell. In Git Bash, put `MSYS_NO_PATHCONV=1 ` in front of each `docker compose exec` line.

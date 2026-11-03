@@ -3,6 +3,11 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Add a reproducible Windows startup batch file (Codex)
+- **Startup:** added `START-SITE.bat` at the project root. After Docker Desktop is opened, it waits for the Docker
+  engine, runs `docker compose up -d`, and opens Moodle and the landing page. Updated `README.md` so the documented
+  one-click startup path matches the file that actually exists.
+
 ## 2026-11-04 — Add learner-controlled LinkedIn sharing showcase (Codex)
 - **Showcase feature:** added a LinkedIn awareness/achievement card to `custom/local/csfr/home.php`, with a
   personalised, editable draft based on the learner's completed hours, a copy button, and a safe external link to

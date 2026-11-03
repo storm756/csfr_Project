@@ -22,7 +22,8 @@ Gujarati layer in progress.
 - **Stack:** Docker Compose. `docker compose up -d` from `D:\csfr-lms`. Containers: `csfr-lms-web-1` (Moodle/PHP),
   `csfr-lms-db-1` (MariaDB), `csfr-lms-landing-1` (the landing page), `csfr-lms-mail-1` (Mailpit).
 - **URLs:** Moodle = **http://localhost:8000**, landing page = **http://localhost:8090**. (Port 8080 is NOT used.)
-- **One-click start:** `START-SITE.bat` on the Desktop (opens Docker-started site).
+- **One-click start:** double-click `D:\csfr-lms\START-SITE.bat` after Docker Desktop is open. It waits for the engine,
+  starts the Compose services, and opens Moodle plus the landing page. A Desktop shortcut can point to this file.
 - **Moodle core** lives inside the web container at `/var/www/html/public` (Moodle 5.3 puts the app under
   `public/`; CLI scripts are at `/var/www/html/admin/cli/...`). Core is NOT in this repo.
 - **Deploy custom code:** `./deploy-custom.sh` — compiles the theme SCSS (fails loudly on errors) and copies
