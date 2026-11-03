@@ -3,6 +3,12 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Complete the shared left-drawer labels in three languages (Codex)
+- **Left navigation:** extended the CSFR course-label dictionary in `custom/theme/csfr/classes/hook_callbacks.php`
+  to include the course title, Collapse all, Start here, its visible orientation activities, attendance and the
+  day-one pre-test. This closes the obvious English-only portion above the Module 1–9 navigation; trainer-only
+  items remain deliberately outside the learner-facing scope.
+
 ## 2026-11-04 — Translate Modules 1–9 course and left-menu labels (Codex)
 - **Course navigation:** added the CSFR theme’s small rendered-label language layer in
   `custom/theme/csfr/classes/hook_callbacks.php`. With Hindi, Marathi or Gujarati selected, it translates Module

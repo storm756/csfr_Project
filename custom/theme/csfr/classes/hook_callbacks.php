@@ -50,7 +50,12 @@ class hook_callbacks {
             'mr' => ['Phone Rescue' => 'फोन बचाव', 'Scam Busters Desk' => 'घोटाळा शोध डेस्क', 'The Verification Desk' => 'पडताळणी डेस्क', 'Triage Desk' => 'तातडीचे वर्गीकरण डेस्क', 'The Evidence Lab' => 'पुरावा प्रयोगशाळा', 'The Routing Room' => 'मार्गनियोजन कक्ष', 'The Support Circuit' => 'सहाय्य चक्र', 'The Recovery Clinic' => 'पुनर्प्राप्ती केंद्र', 'Secure the Smart Home' => 'स्मार्ट घर सुरक्षित करा'],
             'gu' => ['Phone Rescue' => 'ફોન બચાવ', 'Scam Busters Desk' => 'કૌભાંડ ઓળખ ડેસ્ક', 'The Verification Desk' => 'ચકાસણી ડેસ્ક', 'Triage Desk' => 'પ્રાથમિકતા ડેસ્ક', 'The Evidence Lab' => 'પુરાવા પ્રયોગશાળા', 'The Routing Room' => 'આગળ મોકલવાનો કક્ષ', 'The Support Circuit' => 'સહાય ચક્ર', 'The Recovery Clinic' => 'પુનઃપ્રાપ્તિ કેન્દ્ર', 'Secure the Smart Home' => 'સ્માર્ટ ઘર સુરક્ષિત કરો'],
         ];
-        return ['source' => ['Cyber hygiene and digital safety', 'Online fraud and scams', 'Deepfakes, AI threats and misinformation', 'Incident identification and triage', 'Evidence preservation', 'Reporting, escalation and legal basics', 'Citizen guidance and victim support', 'Ransomware, malware and account compromise', 'IoT/OT and smart-device safety'], 'titles' => $titles[$lang] ?? [], 'words' => $words[$lang] ?? [], 'assessments' => $assessments[$lang] ?? []];
+        $fixed = [
+            'hi' => ['Certificate in Cyber Incident First Response (Pilot 2026)' => 'साइबर घटना प्रथम प्रतिक्रिया प्रमाणपत्र (पायलट 2026)', 'Collapse all' => 'सभी समेटें', 'Start here' => 'यहाँ से शुरू करें', 'How this course works' => 'यह कोर्स कैसे काम करता है', 'How you are assessed' => 'आपका मूल्यांकन कैसे होगा', 'Participant handbook, all 11 modules' => 'प्रतिभागी हैंडबुक, सभी 11 मॉड्यूल', 'Help card: helplines and portals' => 'सहायता कार्ड: हेल्पलाइन और पोर्टल', 'Classroom attendance (15 contact hours)' => 'कक्षा उपस्थिति (15 संपर्क घंटे)', 'Day 1 pre-test (does not count)' => 'दिन 1 पूर्व-परीक्षण (अंकों में शामिल नहीं)'],
+            'mr' => ['Certificate in Cyber Incident First Response (Pilot 2026)' => 'सायबर घटना प्रथम प्रतिसाद प्रमाणपत्र (पायलट 2026)', 'Collapse all' => 'सर्व आवरा', 'Start here' => 'येथून सुरू करा', 'How this course works' => 'हा अभ्यासक्रम कसा चालतो', 'How you are assessed' => 'तुमचे मूल्यांकन कसे होते', 'Participant handbook, all 11 modules' => 'सहभागी हँडबुक, सर्व 11 मॉड्यूल', 'Help card: helplines and portals' => 'मदत कार्ड: हेल्पलाइन आणि पोर्टल', 'Classroom attendance (15 contact hours)' => 'वर्ग उपस्थिती (15 संपर्क तास)', 'Day 1 pre-test (does not count)' => 'पहिल्या दिवसाची पूर्वचाचणी (गुणांमध्ये धरली जात नाही)'],
+            'gu' => ['Certificate in Cyber Incident First Response (Pilot 2026)' => 'સાયબર ઘટના પ્રથમ પ્રતિભાવ પ્રમાણપત્ર (પાયલટ 2026)', 'Collapse all' => 'બધું સંકુચિત કરો', 'Start here' => 'અહીંથી શરૂ કરો', 'How this course works' => 'આ કોર્સ કેવી રીતે કાર્ય કરે છે', 'How you are assessed' => 'તમારું મૂલ્યાંકન કેવી રીતે થાય છે', 'Participant handbook, all 11 modules' => 'ભાગીદાર હેન્ડબુક, બધા 11 મોડ્યુલ', 'Help card: helplines and portals' => 'મદદ કાર્ડ: હેલ્પલાઇન અને પોર્ટલ', 'Classroom attendance (15 contact hours)' => 'વર્ગ હાજરી (15 સંપર્ક કલાક)', 'Day 1 pre-test (does not count)' => 'દિવસ 1 પૂર્વ-પરીક્ષણ (ગુણમાં ગણાતું નથી)'],
+        ];
+        return ['source' => ['Cyber hygiene and digital safety', 'Online fraud and scams', 'Deepfakes, AI threats and misinformation', 'Incident identification and triage', 'Evidence preservation', 'Reporting, escalation and legal basics', 'Citizen guidance and victim support', 'Ransomware, malware and account compromise', 'IoT/OT and smart-device safety'], 'titles' => $titles[$lang] ?? [], 'words' => $words[$lang] ?? [], 'assessments' => $assessments[$lang] ?? [], 'fixed' => $fixed[$lang] ?? []];
     }
 
     /**
@@ -105,6 +110,7 @@ JS;
   var data = $json;
   function translated(text) {
     var t = text.replace(/^\s+|\s+$/g, '');
+    if (data.fixed[t]) { return data.fixed[t]; }
     var m = t.match(/^Module\s+([1-9]):\s+(.+)$/);
     if (m) { return data.words.module + ' ' + m[1] + ': ' + data.titles[+m[1] - 1]; }
     m = t.match(/^Lesson:\s+(.+)$/);
