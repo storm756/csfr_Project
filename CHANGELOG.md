@@ -3,6 +3,16 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Translate Modules 1–9 course and left-menu labels (Codex)
+- **Course navigation:** added the CSFR theme’s small rendered-label language layer in
+  `custom/theme/csfr/classes/hook_callbacks.php`. With Hindi, Marathi or Gujarati selected, it translates Module
+  1–9 section titles, lesson/handout/practice/check/assessment labels, assessment scenario names, course cards,
+  breadcrumbs and the asynchronously loaded left course drawer. It does not alter Moodle records, links, IDs,
+  completion, grades or question content.
+- **Why this route:** this Moodle installation has neither of its built-in multilingual text filters enabled or
+  installed. The layer is restricted to learner-facing course-navigation strings and runs after the drawer loads,
+  keeping behaviour reversible and avoiding accidental changes to quiz/lesson body text.
+
 ## 2026-11-04 — Make Modules 1–9 web handouts follow the browser language (Codex)
 - **Browser multilingual proof:** updated `custom/local/csfr/handout.php` so the readable web-text portion of
   Handouts 1–9 uses the existing reviewed English→Hindi/Marathi/Gujarati booklet map when a learner selects that

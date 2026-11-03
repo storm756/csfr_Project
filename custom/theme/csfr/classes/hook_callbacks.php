@@ -27,6 +27,33 @@ use core\hook\output\before_standard_top_of_body_html_generation;
  */
 class hook_callbacks {
     /**
+     * Returns the small, learner-facing course-navigation dictionary. Moodle repeats activity names in the course
+     * index, section page, breadcrumb and activity header, but this Moodle image has no core multilang filter.
+     * Replacing visible labels leaves activity IDs, completion, grades and links untouched.
+     *
+     * @param string $lang Moodle language code.
+     * @return array<string, mixed>
+     */
+    private static function course_labels(string $lang): array {
+        $titles = [
+            'hi' => ['साइबर स्वच्छता और डिजिटल सुरक्षा', 'ऑनलाइन धोखाधड़ी और ठगी', 'डीपफेक, AI खतरे और भ्रामक जानकारी', 'घटना की पहचान और प्राथमिकता निर्धारण', 'साक्ष्य संरक्षण', 'रिपोर्टिंग, अग्रेषण और कानूनी आधार', 'नागरिक मार्गदर्शन और पीड़ित सहायता', 'रैनसमवेयर, मैलवेयर और खाते पर अनधिकृत कब्ज़ा', 'IoT/OT और स्मार्ट-डिवाइस सुरक्षा'],
+            'mr' => ['सायबर स्वच्छता आणि डिजिटल सुरक्षितता', 'ऑनलाइन फसवणूक आणि घोटाळे', 'डीपफेक, AI धोके आणि चुकीची माहिती', 'घटना ओळख आणि तातडीचे वर्गीकरण', 'पुरावे जतन करणे', 'तक्रार, पुढील कार्यवाही आणि कायद्याची मूलतत्त्वे', 'नागरिक मार्गदर्शन आणि पीडितांना मदत', 'रॅन्समवेअर, मालवेअर आणि खात्यावर अनधिकृत ताबा', 'IoT/OT आणि स्मार्ट उपकरणांची सुरक्षितता'],
+            'gu' => ['સાયબર સ્વચ્છતા અને ડિજિટલ સુરક્ષા', 'ઓનલાઇન છેતરપિંડી અને કૌભાંડો', 'ડીપફેક, AI ખતરાં અને ભ્રામક માહિતી', 'ઘટનાની ઓળખ અને પ્રાથમિકતા નક્કી કરવી', 'પુરાવાનું સંરક્ષણ', 'રિપોર્ટિંગ, આગળ મોકલવું અને કાનૂની મૂળભૂત બાબતો', 'નાગરિક માર્ગદર્શન અને પીડિત સહાય', 'રેન્સમવેર, મેલવેર અને એકાઉન્ટ પર અનધિકૃત કબજો', 'IoT/OT અને સ્માર્ટ ઉપકરણોની સુરક્ષા'],
+        ];
+        $words = [
+            'hi' => ['module' => 'मॉड्यूल', 'lesson' => 'पाठ', 'handout' => 'हैंडआउट', 'practice' => 'अभ्यास', 'check' => 'जाँच', 'assessment' => 'मूल्यांकन'],
+            'mr' => ['module' => 'मॉड्यूल', 'lesson' => 'धडा', 'handout' => 'हँडआउट', 'practice' => 'सराव', 'check' => 'तपासणी', 'assessment' => 'मूल्यमापन'],
+            'gu' => ['module' => 'મોડ્યુલ', 'lesson' => 'પાઠ', 'handout' => 'હેન્ડઆઉટ', 'practice' => 'અભ્યાસ', 'check' => 'તપાસ', 'assessment' => 'મૂલ્યાંકન'],
+        ];
+        $assessments = [
+            'hi' => ['Phone Rescue' => 'फोन बचाव', 'Scam Busters Desk' => 'घोटाला पहचान डेस्क', 'The Verification Desk' => 'सत्यापन डेस्क', 'Triage Desk' => 'प्राथमिकता निर्धारण डेस्क', 'The Evidence Lab' => 'साक्ष्य प्रयोगशाला', 'The Routing Room' => 'अग्रेषण कक्ष', 'The Support Circuit' => 'सहायता चक्र', 'The Recovery Clinic' => 'पुनर्प्राप्ति केंद्र', 'Secure the Smart Home' => 'स्मार्ट घर को सुरक्षित करें'],
+            'mr' => ['Phone Rescue' => 'फोन बचाव', 'Scam Busters Desk' => 'घोटाळा शोध डेस्क', 'The Verification Desk' => 'पडताळणी डेस्क', 'Triage Desk' => 'तातडीचे वर्गीकरण डेस्क', 'The Evidence Lab' => 'पुरावा प्रयोगशाळा', 'The Routing Room' => 'मार्गनियोजन कक्ष', 'The Support Circuit' => 'सहाय्य चक्र', 'The Recovery Clinic' => 'पुनर्प्राप्ती केंद्र', 'Secure the Smart Home' => 'स्मार्ट घर सुरक्षित करा'],
+            'gu' => ['Phone Rescue' => 'ફોન બચાવ', 'Scam Busters Desk' => 'કૌભાંડ ઓળખ ડેસ્ક', 'The Verification Desk' => 'ચકાસણી ડેસ્ક', 'Triage Desk' => 'પ્રાથમિકતા ડેસ્ક', 'The Evidence Lab' => 'પુરાવા પ્રયોગશાળા', 'The Routing Room' => 'આગળ મોકલવાનો કક્ષ', 'The Support Circuit' => 'સહાય ચક્ર', 'The Recovery Clinic' => 'પુનઃપ્રાપ્તિ કેન્દ્ર', 'Secure the Smart Home' => 'સ્માર્ટ ઘર સુરક્ષિત કરો'],
+        ];
+        return ['source' => ['Cyber hygiene and digital safety', 'Online fraud and scams', 'Deepfakes, AI threats and misinformation', 'Incident identification and triage', 'Evidence preservation', 'Reporting, escalation and legal basics', 'Citizen guidance and victim support', 'Ransomware, malware and account compromise', 'IoT/OT and smart-device safety'], 'titles' => $titles[$lang] ?? [], 'words' => $words[$lang] ?? [], 'assessments' => $assessments[$lang] ?? []];
+    }
+
+    /**
      * Puts the 1930 / cybercrime.gov.in help strip in the footer of learner-facing course pages only.
      * It sits at the end of the page content (not pinned), and never appears on admin, the dashboard or the
      * front page, where it is only clutter.
@@ -64,5 +91,54 @@ class hook_callbacks {
 </script>
 JS;
         $hook->add_html($html);
+
+        // Show translated copies of course navigation labels in every Moodle region which repeats them. This runs
+        // only for the three CSFR learner languages and deliberately does not touch question/lesson body text.
+        $labels = self::course_labels(current_language());
+        if (!$labels['titles']) {
+            return;
+        }
+        $json = json_encode($labels, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        $hook->add_html(<<<JS
+<script>
+(function () {
+  var data = $json;
+  function translated(text) {
+    var t = text.replace(/^\s+|\s+$/g, '');
+    var m = t.match(/^Module\s+([1-9]):\s+(.+)$/);
+    if (m) { return data.words.module + ' ' + m[1] + ': ' + data.titles[+m[1] - 1]; }
+    m = t.match(/^Lesson:\s+(.+)$/);
+    if (m) { var i = data.source.indexOf(m[1]); return i >= 0 ? data.words.lesson + ': ' + data.titles[i] : null; }
+    m = t.match(/^Handout,\s+Module\s+([1-9])$/);
+    if (m) { return data.words.handout + ', ' + data.words.module + ' ' + m[1]; }
+    m = t.match(/^Module\s+([1-9])\s+(practice|check)$/);
+    if (m) { return data.words.module + ' ' + m[1] + ' ' + data.words[m[2]]; }
+    m = t.match(/^Module\s+([1-9])\s+assessment:\s+(.+)$/);
+    if (m) { return data.words.module + ' ' + m[1] + ' ' + data.words.assessment + ': ' + (data.assessments[m[2]] || m[2]); }
+    return null;
+  }
+  function apply(root) {
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {acceptNode: function (node) {
+      return node.parentElement && !node.parentElement.closest('script, style, textarea, .que') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }});
+    var node, pending = [];
+    while ((node = walker.nextNode())) { var value = translated(node.nodeValue); if (value) { pending.push([node, value]); } }
+    pending.forEach(function (item) { item[0].nodeValue = item[1]; });
+  }
+  function run() {
+    apply(document.querySelector('#course-index') || document.body);
+    apply(document.querySelector('#region-main') || document.body);
+    apply(document.querySelector('.breadcrumb') || document.body);
+  }
+  function watchDrawer() {
+    run();
+    var observer = new MutationObserver(run);
+    observer.observe(document.body, {childList: true, subtree: true});
+    window.setTimeout(function () { observer.disconnect(); }, 2500);
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', watchDrawer); } else { watchDrawer(); }
+})();
+</script>
+JS);
     }
 }

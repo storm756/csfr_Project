@@ -83,6 +83,9 @@ booklet_text.json, bank_booklet.json, modules.php, modules_ext.json  <- derived/
   booklet translations when Moodle is set to Hindi, Marathi or Gujarati. `handout.php` reads the selected Moodle
   language; it does not need or expose a third-party translation API key. Overview metadata, checks and SCORM remain
   separate work items.
+- **Course-index language switch:** Modules 1–9 labels now also switch in the Moodle course page, breadcrumb,
+  activity header and left course drawer through a narrow CSFR theme layer. It is display-only: activity URLs,
+  completion rules, scores and grades retain their original Moodle records.
 - **Assessments = the teammates' interactive games as graded SCORM** (section 6).
 - **Assessment presentation:** every single-SCO assessment uses the full course canvas, with Moodle's redundant TOC
   hidden (`setup/scorm/presentation.php` + theme SCSS). This is a presentation change only; do not remove the SCORM
