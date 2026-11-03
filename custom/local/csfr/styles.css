@@ -725,6 +725,28 @@ table.csfr-table,
     color: var(--csfr-muted);
     text-align: center;
 }
+.csfr-handout__overview {
+    padding: 1.4rem 1.6rem;
+    border-radius: .75rem;
+    background: var(--csfr-teal-soft);
+    border-top: .35rem solid var(--csfr-teal);
+}
+.csfr-handout__overview-kicker {
+    margin: 0 0 .35rem;
+    color: var(--csfr-teal-ink);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.csfr-handout__overview h2 { margin: 0; color: var(--csfr-ink); font-size: 1.55rem; }
+.csfr-handout__overview-tagline { margin: .35rem 0 1.2rem; color: var(--csfr-teal-ink); font-weight: 600; }
+.csfr-handout__overview h3 { margin: 0 0 .45rem; color: var(--csfr-ink); font-size: 1.05rem; }
+.csfr-handout__outcomes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem 1.4rem; margin: 0; padding-left: 1.2rem; }
+.csfr-handout__outcomes li { padding-left: .1rem; line-height: 1.45; }
+.csfr-handout__topics { margin-top: 1.1rem; padding-top: .85rem; border-top: 1px solid rgba(0, 0, 0, .12); }
+.csfr-handout__topics summary { color: var(--csfr-teal-ink); font-weight: 700; cursor: pointer; }
+.csfr-handout__topics ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem 1.5rem; margin: .7rem 0 0; padding-left: 1.25rem; }
 .csfr-handout__paper {
     overflow: hidden;
     border: .55rem solid var(--csfr-mustard);
@@ -774,5 +796,7 @@ table.csfr-table,
 @media (max-width: 40rem) {
     .csfr-handout__paper { border-width: .35rem; }
     .csfr-handout__topic { padding: 1.35rem 1rem; }
+    .csfr-handout__overview { padding: 1.15rem 1rem; }
+    .csfr-handout__outcomes, .csfr-handout__topics ol { grid-template-columns: 1fr; }
     .csfr-handout__ssr { grid-template-columns: 1fr; }
 }

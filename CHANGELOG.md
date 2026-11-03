@@ -3,6 +3,14 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Add learner module overviews to web handouts (Codex)
+- **Handouts:** updated `custom/local/csfr/handout.php` to add a consistent learner-facing overview to all web
+  handouts for Modules 1–9: module title, notional hours, plain-language learning outcomes and a collapsible topic
+  list. It reuses the existing curated module data and does not render NSQF/NOS mapping, trainer plans, assessment
+  materials or answer keys.
+- **Presentation:** updated `custom/local/csfr/styles.css` with a responsive teal overview panel that keeps the
+  handbook visual system intact on desktop and phones.
+
 ## 2026-11-04 — Protect trainer answer keys in handouts (Codex)
 - **Access control:** changed `custom/local/csfr/handout.php` so learners cannot view or download Module 1 p.43
   or Module 2 p.70, both explicitly labelled trainer answer keys. The restriction applies to the displayed original

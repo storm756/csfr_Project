@@ -194,10 +194,19 @@ if ($course) {
 // The full booklet has clean, reviewed web-text data for Modules 1–9. Do not guess at Modules 10–11: their
 // original pages remain the authoritative and safe presentation until equivalent structured text is supplied.
 $webtopics = [];
+$webmeta = null;
 if ($usebook && ctype_digit($n) && (int)$n >= 1 && (int)$n <= 9) {
     $textfile = '/opt/csfr-setup/booklet_text.json';
     $alltext = is_readable($textfile) ? json_decode(file_get_contents($textfile), true) : null;
     $webtopics = is_array($alltext) ? ($alltext[(string)(int)$n] ?? []) : [];
+    $modulesfile = '/opt/csfr-setup/modules.php';
+    $modules = is_readable($modulesfile) ? require($modulesfile) : [];
+    $module = $modules[(int)$n] ?? null;
+    if ($module && $webtopics) {
+        // The HOD booklet specifies 3 notional hours for Modules 1–8 and 2 for Module 9.
+        $webmeta = ['title' => $module['title'], 'tagline' => $module['tagline'], 'hours' => (int)$n === 9 ? 2 : 3,
+            'outcomes' => $module['outcomes'], 'topics' => array_column($webtopics, 'title')];
+    }
 }
 
 echo $OUTPUT->header();
@@ -206,6 +215,26 @@ if ($webtopics) {
     echo html_writer::tag('p', 'Readable web handout', ['class' => 'csfr-handout__eyebrow']);
     echo html_writer::tag('p', 'Select, search and read this handout on any screen. The original page layout remains below.',
         ['class' => 'csfr-handout__intro']);
+    if ($webmeta) {
+        echo html_writer::start_tag('section', ['class' => 'csfr-handout__overview', 'aria-label' => 'Module overview']);
+        echo html_writer::tag('p', 'Module ' . (int)$n . ' · ' . $webmeta['hours'] . ' notional hours',
+            ['class' => 'csfr-handout__overview-kicker']);
+        echo html_writer::tag('h2', s($webmeta['title']));
+        echo html_writer::tag('p', s($webmeta['tagline']), ['class' => 'csfr-handout__overview-tagline']);
+        echo html_writer::tag('h3', 'By the end, you can');
+        echo html_writer::start_tag('ul', ['class' => 'csfr-handout__outcomes']);
+        foreach ($webmeta['outcomes'] as $outcome) {
+            echo html_writer::tag('li', s($outcome));
+        }
+        echo html_writer::end_tag('ul');
+        echo html_writer::start_tag('details', ['class' => 'csfr-handout__topics']);
+        echo html_writer::tag('summary', 'Topics in this handout');
+        echo html_writer::start_tag('ol');
+        foreach ($webmeta['topics'] as $topic) {
+            echo html_writer::tag('li', s($topic));
+        }
+        echo html_writer::end_tag('ol') . html_writer::end_tag('details') . html_writer::end_tag('section');
+    }
     echo html_writer::start_tag('article', ['class' => 'csfr-handout__paper']);
     foreach ($webtopics as $topic) {
         echo html_writer::start_tag('section', ['class' => 'csfr-handout__topic']);
