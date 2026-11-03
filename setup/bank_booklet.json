@@ -1,0 +1,5285 @@
+{
+ "1": [
+  {
+   "id": "M1-01",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which approach is safest for your email password?",
+   "o": [
+    "the same strong password everywhere",
+    "a short code with symbols",
+    "a unique four-word passphrase",
+    "name and birth year"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-02",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Multi-factor authentication means:",
+   "o": [
+    "using two email accounts",
+    "a second check after the password, such as an app code or fingerprint",
+    "changing the password monthly",
+    "a longer password"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-03",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A shopping site you used was breached. You reused its password for Gmail. What should you do first?",
+   "o": [
+    "nothing, Gmail is safe",
+    "wait for an alert",
+    "delete the shopping account only",
+    "change the Gmail password to a unique one and turn on 2-Step Verification"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-04",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A passkey signs you in using:",
+   "o": [
+    "an SMS code",
+    "your fingerprint or face on your device",
+    "your Aadhaar number",
+    "a security question"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-05",
+   "pc": "PC1",
+   "t": "S",
+   "q": "You get “New sign-in from Windows device” for Instagram, which you did not do. The best first step is:",
+   "o": [
+    "open the official app, check login activity and log out unknown sessions",
+    "reply to the email",
+    "tap the link in the alert",
+    "delete the app"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A password manager helps because it:",
+   "o": [
+    "creates and remembers a unique password for every account",
+    "shares passwords with friends",
+    "stores OTPs",
+    "removes the need for any password"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-07",
+   "pc": "PC1",
+   "t": "A",
+   "q": "WhatsApp two-step verification protects you by:",
+   "o": [
+    "hiding your last seen",
+    "blocking unknown callers",
+    "asking for your own 6-digit PIN when your number is registered on a new phone",
+    "encrypting chats"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-08",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Backup codes for an account should be:",
+   "o": [
+    "shared with family on chat",
+    "kept offline in a safe place",
+    "saved in WhatsApp notes",
+    "emailed to yourself"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-09",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A torch app asks for SMS and contacts access. The best response is:",
+   "o": [
+    "allow",
+    "allow once",
+    "deny and uninstall",
+    "restart the phone"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-10",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Why are automatic updates important?",
+   "o": [
+    "they add games",
+    "they close security holes criminals already know about",
+    "they change the wallpaper",
+    "they increase storage"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-11",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A message says “Install this app to get free recharge” with an APK link. You should:",
+   "o": [
+    "install it",
+    "not install; use only official app stores",
+    "forward to friends",
+    "install and delete later"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-12",
+   "pc": "PC2",
+   "t": "R",
+   "q": "The safest screen lock among these is:",
+   "o": [
+    "a 4-digit birth year",
+    "a 6-digit PIN or biometric",
+    "none",
+    "swipe"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-13",
+   "pc": "PC2",
+   "t": "I",
+   "q": "(Picture: Android permission list showing a calculator app with Camera, Microphone, Contacts and SMS allowed.) Which permissions should be removed?",
+   "o": [
+    "Camera, Microphone, Contacts and SMS",
+    "only SMS",
+    "none",
+    "only Camera"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-14",
+   "pc": "PC2",
+   "t": "A",
+   "q": "Before installing an app from Google Play, the most useful check is:",
+   "o": [
+    "the colour of the icon",
+    "the developer name and permissions requested",
+    "the app size",
+    "the number of screenshots"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-15",
+   "pc": "PC2",
+   "t": "R",
+   "q": "An APK installed from a WhatsApp link can:",
+   "o": [
+    "improve battery life",
+    "read OTPs and mirror your screen",
+    "do nothing without root",
+    "only show ads"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-16",
+   "pc": "PC2",
+   "t": "S",
+   "q": "Your phone is hot and slow, and OTPs you did not request are arriving. First action:",
+   "o": [
+    "ignore it",
+    "factory reset",
+    "airplane mode and seek help; do not wipe evidence",
+    "install a cleaner app"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-17",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Which Aadhaar copy should you share for a hotel check-in?",
+   "o": [
+    "masked Aadhaar",
+    "Aadhaar with PIN",
+    "full Aadhaar",
+    "none of these is allowed"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-18",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Locking your Aadhaar biometrics prevents:",
+   "o": [
+    "using Aadhaar for any purpose",
+    "receiving SMS",
+    "updating your address",
+    "misuse of your fingerprints or iris for authentication"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-19",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Which of these is sensitive personal information?",
+   "o": [
+    "bank account details",
+    "school name",
+    "favourite colour",
+    "city of birth"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-20",
+   "pc": "PC3",
+   "t": "A",
+   "q": "To check whether SIMs you do not own are registered in your name, use:",
+   "o": [
+    "the telecom store's WhatsApp",
+    "a social media post",
+    "a search engine",
+    "“Know mobile connections in your name” on Sanchar Saathi"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-21",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A friend posts live location of her week-long holiday. The safest advice is:",
+   "o": [
+    "great idea",
+    "post only at night",
+    "tag more friends",
+    "share trips after returning and switch off live location on posts"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-22",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Under the DPDP Act 2023, a data principal can:",
+   "o": [
+    "ask for correction and erasure of personal data",
+    "none of these",
+    "access others' data",
+    "demand payment for all data"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-23",
+   "pc": "PC3",
+   "t": "I",
+   "q": "(Picture: WhatsApp privacy screen with Profile photo: Everyone, Last seen: Everyone, Groups: Everyone.) What change best improves privacy?",
+   "o": [
+    "leave as is",
+    "delete WhatsApp",
+    "set these to “My contacts”",
+    "change the profile photo"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-24",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Before sharing a photo publicly from your phone, you should:",
+   "o": [
+    "increase brightness",
+    "compress it",
+    "turn off location tagging",
+    "add filters"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-25",
+   "pc": "PC4",
+   "t": "A",
+   "q": "You need to pay a bill at a railway station. The safest option is:",
+   "o": [
+    "station Wi-Fi",
+    "your mobile data",
+    "a stranger's hotspot",
+    "a cybercafé"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-26",
+   "pc": "PC4",
+   "t": "I",
+   "q": "Which address is most likely fake?",
+   "o": [
+    "the bank's app",
+    "onlinesbi.sbi",
+    "the number on your card",
+    "sbi-kyc-update.in"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-27",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A fake hotspot is:",
+   "o": [
+    "a slow network",
+    "a 5G tower",
+    "a VPN",
+    "a Wi-Fi network named like a trusted one to watch your traffic"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-28",
+   "pc": "PC4",
+   "t": "S",
+   "q": "At a cybercafé you must check email. Best practice:",
+   "o": [
+    "save the password in the browser",
+    "private window, log out and close the browser",
+    "tick “remember me”",
+    "leave it open for later"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-29",
+   "pc": "PC4",
+   "t": "R",
+   "q": "The best protection against losing photos to ransomware or phone theft is:",
+   "o": [
+    "deleting old photos",
+    "antivirus alone",
+    "automatic cloud backup plus an offline copy",
+    "a stronger screen lock"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-30",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Your phone is stolen. Which step blocks the handset from use on Indian networks?",
+   "o": [
+    "block it through CEIR on Sanchar Saathi",
+    "change the wallpaper",
+    "wait for a call",
+    "post on social media"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-31",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A padlock icon next to a web address means:",
+   "o": [
+    "the connection is encrypted, not that the site is honest",
+    "it has no ads",
+    "the site is genuine",
+    "the government approved it"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-32",
+   "pc": "PC5",
+   "t": "S",
+   "q": "Your phone suddenly shows “No service” and a bank alert arrives. First action:",
+   "o": [
+    "post online",
+    "call the telecom provider and bank from another phone",
+    "wait",
+    "restart repeatedly"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-33",
+   "pc": "PC5",
+   "t": "A",
+   "q": "As a First Responder you may:",
+   "o": [
+    "ask for the OTP",
+    "call the fraudster",
+    "guide the person to 1930 and the bank",
+    "promise a refund"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Friends receive messages you did not send. This most likely means:",
+   "o": [
+    "your account has been taken over",
+    "phone needs charging",
+    "a network issue",
+    "the app is updating"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-35",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A person shared an OTP with a caller 5 minutes ago. Best guidance:",
+   "o": [
+    "call the bank now from the number on the card; 1930 if money moved; change passwords",
+    "delete the call log",
+    "share another OTP to cancel",
+    "wait and see"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "The First Responder path is:",
+   "o": [
+    "delete, reset, restart",
+    "call, wait, close",
+    "identify, stabilise, preserve, report, follow up",
+    "investigate, arrest, recover"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-37",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Which situation requires calling 112 first?",
+   "o": [
+    "a suspicious SMS",
+    "a fake website",
+    "a threat to someone's life",
+    "a slow phone"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-38",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Suspicious calls or messages with no money lost should be reported on:",
+   "o": [
+    "a newspaper",
+    "the app store",
+    "a WhatsApp group",
+    "Chakshu on sancharsaathi.gov.in"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-39",
+   "pc": "PC5",
+   "t": "S",
+   "q": "An unknown app appeared and the screen moves by itself. The safest first step:",
+   "o": [
+    "keep using the phone",
+    "uninstall immediately",
+    "factory reset",
+    "airplane mode, then help with passwords from a clean device"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-40",
+   "pc": "PC6",
+   "t": "A",
+   "q": "When teaching cyber hygiene to grandparents, the best method is:",
+   "o": [
+    "a long lecture",
+    "printed policy documents",
+    "technical terms",
+    "one habit at a time, shown on their phone, then ask them to repeat it"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-41",
+   "pc": "PC6",
+   "t": "R",
+   "q": "“Teach-back” means:",
+   "o": [
+    "asking the person to explain the step back to check understanding",
+    "the learner teaches the trainer's mistakes",
+    "recording a lecture",
+    "teaching the same thing twice"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-42",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A self-help group member says “I have nothing worth stealing”. A good reply is:",
+   "o": [
+    "ignore it",
+    "explain that her number, contacts and identity can be misused to cheat others",
+    "agree",
+    "tell her to stop using phones"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-43",
+   "pc": "PC6",
+   "t": "A",
+   "q": "Which message is best for a school assembly?",
+   "o": [
+    "“Your OTP is a key — never share it with anyone”",
+    "“Passwords are complex”",
+    "“Use the internet less”",
+    "“Install antivirus”"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-44",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Before touching another person's phone to help, you must:",
+   "o": [
+    "check their gallery",
+    "ask for consent and let them type any secret",
+    "reset it",
+    "unlock it yourself"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-45",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A good way to check that a family member understood MFA is to:",
+   "o": [
+    "send a link",
+    "ask them to turn it on themselves while you watch",
+    "give a quiz in English",
+    "ask “Do you understand?”"
+   ],
+   "a": 1
+  }
+ ],
+ "2": [
+  {
+   "id": "M2-01",
+   "pc": "PC1",
+   "t": "I",
+   "q": "Which part of “https://www.sbi.co.in.kyc-update.xyz/login” shows the real owner?",
+   "o": [
+    "login",
+    "https",
+    "www.sbi.co.in",
+    "kyc-update.xyz"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-02",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Smishing is:",
+   "o": [
+    "phishing by voice call",
+    "a payment app",
+    "a type of antivirus",
+    "phishing by SMS"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-03",
+   "pc": "PC1",
+   "t": "I",
+   "q": "(Picture: SMS “Your electricity will be disconnected tonight at 9:30 PM. Call officer 98XXXXXX21.”) How many red flags are typical here?",
+   "o": [
+    "deadline, personal number and threat",
+    "none",
+    "only the sender",
+    "only the time"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M2-04",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A message offers an income-tax refund and asks you to “verify your account” via a link. You should:",
+   "o": [
+    "click and verify",
+    "ignore the link; refunds go to the account in your tax profile",
+    "reply with account number",
+    "forward to friends"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-05",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A short link (e.g. bit.ly/…) in an unexpected message is risky because it:",
+   "o": [
+    "hides the real address",
+    "is slow",
+    "is always malware",
+    "costs money"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M2-06",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A courier SMS asks for ₹25 to update your address. Safest action:",
+   "o": [
+    "share card details",
+    "do not pay; track only on the official courier site",
+    "reply STOP",
+    "pay ₹25"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-07",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Fake traffic challan messages often contain:",
+   "o": [
+    "a police station address",
+    "no links",
+    "the official Parivahan address only",
+    "look-alike links or APK files"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-08",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Opening your bank's service safely means:",
+   "o": [
+    "searching for the bank in an ad",
+    "clicking the SMS link",
+    "typing the address yourself or using the official app",
+    "calling a number in the SMS"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-09",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A buyer sends a QR code to “pay your advance”. To receive the money you should:",
+   "o": [
+    "scan only",
+    "scan and enter the PIN",
+    "share your OTP",
+    "do nothing; receiving needs no action"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-10",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Entering your UPI PIN always means:",
+   "o": [
+    "the app is updating",
+    "money is coming in",
+    "money is leaving your account",
+    "your balance is shown only"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-11",
+   "pc": "PC2",
+   "t": "I",
+   "q": "(Picture: UPI screen “Collect request: Refund ₹2,000 from cashback@xyz — Enter PIN to approve”.) What happens if you approve?",
+   "o": [
+    "you receive ₹2,000",
+    "your account is verified",
+    "nothing",
+    "₹2,000 leaves your account"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-12",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A buyer sends a screenshot showing ₹20,000 paid instead of ₹2,000 and asks you to return ₹18,000. You should:",
+   "o": [
+    "return it now",
+    "check your own bank app or statement first",
+    "send half",
+    "trust the screenshot"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-13",
+   "pc": "PC2",
+   "t": "R",
+   "q": "An OTP is best described as:",
+   "o": [
+    "a marketing code",
+    "a receipt",
+    "a key that authorises an action and must never be shared",
+    "information you can share with bank staff"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-14",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A shopkeeper should confirm customer payments by:",
+   "o": [
+    "the customer's phone screen",
+    "a handwritten slip",
+    "the customer's word",
+    "the sound-box or their own app alert"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-15",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A caller says, “Share the OTP to cancel the wrong transaction.” You should:",
+   "o": [
+    "share half",
+    "share it",
+    "hang up; an OTP is never needed to cancel anything",
+    "ask for his ID"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-16",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Which of these needs your UPI PIN?",
+   "o": [
+    "checking a received payment",
+    "none",
+    "receiving money",
+    "paying a shop"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-17",
+   "pc": "PC3",
+   "t": "A",
+   "q": "A caller says your KYC expires today and asks you to install a support app. You should:",
+   "o": [
+    "install it",
+    "visit the link",
+    "give only the OTP",
+    "hang up and call the number on your card"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-18",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Safe sources for a bank's helpline number are:",
+   "o": [
+    "a search-engine advert",
+    "a forum post",
+    "the back of your card, passbook or official app",
+    "a WhatsApp forward"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-19",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Screen-sharing apps like AnyDesk become dangerous when:",
+   "o": [
+    "updated",
+    "installed on a stranger's instruction so they can see OTPs",
+    "uninstalled",
+    "used at work by IT staff"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-20",
+   "pc": "PC3",
+   "t": "S",
+   "q": "Someone claiming to be from RBI calls about your KYC. Best response:",
+   "o": [
+    "hang up; RBI does not hold individual accounts or call about KYC; report on Chakshu",
+    "call back on the number he gives",
+    "share PAN",
+    "cooperate"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M2-21",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Your card will be “blocked tonight” says a caller who knows your name and last four digits. This:",
+   "o": [
+    "means you must act fast",
+    "means RBI called",
+    "does not prove anything; leaked data makes scams look real",
+    "proves he is genuine"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-22",
+   "pc": "PC3",
+   "t": "I",
+   "q": "(Picture: search results showing an advert “XYZ Bank Customer Care 24x7 – 9XXXXXXXXX” above the official site.) Which number is safest?",
+   "o": [
+    "a number in reviews",
+    "the number on the bank's official website or your card",
+    "any 10-digit number",
+    "the advert"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-23",
+   "pc": "PC3",
+   "t": "R",
+   "q": "A genuine bank employee may ask you for:",
+   "o": [
+    "your PIN",
+    "your OTP",
+    "none of these secrets",
+    "your CVV"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-24",
+   "pc": "PC4",
+   "t": "S",
+   "q": "An app pays you for liking videos, then asks you to deposit ₹10,000 for a “merchant task”. This is:",
+   "o": [
+    "a bonus",
+    "a task-based job scam",
+    "a genuine job",
+    "a tax"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-25",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Where do you check whether an investment adviser is registered?",
+   "o": [
+    "the WhatsApp group admin",
+    "the SEBI registered intermediaries list",
+    "the app store rating",
+    "a YouTube review"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-26",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A video caller in uniform says you are under “digital arrest”. The right action is:",
+   "o": [
+    "pay to clear your name",
+    "disconnect and call 1930",
+    "share Aadhaar to prove identity",
+    "stay on camera"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-27",
+   "pc": "PC4",
+   "t": "R",
+   "q": "RBI's Sachet portal is used to:",
+   "o": [
+    "check and report unauthorised deposit schemes",
+    "file income tax",
+    "block SIMs",
+    "pay bills"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M2-28",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A strong red flag in investment offers is:",
+   "o": [
+    "guaranteed high returns, such as doubling in 30 days",
+    "a registered broker",
+    "a SEBI registration number you can verify",
+    "a written contract"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M2-29",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A trading app shows a large profit but asks for a 20% “tax” before withdrawal. This suggests:",
+   "o": [
+    "a bank delay",
+    "a fake trading platform",
+    "a SEBI fee",
+    "normal tax rules"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-30",
+   "pc": "PC4",
+   "t": "R",
+   "q": "Crypto service providers operating in India must be registered with:",
+   "o": [
+    "the app store",
+    "UIDAI",
+    "FIU-IND",
+    "TRAI"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-31",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A loan app offers instant cash with no checks and wants access to all contacts. Best advice:",
+   "o": [
+    "accept",
+    "share Aadhaar only",
+    "borrow a small amount first",
+    "check the lender is an RBI- regulated bank or NBFC; do not give contacts access"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-32",
+   "pc": "PC5",
+   "t": "A",
+   "q": "The single most useful detail when calling 1930 about a UPI fraud is:",
+   "o": [
+    "your Aadhaar number",
+    "the fraudster's photo",
+    "your UPI PIN",
+    "the UTR or transaction ID"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-33",
+   "pc": "PC5",
+   "t": "S",
+   "q": "Someone offers to recover your lost money for a ₹5,000 fee. This is:",
+   "o": [
+    "a bank charge",
+    "a police process",
+    "a recovery scam",
+    "a lawyer's service"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "The golden hour is:",
+   "o": [
+    "the hour before midnight",
+    "the bank's opening hour",
+    "the time to file income tax",
+    "the first hour after a fraudulent transaction, when fast reporting can help hold money"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-35",
+   "pc": "PC5",
+   "t": "A",
+   "q": "In which order should a victim act after a UPI fraud ten minutes ago?",
+   "o": [
+    "social media post first",
+    "stop payments, 1930, bank, evidence, NCRP",
+    "police next week",
+    "NCRP, then wait"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Reporting an unauthorised electronic transaction to the bank quickly matters because under RBI rules:",
+   "o": [
+    "banks never refund",
+    "only cash is protected",
+    "it has no effect",
+    "delay increases the customer's share of the loss"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-37",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A victim paid two days ago and has done nothing yet. Best advice:",
+   "o": [
+    "only post a warning",
+    "it is too late",
+    "still call 1930, inform the bank in writing, and file on NCRP today",
+    "wait for the bank to call"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-38",
+   "pc": "PC5",
+   "t": "R",
+   "q": "After calling 1930, the complaint should be completed on:",
+   "o": [
+    "a social media page",
+    "the app store",
+    "cybercrime.gov.in",
+    "TRAI's website"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-39",
+   "pc": "PC5",
+   "t": "I",
+   "q": "(Picture: UPI transaction detail screen with “UPI transaction ID: 4301XXXXXXXX” and amount.) Which number goes in the complaint?",
+   "o": [
+    "the balance",
+    "the app version",
+    "the phone model",
+    "the UPI transaction ID / UTR shown"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-40",
+   "pc": "PC6",
+   "t": "A",
+   "q": "The simplest rule to teach a family about UPI is:",
+   "o": [
+    "accept all collect requests",
+    "share OTP with bank staff",
+    "PIN = Pay",
+    "always scan QR codes"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-41",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A senior citizen at a session asks if she should give her OTP to “bank staff” who call. Best answer:",
+   "o": [
+    "only if they know her name",
+    "never; banks do not ask for OTPs",
+    "give it after verifying her balance",
+    "give half"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M2-42",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A family code word is useful for:",
+   "o": [
+    "Wi-Fi passwords",
+    "UPI PIN",
+    "bank login",
+    "verifying emergency money requests from relatives"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-43",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A good community-session habit is to:",
+   "o": [
+    "shame people who were scammed",
+    "ask people to show their bank apps",
+    "share real-looking but fictional examples and invite questions without blame",
+    "collect phone numbers"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M2-44",
+   "pc": "PC6",
+   "t": "A",
+   "q": "To check a shopkeeper understood QR safety, ask him to:",
+   "o": [
+    "read a pamphlet",
+    "sign a form",
+    "give his PIN",
+    "show how he confirms a payment on his own app or sound-box"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M2-45",
+   "pc": "PC6",
+   "t": "S",
+   "q": "During a session, someone says they just lost money to a fake buyer. You should:",
+   "o": [
+    "continue the talk",
+    "ask them to leave",
+    "discuss their case publicly",
+    "pause, help them start 1930 and bank steps privately, then continue"
+   ],
+   "a": 3
+  }
+ ],
+ "3": [
+  {
+   "id": "M3-01",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A deepfake is:",
+   "o": [
+    "any edited photo",
+    "a virus",
+    "AI-made or AI-altered media showing a real person saying or doing something they did not",
+    "a fake website"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-02",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A “cheapfake” is:",
+   "o": [
+    "a low-cost phone",
+    "misleading media made with simple editing, such as a false caption, without AI",
+    "a free AI app",
+    "a deepfake detector"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-03",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which question matters most when deciding whether a video is genuine?",
+   "o": [
+    "Is it high resolution?",
+    "How many views?",
+    "Is the music good?",
+    "Where did it first appear and who posted it?"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-04",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Generative AI is AI that:",
+   "o": [
+    "blocks malware",
+    "only sorts data",
+    "creates new text, images, audio or video from an instruction",
+    "stores passwords"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-05",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which is a legitimate use of synthetic media?",
+   "o": [
+    "a labelled film dub made with the actor's consent",
+    "a morphed image for blackmail",
+    "a voice-clone emergency call",
+    "a fake celebrity investment advert"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-06",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A famous actor appears in a video promoting a trading app with “guaranteed returns”. Most likely:",
+   "o": [
+    "a genuine endorsement",
+    "a deepfake or misleading advert; verify on official channels",
+    "a news report",
+    "a SEBI notice"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-07",
+   "pc": "PC1",
+   "t": "R",
+   "q": "The four stages of making and spreading a deepfake are:",
+   "o": [
+    "hack, lock, pay, unlock",
+    "scan, copy, print, post",
+    "call, ask, pay, leave",
+    "collect, train, generate, spread"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-08",
+   "pc": "PC1",
+   "t": "A",
+   "q": "What makes deepfakes a bigger risk today than a few years ago?",
+   "o": [
+    "phones cannot play them",
+    "free or cheap apps can make them in minutes",
+    "they are illegal everywhere",
+    "they need studios"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-09",
+   "pc": "PC2",
+   "t": "I",
+   "q": "(Picture: portrait with six fingers on one hand and blurred earrings.) These details suggest:",
+   "o": [
+    "the photo is certainly fake",
+    "possible AI generation — a reason to verify, not proof",
+    "the photo is genuine",
+    "a camera fault only"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-10",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Which is a common clue in face-swap videos?",
+   "o": [
+    "natural blinking",
+    "clear background",
+    "matching shadows",
+    "blur or flicker at the edges of the face"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-11",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A detector says a voice note is “72% AI-generated”. You should:",
+   "o": [
+    "ignore all evidence",
+    "treat it as one clue and rely on a call-back",
+    "treat it as proof",
+    "post the result online"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-12",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Why can the best deepfakes not be caught by eye?",
+   "o": [
+    "they have watermarks",
+    "they show none of the usual clues",
+    "they are black and white",
+    "they are always low quality"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-13",
+   "pc": "PC2",
+   "t": "A",
+   "q": "In a lip-sync deepfake, which sounds best reveal a mismatch?",
+   "o": [
+    "background music",
+    "sounds like “p”, “b” and “m” that close the lips",
+    "vowels like “a”",
+    "silence"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-14",
+   "pc": "PC2",
+   "t": "R",
+   "q": "A cloned voice often lacks:",
+   "o": [
+    "words",
+    "volume",
+    "natural breathing, emotion and background sound",
+    "language"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-15",
+   "pc": "PC2",
+   "t": "S",
+   "q": "Your colleague says, “I can always spot fakes.” The best reply is:",
+   "o": [
+    "explain that people are often fooled, so verification beats eyesight",
+    "test him with a quiz",
+    "agree",
+    "ignore it"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-16",
+   "pc": "PC2",
+   "t": "I",
+   "q": "(Picture: video frame where shadows of a person and a lamp fall in different directions.) This is:",
+   "o": [
+    "a lighting inconsistency that raises suspicion",
+    "normal for all videos",
+    "proof of a deepfake",
+    "a camera brand mark"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-17",
+   "pc": "PC3",
+   "t": "R",
+   "q": "In the S·I·F·T routine, “T” stands for:",
+   "o": [
+    "Trust the source",
+    "Type a comment",
+    "Tell friends",
+    "Trace to the original"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-18",
+   "pc": "PC3",
+   "t": "A",
+   "q": "A flood photo is shared as “Mumbai today”. The fastest check is:",
+   "o": [
+    "a reverse image search to find the earliest date and place",
+    "zoom in",
+    "ask in the family group",
+    "count likes"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-19",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Malinformation is:",
+   "o": [
+    "true information used out of context to harm",
+    "false content shared by mistake",
+    "a type of malware",
+    "a fact-check"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-20",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Disinformation is:",
+   "o": [
+    "shared without intent",
+    "satire",
+    "true but old",
+    "false and deliberately created to deceive"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-21",
+   "pc": "PC3",
+   "t": "A",
+   "q": "A forward says “Government gives ₹5,000 to all students — register here”. Best check:",
+   "o": [
+    "register quickly",
+    "ask the sender",
+    "official ministry website and PIB Fact Check",
+    "share to warn others"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-22",
+   "pc": "PC3",
+   "t": "S",
+   "q": "You cannot confirm a voice note's origin after reasonable checks. The honest verdict is:",
+   "o": [
+    "cannot verify yet",
+    "fake",
+    "probably real",
+    "genuine"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-23",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Which tool helps search frames from a video?",
+   "o": [
+    "a calculator",
+    "a QR scanner",
+    "a keyframe tool such as InVID-WeVerify",
+    "a VPN"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-24",
+   "pc": "PC3",
+   "t": "A",
+   "q": "A headline says “ban”, but the article says “proposal under study”. This is:",
+   "o": [
+    "accurate",
+    "a misleading headline",
+    "a deepfake",
+    "a scam"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-25",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A student says someone made a fake intimate photo of her and demands money. First thing to say:",
+   "o": [
+    "“It is not your fault; let us make sure you are safe”",
+    "“Pay quickly”",
+    "“Why did you post photos?”",
+    "“Show me the photo”"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-26",
+   "pc": "PC4",
+   "t": "R",
+   "q": "In a sextortion case you should save:",
+   "o": [
+    "the image on your phone",
+    "links, usernames, chat and times, but never the image",
+    "the image itself",
+    "nothing"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-27",
+   "pc": "PC4",
+   "t": "R",
+   "q": "StopNCII.org helps adults by:",
+   "o": [
+    "tracking the criminal",
+    "paying the demand",
+    "deleting the internet",
+    "creating a hash of an intimate image on their own device so participating platforms can block uploads"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-28",
+   "pc": "PC4",
+   "t": "R",
+   "q": "For images of someone under 18, the hash-based service to use is:",
+   "o": [
+    "StopNCII",
+    "Take It Down",
+    "Chakshu",
+    "PIB Fact Check"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-29",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Under the IT Rules 2021, platforms must act on a complaint about intimate or morphed images of a person within:",
+   "o": [
+    "6 months",
+    "30 days",
+    "24 hours",
+    "no time limit"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-30",
+   "pc": "PC4",
+   "t": "S",
+   "q": "The victim wants to pay ₹5,000 “to end it”. Best advice:",
+   "o": [
+    "pay quickly",
+    "block and forget",
+    "negotiate a lower amount",
+    "do not pay; payment brings more demands; report and stop the spread"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-31",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A fake profile using someone's photos should be reported first to:",
+   "o": [
+    "the phone maker",
+    "a newspaper",
+    "the platform's impersonation reporting",
+    "TRAI"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M3-32",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Which helpline supports women facing online harassment?",
+   "o": [
+    "1947",
+    "181",
+    "1909",
+    "14567"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-33",
+   "pc": "PC5",
+   "t": "S",
+   "q": "Your “nephew” sends a voice note asking for ₹30,000 urgently. The best first step:",
+   "o": [
+    "pay",
+    "hang up and call him back on his saved number",
+    "reply asking for his bank",
+    "forward to family"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "AI-written phishing is dangerous because it:",
+   "o": [
+    "is fluent, personalised and in any language",
+    "contains spelling mistakes",
+    "is always in English",
+    "cannot include links"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-35",
+   "pc": "PC5",
+   "t": "A",
+   "q": "A “senior manager” sends a video message asking you to buy gift cards urgently. You should:",
+   "o": [
+    "confirm in person or on a known number and follow approval rules",
+    "forward to HR later",
+    "buy them",
+    "reply on the same chat"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "The one habit that defeats most AI-enabled impersonation is:",
+   "o": [
+    "verifying through a channel you already trust",
+    "a better phone",
+    "a detector app",
+    "never answering calls"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-37",
+   "pc": "PC5",
+   "t": "S",
+   "q": "In a video call, “police officers” with uniforms demand money to avoid arrest. This is:",
+   "o": [
+    "a court order",
+    "a scam, possibly with face-swap; end the call and call 1930",
+    "a digital arrest that must be obeyed",
+    "normal procedure"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-38",
+   "pc": "PC5",
+   "t": "A",
+   "q": "An AI chatbot “recruiter” answers every question perfectly and asks for a registration fee. Best action:",
+   "o": [
+    "contact the company only through its official website",
+    "pay",
+    "ask the bot for proof",
+    "share Aadhaar"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-39",
+   "pc": "PC5",
+   "t": "R",
+   "q": "A suspected fraud call with no money lost is reported on:",
+   "o": [
+    "a WhatsApp group",
+    "the app store",
+    "nowhere",
+    "Chakshu (sancharsaathi.gov.in)"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-40",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Under the DPDP Act 2023, a person's image and voice are:",
+   "o": [
+    "personal data",
+    "government data",
+    "public property",
+    "not covered"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-41",
+   "pc": "PC6",
+   "t": "A",
+   "q": "Which is responsible use of AI?",
+   "o": [
+    "cloning a teacher's voice for a prank",
+    "feeding a friend's private photos into an AI app",
+    "making a funny AI video of a classmate without asking",
+    "labelling AI-generated content you create and getting consent from people shown"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-42",
+   "pc": "PC6",
+   "t": "A",
+   "q": "Which habit best limits voice cloning of you?",
+   "o": [
+    "louder speech",
+    "private accounts and fewer public long videos",
+    "using only English",
+    "long public voice notes to strangers"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M3-43",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A friend asks you to make an AI image of your class teacher “for fun”. You should:",
+   "o": [
+    "do it",
+    "blur the face",
+    "do it but not share",
+    "refuse; it needs her consent and may harm her dignity"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M3-44",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A family code word helps against:",
+   "o": [
+    "voice-clone emergency calls",
+    "Wi-Fi hacking",
+    "phishing websites",
+    "malware"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M3-45",
+   "pc": "PC6",
+   "t": "A",
+   "q": "Before forwarding content to warn others, you should:",
+   "o": [
+    "forward fast",
+    "verify first; if you cannot verify, do not forward",
+    "forward to all groups",
+    "add your own comments"
+   ],
+   "a": 1
+  }
+ ],
+ "4": [
+  {
+   "id": "M4-01",
+   "pc": "PC1",
+   "t": "R",
+   "q": "The first of the six intake questions is:",
+   "o": [
+    "Is anyone unsafe?",
+    "What happened, in the citizen's own words?",
+    "What is your Aadhaar number?",
+    "Which bank do you use?"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-02",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Event time, discovery time and report time differ because:",
+   "o": [
+    "the incident, its noticing and its first report can happen at different times",
+    "only report time matters",
+    "they are the same thing",
+    "the bank sets them"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-03",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A citizen says, “Someone changed my SIM.” How should you record this?",
+   "o": [
+    "“Telecom fraud by staff”",
+    "“SIM swap confirmed”",
+    "“Citizen states: someone changed my SIM”",
+    "leave it out"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-04",
+   "pc": "PC1",
+   "t": "A",
+   "q": "“Possible SIM takeover; not confirmed” is an example of:",
+   "o": [
+    "a legal finding",
+    "an observed fact",
+    "a working hypothesis",
+    "the citizen's account"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-05",
+   "pc": "PC1",
+   "t": "S",
+   "q": "During the intake, a second debit appears on the citizen's phone. You should:",
+   "o": [
+    "pause and act: bank and 1930 now",
+    "note it for later",
+    "ask for the OTP",
+    "finish all six questions first"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Before writing down a citizen's details you should:",
+   "o": [
+    "photograph their ID",
+    "start writing",
+    "ask for their password",
+    "ask for consent and a safe contact"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-07",
+   "pc": "PC1",
+   "t": "A",
+   "q": "If a password must be entered during help, the correct practice is:",
+   "o": [
+    "the citizen types it on their own device; you never see it",
+    "write it on the form",
+    "the responder types it",
+    "the citizen tells it aloud"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-08",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Question 6 of the intake (“What is already done?”) matters because:",
+   "o": [
+    "it reveals the criminal",
+    "earlier actions may have reported, changed or deleted evidence",
+    "it is required by law",
+    "it fills time"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-09",
+   "pc": "PC2",
+   "t": "A",
+   "q": "“My phone lost signal and money is going from my account.” Primary and secondary categories:",
+   "o": [
+    "financial fraud; account/SIM takeover",
+    "misinformation; fraud",
+    "child safety; fraud",
+    "malware; harassment"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-10",
+   "pc": "PC2",
+   "t": "R",
+   "q": "How many standard incident categories does the programme use?",
+   "o": [
+    "four",
+    "twelve",
+    "eight",
+    "six"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-11",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A loan app is sending a borrower's photos to her contacts. Primary category:",
+   "o": [
+    "malware",
+    "child safety",
+    "misinformation",
+    "harassment and extortion"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-12",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A fake profile of a 15-year-old girl is messaging boys. Primary category:",
+   "o": [
+    "malware",
+    "impersonation only",
+    "child safety",
+    "financial fraud"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-13",
+   "pc": "PC2",
+   "t": "R",
+   "q": "When an incident fits several categories, you record:",
+   "o": [
+    "all as primary",
+    "the most harmful as primary and the others as secondary",
+    "none",
+    "only the first mentioned"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-14",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A school computer shows a ransom note and children's records are on it. Categories:",
+   "o": [
+    "harassment",
+    "financial fraud only",
+    "misinformation",
+    "malware and ransomware; child safety (records)"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-15",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A voice like a man's son asked for money; he paid. Primary and secondary:",
+   "o": [
+    "child safety; fraud",
+    "financial fraud; impersonation (voice clone)",
+    "misinformation only",
+    "malware; fraud"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-16",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Which is NOT one of the six categories?",
+   "o": [
+    "financial fraud",
+    "malware and ransomware",
+    "traffic violation",
+    "child safety"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-17",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Urgency is decided by:",
+   "o": [
+    "the amount lost",
+    "the time of day",
+    "present danger, active loss and spread",
+    "the citizen's age"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-18",
+   "pc": "PC3",
+   "t": "A",
+   "q": "A man says he will hurt himself after a sextortion threat. Colour:",
+   "o": [
+    "GREEN",
+    "YELLOW",
+    "AMBER",
+    "RED"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-19",
+   "pc": "PC3",
+   "t": "A",
+   "q": "WhatsApp taken over 20 minutes ago; contacts are being asked for money. Colour:",
+   "o": [
+    "YELLOW",
+    "GREEN",
+    "AMBER",
+    "RED"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-20",
+   "pc": "PC3",
+   "t": "A",
+   "q": "₹6,000 lost to a fake buyer's QR two days ago; nothing happening now. Colour:",
+   "o": [
+    "GREEN",
+    "AMBER",
+    "RED",
+    "YELLOW"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-21",
+   "pc": "PC3",
+   "t": "A",
+   "q": "An SMS about electricity disconnection; no link clicked, nothing lost. Colour:",
+   "o": [
+    "RED",
+    "YELLOW",
+    "AMBER",
+    "GREEN"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-22",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A teacher lost money ten days ago (YELLOW). Today threats to publish a morphed image begin and she is very distressed. New colour:",
+   "o": [
+    "stays YELLOW",
+    "RED",
+    "GREEN",
+    "AMBER only"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-23",
+   "pc": "PC3",
+   "t": "R",
+   "q": "If unsure between two colours, you should:",
+   "o": [
+    "choose the higher one and tell the mentor",
+    "wait",
+    "choose the lower one",
+    "ask the citizen to decide"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-24",
+   "pc": "PC3",
+   "t": "R",
+   "q": "A colour is always written with:",
+   "o": [
+    "a signature",
+    "a reason",
+    "the bank's name",
+    "the citizen's name"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-25",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A remote-access app is suspected. The right stabilising action is:",
+   "o": [
+    "uninstall it",
+    "factory reset",
+    "airplane mode with Wi-Fi and Bluetooth off; use another phone for the bank",
+    "keep the call going"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-26",
+   "pc": "PC4",
+   "t": "R",
+   "q": "Which action destroys evidence?",
+   "o": [
+    "factory-resetting the phone",
+    "photographing the screen",
+    "noting the time",
+    "airplane mode"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-27",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A ransom note appears on a shop PC. First stabilising step:",
+   "o": [
+    "delete files",
+    "pay",
+    "unplug the network cable and inform the owner",
+    "restart it repeatedly"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-28",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A citizen is on a scam call while talking to you. You should:",
+   "o": [
+    "let the call continue to learn more",
+    "help them end the call and stop payments",
+    "record the call and wait",
+    "speak to the scammer"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M4-29",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A “clean device” means:",
+   "o": [
+    "any phone in the room",
+    "a newly wiped phone",
+    "the victim's phone after restart",
+    "a trusted phone or PC the attacker has never controlled"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-30",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A SIM suddenly shows “No Service” and debits start. Stabilise by:",
+   "o": [
+    "calling the bank and the telecom provider from another phone at once",
+    "buying a new phone",
+    "switching the phone off and on",
+    "waiting a day"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-31",
+   "pc": "PC4",
+   "t": "R",
+   "q": "Stabilising comes before evidence capture when:",
+   "o": [
+    "never",
+    "the form is ready",
+    "the mentor arrives",
+    "loss or danger is still active"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-32",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Times in the intake record are written in:",
+   "o": [
+    "UTC only",
+    "any time zone",
+    "IST, with date",
+    "approximate words like “morning”"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-33",
+   "pc": "PC5",
+   "t": "R",
+   "q": "A case is complete when:",
+   "o": [
+    "the citizen leaves",
+    "the colour is GREEN",
+    "the receiving agency accepts it and the next check is scheduled",
+    "the form is printed"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-34",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Which item must NEVER appear in an intake record?",
+   "o": [
+    "the citizen's OTP or PIN",
+    "the suspect number",
+    "the UTR",
+    "the time of the debit"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-35",
+   "pc": "PC5",
+   "t": "A",
+   "q": "The record field “Receiver and reference” should contain:",
+   "o": [
+    "nothing",
+    "the suspect's address",
+    "who accepted the hand-over and their reference number",
+    "the citizen's password"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Citizen identity should be kept off:",
+   "o": [
+    "the hand-over form",
+    "the case file",
+    "shared groups and dashboards",
+    "the consent note"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-37",
+   "pc": "PC5",
+   "t": "S",
+   "q": "After a hand-over to the bank, the citizen asks what happens next. You should:",
+   "o": [
+    "promise a refund",
+    "say “not my job”",
+    "give your personal number to the suspect",
+    "explain who acts next and the agreed next check, and record it"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-38",
+   "pc": "PC5",
+   "t": "R",
+   "q": "The eight-field record includes:",
+   "o": [
+    "only the amount",
+    "only the citizen's name",
+    "photos of the citizen",
+    "case ID, six answers, category, colour, times and actions, evidence IDs, receiver, next check"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-39",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A girl, 14, says an online “friend” wants to meet her tonight. You should:",
+   "o": [
+    "advise her to block him only",
+    "contact the friend",
+    "note it for tomorrow",
+    "RED: police and 1098 now; inform guardian and mentor"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-40",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Which is outside the First Responder's role?",
+   "o": [
+    "helping call 1930",
+    "grading urgency",
+    "recording the intake",
+    "tracing the criminal's location"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M4-41",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Every RED case and every child case must be reported to:",
+   "o": [
+    "the mentor, in addition to emergency services",
+    "the suspect",
+    "social media",
+    "no one else"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-42",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A citizen asks you to “hack back” the scammer's account. You should:",
+   "o": [
+    "refuse; it is illegal and outside the role; route to police",
+    "ask a friend to do it",
+    "call the scammer",
+    "try it"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-43",
+   "pc": "PC6",
+   "t": "A",
+   "q": "When should you stop the intake and call 112?",
+   "o": [
+    "never",
+    "when the citizen cries",
+    "when there is a risk to life or immediate danger",
+    "when the form is complete"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M4-44",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A First Responder never:",
+   "o": [
+    "promises a freeze, refund or arrest",
+    "listens",
+    "records times",
+    "escalates"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M4-45",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A citizen insists you take his phone home to “fix it”. You should:",
+   "o": [
+    "decline; never take devices; help him route to the IT lead or police",
+    "agree",
+    "take it for a day",
+    "reset it there"
+   ],
+   "a": 0
+  }
+ ],
+ "5": [
+  {
+   "id": "M5-01",
+   "pc": "PC1",
+   "t": "R",
+   "q": "For a UPI fraud, the most important identifier to save is:",
+   "o": [
+    "the phone's colour",
+    "the UTR or transaction ID",
+    "the app version",
+    "the victim's Aadhaar"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-02",
+   "pc": "PC1",
+   "t": "A",
+   "q": "For a fake profile case, the best evidence is:",
+   "o": [
+    "the profile URL or user ID, posts and dates",
+    "the display name only",
+    "the citizen's password",
+    "a photo of the citizen"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-03",
+   "pc": "PC1",
+   "t": "A",
+   "q": "In an account-takeover case you should save:",
+   "o": [
+    "the victim's new password",
+    "nothing",
+    "login alerts, security emails and messages sent in the victim's name",
+    "only the victim's statement"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-04",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Email headers are useful because they:",
+   "o": [
+    "show the real sending server",
+    "show the victim's location",
+    "decrypt files",
+    "contain the password"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-05",
+   "pc": "PC1",
+   "t": "A",
+   "q": "For a ransomware case, evidence includes:",
+   "o": [
+    "installing new software",
+    "a photo of the ransom screen, time first seen and affected files",
+    "paying the ransom",
+    "wiping the PC"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Evidence collection should never:",
+   "o": [
+    "delay urgent help when loss or danger is active",
+    "be quick",
+    "include identifiers",
+    "include times"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-07",
+   "pc": "PC1",
+   "t": "I",
+   "q": "(Picture: screenshot of a chat showing only the last message, no sender or time visible.) This screenshot is:",
+   "o": [
+    "complete",
+    "weak — sender, date and context are missing",
+    "perfect for court",
+    "a forgery"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-08",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A harassment victim shows threatening messages. Minimum evidence:",
+   "o": [
+    "profile URLs or IDs, the full chat in order, and dates",
+    "her diary",
+    "one cropped screenshot",
+    "the harasser's photo only"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-09",
+   "pc": "PC2",
+   "t": "R",
+   "q": "The native record is:",
+   "o": [
+    "a screenshot",
+    "a copy on your phone",
+    "the original item where it lives, such as the chat inside the app",
+    "a printout"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-10",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A victim wants to delete the scam chat after screenshots. You advise:",
+   "o": [
+    "keep the original; screenshots are working copies",
+    "delete",
+    "forward then delete",
+    "export then delete"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-11",
+   "pc": "PC2",
+   "t": "A",
+   "q": "Exporting a WhatsApp chat is useful because it:",
+   "o": [
+    "deletes the chat",
+    "creates a copy while keeping the original in the app",
+    "hides the sender",
+    "sends it to the police automatically"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-12",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Capture time is:",
+   "o": [
+    "the bank's time",
+    "when the event happened",
+    "when you saved the evidence",
+    "when it was handed over"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-13",
+   "pc": "PC2",
+   "t": "A",
+   "q": "An email shows “10:15 UTC”. In IST this is:",
+   "o": [
+    "16:15",
+    "10:15",
+    "15:45",
+    "04:45"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-14",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Social media apps often:",
+   "o": [
+    "include GPS always",
+    "strip or change metadata such as original creation time",
+    "keep everything unchanged",
+    "add detailed metadata"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-15",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A citizen is unsure exactly when the call came. You record:",
+   "o": [
+    "nothing",
+    "“approx.” with the reason",
+    "a precise invented time",
+    "the current time"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-16",
+   "pc": "PC2",
+   "t": "I",
+   "q": "(Picture: full-screen screenshot with status-bar clock, sender number, date header and message thread.) Is this a good working copy?",
+   "o": [
+    "yes — sender, date and context are visible",
+    "only if printed",
+    "no — screenshots are never useful",
+    "only if cropped"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-17",
+   "pc": "PC3",
+   "t": "R",
+   "q": "The chain of custody records:",
+   "o": [
+    "the criminal's name",
+    "the bank's balance",
+    "the citizen's password",
+    "who held each item, when and why"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-18",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Which field belongs in the evidence register?",
+   "o": [
+    "the suspect's photo only",
+    "the responder's salary",
+    "item ID, source, event time, capture time, method, storage/hash",
+    "citizen's PIN"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-19",
+   "pc": "PC3",
+   "t": "A",
+   "q": "When handing copies to the police you should:",
+   "o": [
+    "use a transfer receipt signed by giver and receiver",
+    "send on your personal WhatsApp",
+    "post in a group",
+    "email without record"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-20",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Item IDs such as E-01, E-02 help to:",
+   "o": [
+    "hide evidence",
+    "decorate the file",
+    "count pages",
+    "refer to each item unambiguously in the register, complaint and receipt"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-21",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A colleague moved evidence through his own phone without noting it. The problem is:",
+   "o": [
+    "it saves time",
+    "the hash will match",
+    "none",
+    "a gap in the chain of custody"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-22",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Evidence storage should be:",
+   "o": [
+    "the agreed folder with limited access",
+    "personal chats",
+    "social media",
+    "a public drive"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-23",
+   "pc": "PC3",
+   "t": "A",
+   "q": "After transfer, the case file should record:",
+   "o": [
+    "the citizen's bank PIN",
+    "nothing",
+    "the receiving agency's acknowledgement or reference",
+    "the suspect's reply"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-24",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A SHA-256 hash is best described as:",
+   "o": [
+    "a password",
+    "a fixed-length fingerprint of a file",
+    "a file name",
+    "an encryption key"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-25",
+   "pc": "PC4",
+   "t": "A",
+   "q": "If a working copy's hash matches the master's recorded hash, this shows:",
+   "o": [
+    "who wrote the message",
+    "the evidence is admissible by itself",
+    "the content is true",
+    "the copy is identical to the master"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-26",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A cropped copy of a screenshot will have:",
+   "o": [
+    "the same hash",
+    "a shorter password",
+    "a different hash",
+    "no hash"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-27",
+   "pc": "PC4",
+   "t": "R",
+   "q": "On Windows, a SHA-256 hash can be computed with:",
+   "o": [
+    "ipconfig",
+    "ping",
+    "format",
+    "certutil - hashfile file SHA256"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-28",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A matching hash does NOT show:",
+   "o": [
+    "who created the content",
+    "which register item it is",
+    "that the copy is unchanged",
+    "that nothing changed after hashing"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-29",
+   "pc": "PC4",
+   "t": "S",
+   "q": "You hash the master copy. When should you open the master for editing?",
+   "o": [
+    "never; work only on copies",
+    "after a week",
+    "whenever needed",
+    "before transfer"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-30",
+   "pc": "PC4",
+   "t": "I",
+   "q": "(Picture: two hash values: master 9f2c…03f5, copy b07e…7a41.) Conclusion:",
+   "o": [
+    "the copy has changed",
+    "the tool is broken",
+    "both are fake",
+    "identical files"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-31",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A case includes an intimate image of the victim's sister. You should:",
+   "o": [
+    "not view or copy it; record the URL, username and time; report",
+    "copy it to the evidence folder",
+    "forward it to the police on WhatsApp",
+    "ask her to send it to you"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-32",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Under POCSO s.19, a person who knows that a child is being sexually abused must:",
+   "o": [
+    "stay silent",
+    "report to the police or Special Juvenile Police Unit",
+    "investigate personally",
+    "inform only the school"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-33",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Storing or transmitting child sexual material electronically is an offence under:",
+   "o": [
+    "the Motor Vehicles Act",
+    "the Companies Act",
+    "IT Act s.67B",
+    "no law"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-34",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Instead of copying a harmful image, you can describe it as:",
+   "o": [
+    "a brief neutral description in words, plus identifiers",
+    "nothing at all",
+    "a sketch",
+    "a detailed description"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-35",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A victim insists on showing you the intimate image “so you understand”. You should:",
+   "o": [
+    "look at it",
+    "take a photo of it",
+    "ask her to email it",
+    "gently decline; explain you only need the links and details"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Child sexual material on cybercrime.gov.in can be reported:",
+   "o": [
+    "anonymously through the women/child section",
+    "only with full identity",
+    "not at all",
+    "only by police"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-37",
+   "pc": "PC5",
+   "t": "A",
+   "q": "The safest way to preserve a link to harmful content is:",
+   "o": [
+    "share the link in a group",
+    "screenshot the content",
+    "copy the URL and note platform, username and time",
+    "download the content"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-38",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Safeguarding rules for harmful material:",
+   "o": [
+    "apply only in court",
+    "are optional",
+    "apply only to adults",
+    "override other evidence instructions"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M5-39",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Under the Bharatiya Sakshya Adhiniyam 2023, s.61, an electronic record:",
+   "o": [
+    "cannot be evidence",
+    "cannot be refused merely because it is electronic",
+    "is always proof",
+    "needs a notary"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-40",
+   "pc": "PC6",
+   "t": "R",
+   "q": "BSA s.63 concerns:",
+   "o": [
+    "data protection",
+    "admissibility of electronic records, usually with a certificate",
+    "bank interest",
+    "traffic fines"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M5-41",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A screenshot shown by a victim is best described as:",
+   "o": [
+    "a lead that helps investigation, not automatic proof",
+    "automatic proof of identity",
+    "a forensic image",
+    "worthless"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-42",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Making a forensic image of a suspect's phone is:",
+   "o": [
+    "outside the role; for authorised officers",
+    "done by the citizen",
+    "part of the Level 4 role",
+    "not needed ever"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M5-43",
+   "pc": "PC6",
+   "t": "S",
+   "q": "The police ask how you collected an item. You should:",
+   "o": [
+    "show your phone gallery",
+    "guess",
+    "show the register and receipt with times and method",
+    "refuse"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-44",
+   "pc": "PC6",
+   "t": "A",
+   "q": "Which law replaced the Indian Evidence Act from 1 July 2024?",
+   "o": [
+    "BNS",
+    "BNSS",
+    "BSA",
+    "DPDP Act"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M5-45",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Your role with evidence is to:",
+   "o": [
+    "analyse malware",
+    "unlock devices",
+    "preserve, record and hand over",
+    "recover deleted data"
+   ],
+   "a": 2
+  }
+ ],
+ "6": [
+  {
+   "id": "M6-01",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A UPI fraud happened 15 minutes ago. The primary route is:",
+   "o": [
+    "1930 and the bank, at once",
+    "Chakshu only",
+    "police next week",
+    "a social media post"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-02",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A fraud call with no money lost should be reported on:",
+   "o": [
+    "SEBI SCORES",
+    "Chakshu",
+    "RBI CMS",
+    "the Data Protection Board"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-03",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A lost phone should be blocked through:",
+   "o": [
+    "the app store",
+    "CEIR on Sanchar Saathi",
+    "the bank",
+    "NCRP only"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-04",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A SIM swap led to debits and a hacked email. Which combination is correct?",
+   "o": [
+    "bank and 1930 now; telecom; email recovery; NCRP",
+    "1930 only",
+    "only the telecom",
+    "police tomorrow"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-05",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A company misuses a person's personal data. The first route is:",
+   "o": [
+    "SEBI",
+    "1930",
+    "Chakshu",
+    "the company's grievance officer"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Ransomware at a company must be reported by the organisation to:",
+   "o": [
+    "UIDAI",
+    "the Election Commission",
+    "CERT-In",
+    "TRAI"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-07",
+   "pc": "PC1",
+   "t": "A",
+   "q": "An investment scam through a registered broker: after the broker, complain on:",
+   "o": [
+    "the app store",
+    "Chakshu",
+    "CEIR",
+    "SEBI SCORES"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-08",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A child is in danger of sexual exploitation. First routes:",
+   "o": [
+    "NCRP only",
+    "police / 112 and 1098",
+    "a school notice",
+    "the platform only"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-09",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A “parallel route” is:",
+   "o": [
+    "a longer road",
+    "another agency handling a different part of the same case",
+    "a duplicate complaint",
+    "a social media post"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-10",
+   "pc": "PC2",
+   "t": "R",
+   "q": "The National Cyber Crime Reporting Portal is:",
+   "o": [
+    "scores.sebi.gov.in",
+    "cms.rbi.org.in",
+    "cybercrime.gov.in",
+    "sancharsaathi.gov.in"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-11",
+   "pc": "PC2",
+   "t": "A",
+   "q": "While filing on NCRP, the OTP should be typed by:",
+   "o": [
+    "the police",
+    "the citizen",
+    "anyone present",
+    "the responder"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-12",
+   "pc": "PC2",
+   "t": "R",
+   "q": "After submission, NCRP gives:",
+   "o": [
+    "an acknowledgement number",
+    "a refund",
+    "a court date",
+    "an FIR copy"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-13",
+   "pc": "PC2",
+   "t": "A",
+   "q": "For each transaction in a financial-fraud complaint you need:",
+   "o": [
+    "only the total",
+    "the CVV",
+    "amount, bank, date and time, UTR",
+    "the PIN"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-14",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A citizen wants to file a second complaint for the same incident “to speed things up”. Advise:",
+   "o": [
+    "file more",
+    "do not duplicate; track the existing acknowledgement",
+    "file in another state",
+    "file on social media"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-15",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Complaints about women or children on NCRP:",
+   "o": [
+    "have a separate section; child sexual material can be reported anonymously",
+    "need a lawyer",
+    "cannot be filed",
+    "go to SEBI"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-16",
+   "pc": "PC2",
+   "t": "A",
+   "q": "During training, NCRP filing is practised using:",
+   "o": [
+    "the live portal with fake data",
+    "WhatsApp",
+    "walk-through screenshots on the portal unit, never the live portal",
+    "the bank's site"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-17",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Which sentence is neutral and actionable?",
+   "o": [
+    "“A fraud company cheated me badly”",
+    "“Please catch them fast”",
+    "“I am very upset”",
+    "“On 31 Oct 2026 at 19:05 IST I paid ₹2,000 (UTR 4301XXXX1101) to taskpay@XXX”"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-18",
+   "pc": "PC3",
+   "t": "R",
+   "q": "How many elements does an actionable complaint have in this programme?",
+   "o": [
+    "seven",
+    "three",
+    "five",
+    "ten"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-19",
+   "pc": "PC3",
+   "t": "R",
+   "q": "The last element of an actionable complaint is:",
+   "o": [
+    "the complainant's feelings",
+    "actions already taken and what is requested",
+    "a photo",
+    "the suspect's address"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-20",
+   "pc": "PC3",
+   "t": "A",
+   "q": "An actionable complaint lists evidence by:",
+   "o": [
+    "“see phone”",
+    "attaching the citizen's phone",
+    "describing intimate images",
+    "item IDs from the register"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-21",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A citizen's draft says, “They took all my money.” What should be added first?",
+   "o": [
+    "adjectives",
+    "the citizen's Aadhaar",
+    "each transaction's amount, bank and UTR",
+    "a prayer"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-22",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Complaint narratives are written in:",
+   "o": [
+    "time order",
+    "order of importance to the citizen",
+    "random order",
+    "reverse order"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-23",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Suspect identifiers in a complaint include:",
+   "o": [
+    "phone numbers, UPI IDs, account numbers, URLs",
+    "the bank's logo",
+    "the responder's name",
+    "the citizen's PIN"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-24",
+   "pc": "PC4",
+   "t": "R",
+   "q": "If a bank does not resolve a complaint within 30 days, the customer may approach:",
+   "o": [
+    "UIDAI",
+    "the RBI Integrated Ombudsman (cms.rbi.org.in)",
+    "TRAI",
+    "SEBI"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-25",
+   "pc": "PC4",
+   "t": "R",
+   "q": "Appeals against a platform grievance officer's decision go to:",
+   "o": [
+    "the Grievance Appellate Committee (gac.gov.in)",
+    "the telecom",
+    "CERT-In",
+    "RBI"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-26",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A follow-up log should record:",
+   "o": [
+    "nothing",
+    "the suspect's reply",
+    "only the citizen's name",
+    "date, agency and reference, what was said, next check and owner"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-27",
+   "pc": "PC4",
+   "t": "S",
+   "q": "Seven days later there is no update. Best action:",
+   "o": [
+    "stop following up",
+    "check status with the acknowledgement; follow up with the bank's nodal officer; record the next check",
+    "file a duplicate",
+    "tell the citizen the money is lost"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-28",
+   "pc": "PC4",
+   "t": "R",
+   "q": "An unauthorised electronic transaction should be reported to the bank in writing within:",
+   "o": [
+    "3 working days",
+    "3 months",
+    "no limit",
+    "1 year"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-29",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Escalation should always include:",
+   "o": [
+    "a new complaint number",
+    "threats",
+    "earlier references and dates",
+    "the suspect's address"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-30",
+   "pc": "PC4",
+   "t": "R",
+   "q": "Organisations must report specified cyber incidents to CERT-In within:",
+   "o": [
+    "6 months",
+    "6 hours",
+    "6 weeks",
+    "6 days"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-31",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Cheating by personation using a computer resource is an offence under:",
+   "o": [
+    "BSA s.63",
+    "BNSS s.173",
+    "IT Act s.66D",
+    "IT Act s.43"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-32",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Identity theft (e.g. using someone's password) falls under:",
+   "o": [
+    "DPDP Act",
+    "POCSO s.19",
+    "IT Act s.66C",
+    "BNS s.78"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-33",
+   "pc": "PC5",
+   "t": "A",
+   "q": "A police station refuses a complaint saying it is not their area. The citizen can ask for:",
+   "o": [
+    "a court order immediately",
+    "nothing",
+    "a refund",
+    "a Zero FIR"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Zero FIR and e-FIR are provided for in:",
+   "o": [
+    "IT Act s.67",
+    "BNSS s.173",
+    "BSA s.61",
+    "BNS s.318"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-35",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Cheating is an offence under BNS section:",
+   "o": [
+    "318",
+    "173",
+    "19",
+    "63"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "The new criminal laws (BNS, BNSS, BSA) came into force on:",
+   "o": [
+    "1 April 2020",
+    "15 August 2023",
+    "1 January 2026",
+    "1 July 2024"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-37",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Under the DPDP Act 2023, a data principal may:",
+   "o": [
+    "demand cash",
+    "access anyone's data",
+    "nothing",
+    "ask for correction and erasure and raise a grievance"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-38",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Failure to report child sexual abuse is punishable under:",
+   "o": [
+    "DPDP Act",
+    "IT Act s.43",
+    "BNSS s.173",
+    "POCSO s.21"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-39",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Stalking, including electronic monitoring, is an offence under BNS section:",
+   "o": [
+    "318",
+    "63",
+    "78",
+    "111"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M6-40",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A citizen asks, “Will I get my money back?” The best answer:",
+   "o": [
+    "“Fast reporting gives the best chance that money can be held; I cannot promise a refund or a date”",
+    "“Pay a fee to speed it up”",
+    "“Yes, within a week”",
+    "“No, never”"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M6-41",
+   "pc": "PC6",
+   "t": "A",
+   "q": "In a crowded help desk, sensitive details should be discussed:",
+   "o": [
+    "on a group chat",
+    "loudly for transparency",
+    "in public",
+    "in a private space with consent"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M6-42",
+   "pc": "PC6",
+   "t": "R",
+   "q": "An NCRP acknowledgement is:",
+   "o": [
+    "a court order",
+    "proof the complaint was received, not an FIR",
+    "a refund receipt",
+    "an FIR"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-43",
+   "pc": "PC6",
+   "t": "A",
+   "q": "What can a platform usually do?",
+   "o": [
+    "refund money",
+    "remove content that breaks its rules or the law",
+    "guarantee every copy disappears",
+    "arrest users"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-44",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A citizen wants you to post his case on social media to pressure the bank. You should:",
+   "o": [
+    "post anonymously",
+    "explain privacy risks and use formal escalation instead",
+    "tag the bank publicly",
+    "post it"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M6-45",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A First Responder gives:",
+   "o": [
+    "legal advice",
+    "a legal quick reference and routes, not legal advice",
+    "verdicts",
+    "court representation"
+   ],
+   "a": 1
+  }
+ ],
+ "7": [
+  {
+   "id": "M7-01",
+   "pc": "PC1",
+   "t": "R",
+   "q": "The three action principles of psychological first aid are:",
+   "o": [
+    "Ask, Tell, Close",
+    "Stop, Save, Report",
+    "Look, Listen, Link",
+    "Find, Fix, File"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-02",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which opening is best for a scam victim?",
+   "o": [
+    "“Calm down.”",
+    "“This happens to careless people.”",
+    "“Thank you for telling me. You did the right thing coming here.”",
+    "“Why did you share the OTP?”"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-03",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Psychological first aid is:",
+   "o": [
+    "humane, supportive, practical help that never forces people to talk",
+    "a medical treatment",
+    "a legal process",
+    "therapy"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-04",
+   "pc": "PC1",
+   "t": "A",
+   "q": "“It sounds like you feel embarrassed and worried about your family” is an example of:",
+   "o": [
+    "reflecting feelings",
+    "advice",
+    "summarising facts",
+    "blaming"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-05",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A victim keeps repeating, “I am so stupid.” Best response:",
+   "o": [
+    "“Yes, be careful next time.”",
+    "agree gently",
+    "“These criminals fool doctors and police officers too. This was done to you.”",
+    "change the topic"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Secondary victimisation means:",
+   "o": [
+    "being scammed twice by the same criminal",
+    "harm caused by blame or insensitive reactions of others",
+    "a second bank account",
+    "a backup victim"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-07",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Offering choice looks like:",
+   "o": [
+    "taking the phone and calling",
+    "“Would you like me to stay while you call the bank?”",
+    "“You must do this now”",
+    "deciding for them"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-08",
+   "pc": "PC1",
+   "t": "S",
+   "q": "An angry citizen shouts that nobody helps. You should:",
+   "o": [
+    "ask them to leave",
+    "argue",
+    "shout back",
+    "acknowledge the frustration calmly and focus on the next action"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-09",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A person quietly says, “Sometimes I think it would be better if I wasn't here.” You should:",
+   "o": [
+    "tell them to sleep",
+    "change the subject",
+    "ask directly whether they are thinking of ending their life, stay with them and connect to help",
+    "ignore it"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-10",
+   "pc": "PC2",
+   "t": "R",
+   "q": "The national mental health helpline Tele-MANAS is:",
+   "o": [
+    "14416",
+    "1930",
+    "181",
+    "1098"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-11",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Asking directly about suicide:",
+   "o": [
+    "is illegal",
+    "puts the idea in someone's head",
+    "opens the door to help and does not increase risk",
+    "should be avoided"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-12",
+   "pc": "PC2",
+   "t": "A",
+   "q": "A person at immediate risk of harming themselves needs:",
+   "o": [
+    "a leaflet",
+    "a promise of secrecy",
+    "to be left alone to calm down",
+    "someone to stay, 112 if in danger, Tele-MANAS and a trusted person"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-13",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Childline's number is:",
+   "o": [
+    "1947",
+    "1098",
+    "15100",
+    "14567"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-14",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A 13-year-old says an adult online asked her to meet secretly. Action:",
+   "o": [
+    "wait for more information",
+    "tell her to block him",
+    "police / SJPU and 1098 now; involve a guardian unless they are the risk",
+    "contact the adult"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-15",
+   "pc": "PC2",
+   "t": "A",
+   "q": "If a child discloses sexual abuse, you should NOT:",
+   "o": [
+    "report to police",
+    "inform the mentor",
+    "question the child repeatedly about details",
+    "listen calmly"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-16",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Which is a warning sign of severe distress?",
+   "o": [
+    "making a phone call",
+    "asking questions",
+    "hopelessness, not eating or sleeping, isolation",
+    "taking notes"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-17",
+   "pc": "PC3",
+   "t": "R",
+   "q": "The five trauma-informed principles are:",
+   "o": [
+    "listen, record, file, close, forget",
+    "none",
+    "speed, power, control, secrecy, money",
+    "safety, trust, choice, collaboration, empowerment"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-18",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Explaining 1930 to a senior citizen, the best approach is:",
+   "o": [
+    "slow pace, one step at a time, dial together, write numbers on a card",
+    "tell her son only",
+    "technical terms quickly",
+    "send a link"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-19",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Checking understanding with “teach-back” means asking:",
+   "o": [
+    "“Do you understand?”",
+    "“Any questions?”",
+    "“What will you do when you get home?”",
+    "“Shall I repeat?”"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-20",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A deaf citizen arrives. You should:",
+   "o": [
+    "speak louder",
+    "ask how they prefer to communicate; use writing or visuals; allow time",
+    "ask them to come back with someone",
+    "skip the intake"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-21",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Elder Line, the helpline for senior citizens, is:",
+   "o": [
+    "14567",
+    "1930",
+    "1098",
+    "112"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-22",
+   "pc": "PC3",
+   "t": "A",
+   "q": "With a teenager, which statement is right?",
+   "o": [
+    "“Tell your parents yourself.”",
+    "“I promise I won't tell anyone, whatever happens.”",
+    "“It's not a big deal.”",
+    "“I will keep this private, but if you are in danger I must involve someone who can keep you safe.”"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-23",
+   "pc": "PC3",
+   "t": "A",
+   "q": "For a person with low literacy, the best format for next steps is:",
+   "o": [
+    "speaking, demonstrating and a simple card with numbers and pictures",
+    "an email",
+    "a legal notice",
+    "a long printed policy"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-24",
+   "pc": "PC4",
+   "t": "R",
+   "q": "The Women Helpline number is:",
+   "o": [
+    "1930",
+    "181",
+    "1947",
+    "14416"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-25",
+   "pc": "PC4",
+   "t": "R",
+   "q": "Free legal aid can be accessed through the NALSA helpline:",
+   "o": [
+    "14567",
+    "1098",
+    "1909",
+    "15100"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-26",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A woman says her ex-partner always knows where she is. Before removing apps from her phone you should:",
+   "o": [
+    "remove them at once",
+    "discuss safety first, use a safe device, and refer to police / 181 / One Stop Centre for a safety plan",
+    "confront the ex-partner",
+    "tell her to change her number only"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-27",
+   "pc": "PC4",
+   "t": "A",
+   "q": "One Stop Centres (Sakhi) provide:",
+   "o": [
+    "phone repairs",
+    "integrated support for women affected by violence",
+    "bank loans",
+    "SIM cards"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-28",
+   "pc": "PC4",
+   "t": "A",
+   "q": "For a victim of sextortion, the most important first message is:",
+   "o": [
+    "“It is not your fault; let us make sure you are safe and stop the spread”",
+    "“Delete all your accounts”",
+    "“Why did you chat with him?”",
+    "“Pay quickly”"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-29",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A senior citizen lost savings and fears telling her son. You can:",
+   "o": [
+    "tell her son without asking",
+    "keep it from him forever",
+    "blame her",
+    "offer to help her tell him, if she wishes"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-30",
+   "pc": "PC4",
+   "t": "R",
+   "q": "For a child harmed online, refer to:",
+   "o": [
+    "1098, police/SJPU and NCRP's child section",
+    "the app store only",
+    "SEBI",
+    "TRAI"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-31",
+   "pc": "PC4",
+   "t": "A",
+   "q": "“Linking” in PFA means:",
+   "o": [
+    "giving a list of numbers and leaving",
+    "linking bank accounts",
+    "actively connecting the person to practical help and services",
+    "sharing a web link"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-32",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Confidentiality may be broken without consent when:",
+   "o": [
+    "a journalist asks",
+    "there is a risk to life or child abuse that must be reported",
+    "never",
+    "a relative asks"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-33",
+   "pc": "PC5",
+   "t": "A",
+   "q": "In a shared waiting area, you should:",
+   "o": [
+    "move to a private spot unless the person wants others present",
+    "ask others to listen",
+    "discuss details loudly",
+    "post updates"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Case records should contain:",
+   "o": [
+    "everything the person says",
+    "copies of intimate images",
+    "passwords",
+    "the minimum data needed, with consent, and no secrets"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-35",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A neighbour asks you about the citizen you helped. You:",
+   "o": [
+    "show the case file",
+    "share details",
+    "politely decline to discuss any case",
+    "share only the amount lost"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M7-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "When should limits of confidentiality be explained?",
+   "o": [
+    "after the report",
+    "early in the conversation",
+    "never",
+    "only if asked"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-37",
+   "pc": "PC5",
+   "t": "A",
+   "q": "A dashboard used by the programme should show:",
+   "o": [
+    "photos",
+    "case IDs and status without citizen names",
+    "full names and phone numbers",
+    "bank balances"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-38",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Before photographing evidence on a citizen's phone, you:",
+   "o": [
+    "ask the police",
+    "ask a bystander",
+    "just do it",
+    "ask for consent"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-39",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A case is closed well when:",
+   "o": [
+    "the form is filed",
+    "the person leaves",
+    "the bank calls",
+    "the person knows what was done, what happens next, who acts and how to reach help"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-40",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Vicarious trauma is:",
+   "o": [
+    "the emotional impact on helpers of hearing about others' trauma",
+    "a scam type",
+    "a malware",
+    "a legal term"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-41",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A healthy response to a very hard case is to:",
+   "o": [
+    "take more cases immediately",
+    "debrief with your mentor and rest",
+    "keep it to yourself",
+    "post about it online"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M7-42",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A follow-up plan includes:",
+   "o": [
+    "nothing",
+    "a promise of a refund",
+    "the suspect's number",
+    "date, channel and owner of the next contact"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-43",
+   "pc": "PC6",
+   "t": "S",
+   "q": "You notice you are not sleeping and keep thinking about cases. You should:",
+   "o": [
+    "quit without telling anyone",
+    "ignore it",
+    "take on more cases",
+    "talk to your mentor, use self-care and Tele-MANAS if needed, and take a break from case work"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M7-44",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A written next-steps card should include:",
+   "o": [
+    "references and helpline numbers in plain language",
+    "the criminal's details",
+    "the responder's opinions",
+    "legal threats"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M7-45",
+   "pc": "PC6",
+   "t": "A",
+   "q": "When handing a victim over to a One Stop Centre, you should:",
+   "o": [
+    "just give the address",
+    "call ahead with consent, share the minimum needed and confirm the hand-over",
+    "send all files by WhatsApp",
+    "leave it to the victim"
+   ],
+   "a": 1
+  }
+ ],
+ "8": [
+  {
+   "id": "M8-01",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Malware is:",
+   "o": [
+    "a type of phone",
+    "software designed to harm, spy or steal",
+    "a hardware fault",
+    "any software update"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-02",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A WhatsApp “wedding invitation” arrives as an .apk file. It is most likely:",
+   "o": [
+    "a video",
+    "a malicious app",
+    "a card",
+    "a photo"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-03",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Ransomware:",
+   "o": [
+    "backs up data",
+    "speeds up computers",
+    "locks or encrypts files and demands payment",
+    "shows ads"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-04",
+   "pc": "PC1",
+   "t": "I",
+   "q": "(Picture: Android Accessibility settings showing an unknown app “System Service Pro” turned on.) This suggests:",
+   "o": [
+    "a battery saver",
+    "normal settings",
+    "possible malicious control of the screen",
+    "a font setting"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-05",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which is a sign of email compromise that persists after a password change?",
+   "o": [
+    "a hidden forwarding rule sending emails elsewhere",
+    "a full inbox",
+    "a slow internet connection",
+    "a new profile photo"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Real screen-sharing apps become a threat when:",
+   "o": [
+    "installed by an IT team",
+    "installed on a scammer's instruction",
+    "updated",
+    "uninstalled"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-07",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Files on a PC suddenly have strange extensions and a note demands payment. This is:",
+   "o": [
+    "a Windows update",
+    "ransomware",
+    "a virus scan",
+    "a printer fault"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-08",
+   "pc": "PC1",
+   "t": "R",
+   "q": "A botnet is:",
+   "o": [
+    "a robot toy",
+    "a firewall",
+    "a network of hijacked devices controlled by a criminal",
+    "a VPN"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-09",
+   "pc": "PC1",
+   "t": "S",
+   "q": "OTPs arrive that you did not request, and the phone is hot when idle. Best interpretation:",
+   "o": [
+    "normal",
+    "network upgrade",
+    "faulty charger",
+    "possible compromise — check carefully and consider isolation"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-10",
+   "pc": "PC2",
+   "t": "A",
+   "q": "First step for a phone suspected of remote control:",
+   "o": [
+    "airplane mode with Wi-Fi and Bluetooth off",
+    "uninstall all apps",
+    "factory reset",
+    "keep using it"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-11",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Isolating a Windows PC hit by ransomware means:",
+   "o": [
+    "restarting it",
+    "unplugging the network cable, turning off Wi-Fi and disconnecting drives",
+    "deleting files",
+    "paying"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-12",
+   "pc": "PC2",
+   "t": "A",
+   "q": "Why should you not reset a compromised phone immediately?",
+   "o": [
+    "it is illegal",
+    "it costs money",
+    "it destroys evidence and may leave stolen accounts open",
+    "it takes long"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-13",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A citizen wants to install a “cleaner” app to remove the malware. Advise:",
+   "o": [
+    "reset instead",
+    "install it",
+    "not yet — isolate, preserve and route first",
+    "install two cleaners"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-14",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Photographing the screen of a compromised device should be done:",
+   "o": [
+    "with the same phone",
+    "never",
+    "after reset",
+    "with another phone"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-15",
+   "pc": "PC2",
+   "t": "A",
+   "q": "During isolation of a phone, you should keep it:",
+   "o": [
+    "charged and unchanged",
+    "in water",
+    "switched off repeatedly",
+    "connected to Wi-Fi"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-16",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Who decides on examination and cleaning of the device?",
+   "o": [
+    "the First Responder",
+    "the owner with the IT lead or police",
+    "the scammer",
+    "a neighbour"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-17",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Account recovery should be done from:",
+   "o": [
+    "the compromised phone",
+    "any shared PC",
+    "a cybercafé",
+    "a clean device the attacker never controlled"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-18",
+   "pc": "PC3",
+   "t": "R",
+   "q": "The official recovery page for a hacked Instagram account is:",
+   "o": [
+    "instagram.com/hacked",
+    "an app from a link",
+    "a Telegram group",
+    "a recovery agent"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-19",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Why is the email account recovered first?",
+   "o": [
+    "it is free",
+    "it is easiest",
+    "other accounts reset passwords by email",
+    "it has photos"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-20",
+   "pc": "PC3",
+   "t": "A",
+   "q": "After recovering an account, which step locks the attacker out?",
+   "o": [
+    "signing out all other sessions and devices",
+    "changing the profile photo",
+    "posting a status",
+    "uninstalling the app"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-21",
+   "pc": "PC3",
+   "t": "A",
+   "q": "After recovery, which should also be checked?",
+   "o": [
+    "font size",
+    "ringtone",
+    "recovery phone and email, forwarding rules and linked apps",
+    "wallpaper"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-22",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A WhatsApp account is hijacked and the attacker has set a two-step PIN. Best guidance:",
+   "o": [
+    "buy a new number",
+    "pay the attacker",
+    "re-register on the phone; if blocked by the PIN, follow WhatsApp's waiting period and contact support; warn contacts meanwhile",
+    "give up"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-23",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Google account recovery starts at:",
+   "o": [
+    "a search ad",
+    "g.co/recover",
+    "a forum",
+    "a phone shop"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-24",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Contacts should be warned about a hijacked account:",
+   "o": [
+    "through another channel, such as a call or SMS",
+    "from the hijacked account",
+    "by the attacker",
+    "not at all"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-25",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A SIM swap lets a criminal:",
+   "o": [
+    "lower bills",
+    "receive the victim's calls and OTPs",
+    "improve signal",
+    "block spam"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-26",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Correct order after a SIM swap with debits:",
+   "o": [
+    "bank and 1930, telecom, email recovery, other accounts, NCRP",
+    "post online first",
+    "only the telecom",
+    "NCRP, then bank next week"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-27",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A caller asks you to send an SMS to “upgrade your SIM to 5G”. You should:",
+   "o": [
+    "do it",
+    "ask for his name",
+    "refuse; it may be a SIM-swap trick",
+    "send it twice"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-28",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A sudden “No Service” plus OTP or debit alerts should be treated as:",
+   "o": [
+    "normal",
+    "a phone update",
+    "possible SIM swap — act at once from another phone",
+    "a tower fault"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-29",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Which MFA type resists SIM swap best?",
+   "o": [
+    "authenticator app prompts or passkeys",
+    "security questions",
+    "SMS codes",
+    "none"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-30",
+   "pc": "PC4",
+   "t": "R",
+   "q": "To find unknown SIMs registered in your name, use:",
+   "o": [
+    "SEBI",
+    "NCRP",
+    "Sanchar Saathi",
+    "RBI CMS"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-31",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A banking trojan is suspected on the phone used for UPI. Before resetting the UPI PIN you should:",
+   "o": [
+    "share the PIN with the bank",
+    "block UPI via the bank from a clean device and reset only once the phone is safe",
+    "do nothing",
+    "reset immediately on the same phone"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-32",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A shop owner wants to pay a ransom quickly. Best advice:",
+   "o": [
+    "negotiate for him",
+    "help him pay",
+    "stay silent",
+    "explain no guarantee, it funds crime and marks him as a payer; involve the IT lead, check backups and decryptors, report"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-33",
+   "pc": "PC5",
+   "t": "R",
+   "q": "nomoreransom.org offers:",
+   "o": [
+    "ransom payments",
+    "loans",
+    "VPNs",
+    "free decryption tools for some ransomware families"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Organisations must report specified incidents such as ransomware to CERT-In within:",
+   "o": [
+    "6 hours",
+    "no time",
+    "6 months",
+    "24 days"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-35",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Ransomware spreads to two more computers. The colour and action:",
+   "o": [
+    "AMBER, escalate: isolate all, IT lead, CERT-In route, NCRP",
+    "GREEN; wait",
+    "RED only if money paid",
+    "YELLOW; tomorrow"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "The First Responder's role in an organisational ransomware case is to:",
+   "o": [
+    "contain, record and escalate",
+    "decrypt",
+    "negotiate",
+    "analyse malware"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-37",
+   "pc": "PC5",
+   "t": "A",
+   "q": "Parents receive fake fee emails after a coaching centre's ransomware attack. Best step:",
+   "o": [
+    "warn parents via SMS from the official number; preserve emails; payers call 1930",
+    "post on social media",
+    "ignore",
+    "email all parents from the infected PC"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-38",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Cyber Swachhta Kendra, run by CERT-In, provides:",
+   "o": [
+    "loans",
+    "free tools and advice to clean infected devices",
+    "SIM cards",
+    "bank accounts"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-39",
+   "pc": "PC6",
+   "t": "R",
+   "q": "The 3-2-1 backup rule means:",
+   "o": [
+    "3 antivirus apps",
+    "3 passwords, 2 phones, 1 email",
+    "backup every 3 years",
+    "3 copies, 2 storage types, 1 copy offline or off-site"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-40",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A backup drive always plugged into the office PC is risky because:",
+   "o": [
+    "it is slow",
+    "it uses power",
+    "ransomware can encrypt it too",
+    "it is too big"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-41",
+   "pc": "PC6",
+   "t": "R",
+   "q": "A backup that has never been restored is:",
+   "o": [
+    "guaranteed",
+    "a hope, not a backup — test the restore",
+    "unnecessary",
+    "illegal"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-42",
+   "pc": "PC6",
+   "t": "A",
+   "q": "Which prevention advice fits a family after a fake-APK incident?",
+   "o": [
+    "install apps only from official stores and keep updates on",
+    "remove the screen lock",
+    "share passwords",
+    "allow unknown sources"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-43",
+   "pc": "PC6",
+   "t": "A",
+   "q": "For a small office, “least privilege” means:",
+   "o": [
+    "everyone is admin",
+    "staff use normal accounts; admin rights only when needed",
+    "shared logins",
+    "no passwords"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-44",
+   "pc": "PC6",
+   "t": "S",
+   "q": "After recovery, a citizen asks how to avoid this again. The best single habit is:",
+   "o": [
+    "MFA on email and banking with unique passphrases",
+    "turn off the phone at night",
+    "avoid all apps",
+    "change wallpaper"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-45",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Which is part of an organisation's incident contact list?",
+   "o": [
+    "IT lead, owner, police cyber cell, CERT- In",
+    "none",
+    "the attacker",
+    "social media influencers"
+   ],
+   "a": 0
+  }
+ ],
+ "9": [
+  {
+   "id": "M9-01",
+   "pc": "PC1",
+   "t": "R",
+   "q": "IoT refers to:",
+   "o": [
+    "an internet speed",
+    "a law",
+    "a payment app",
+    "internet-connected everyday devices such as cameras, TVs and watches"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-02",
+   "pc": "PC1",
+   "t": "R",
+   "q": "OT (operational technology) controls:",
+   "o": [
+    "phone games",
+    "social media",
+    "physical processes such as pumps, inverters and lifts",
+    "email"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-03",
+   "pc": "PC1",
+   "t": "R",
+   "q": "The Mirai botnet (2016) mainly took over devices by:",
+   "o": [
+    "default usernames and passwords",
+    "fake apps",
+    "zero-day exploits only",
+    "stolen phones"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-04",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which home device is the “front door” for all others?",
+   "o": [
+    "router",
+    "TV remote",
+    "charger",
+    "smart bulb"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-05",
+   "pc": "PC1",
+   "t": "A",
+   "q": "Which risk is common to many cheap smart plugs and cameras?",
+   "o": [
+    "too many updates",
+    "old firmware that is rarely updated",
+    "too strong passwords",
+    "no internet"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-06",
+   "pc": "PC1",
+   "t": "R",
+   "q": "Firmware is:",
+   "o": [
+    "a cable",
+    "a cloud account",
+    "a type of Wi-Fi",
+    "the device's built-in software"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-07",
+   "pc": "PC1",
+   "t": "A",
+   "q": "A society's water-pump controller is an example of:",
+   "o": [
+    "malware",
+    "OT",
+    "social media",
+    "IoT entertainment"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-08",
+   "pc": "PC1",
+   "t": "S",
+   "q": "A family says, “Our devices are too small to be hacked.” Best reply:",
+   "o": [
+    "agree",
+    "small devices with default passwords are easy targets and can be used to attack others",
+    "unplug everything",
+    "only phones get hacked"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-09",
+   "pc": "PC2",
+   "t": "R",
+   "q": "The safest common Wi-Fi security options are:",
+   "o": [
+    "WPA3, or WPA2-AES",
+    "open network",
+    "WEP",
+    "no password"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-10",
+   "pc": "PC2",
+   "t": "A",
+   "q": "The router's admin password should be:",
+   "o": [
+    "changed to a unique passphrase different from the Wi-Fi password",
+    "left as printed on the sticker",
+    "“admin”",
+    "the same as the Wi-Fi password"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-11",
+   "pc": "PC2",
+   "t": "R",
+   "q": "A guest network is useful for:",
+   "o": [
+    "watching TV",
+    "separating smart devices and visitors from personal computers and phones",
+    "faster downloads",
+    "free calls"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-12",
+   "pc": "PC2",
+   "t": "R",
+   "q": "Which router feature should usually be turned off?",
+   "o": [
+    "firmware updates",
+    "Wi-Fi security",
+    "the admin password",
+    "WPS and remote management"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-13",
+   "pc": "PC2",
+   "t": "I",
+   "q": "(Picture: router settings page showing “Security: WEP” and “Remote management: ON”.) What should change?",
+   "o": [
+    "turn off Wi-Fi",
+    "only the SSID name",
+    "WPA2-AES or WPA3, and remote management off",
+    "nothing"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-14",
+   "pc": "PC2",
+   "t": "A",
+   "q": "The router supplied by the internet provider no longer gets updates. Best action:",
+   "o": [
+    "ignore",
+    "remove the password",
+    "ask the provider for an update or replacement",
+    "open all ports"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-15",
+   "pc": "PC2",
+   "t": "R",
+   "q": "How often should router settings be checked?",
+   "o": [
+    "never",
+    "every ten years",
+    "about every six months and after any incident",
+    "only when buying"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-16",
+   "pc": "PC2",
+   "t": "S",
+   "q": "A shop owner shares his Wi-Fi password with every customer. Best advice:",
+   "o": [
+    "use WEP",
+    "fine",
+    "put customers on a guest network and keep the billing PC on the main network",
+    "remove the password"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-17",
+   "pc": "PC3",
+   "t": "A",
+   "q": "The first thing to change on a new home camera is:",
+   "o": [
+    "the angle",
+    "the time zone",
+    "its colour",
+    "the default password"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-18",
+   "pc": "PC3",
+   "t": "R",
+   "q": "Under the DPDP Act 2023, video of identifiable people is:",
+   "o": [
+    "public data",
+    "not covered",
+    "government data",
+    "personal data"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-19",
+   "pc": "PC3",
+   "t": "A",
+   "q": "Where should a shop CCTV camera NOT point?",
+   "o": [
+    "the cash counter",
+    "a changing room or a neighbour's home",
+    "the entrance",
+    "the stock room"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-20",
+   "pc": "PC3",
+   "t": "A",
+   "q": "A camera app offers cloud sharing you never use. You should:",
+   "o": [
+    "share the link publicly",
+    "disable it",
+    "give the password to the installer permanently",
+    "keep it on"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-21",
+   "pc": "PC3",
+   "t": "R",
+   "q": "A good practice for CCTV in a housing society is:",
+   "o": [
+    "public live streams",
+    "hidden cameras in flats",
+    "no passwords",
+    "a notice informing residents and visitors, and limited retention"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-22",
+   "pc": "PC3",
+   "t": "S",
+   "q": "A camera installer left the default password on eight cameras. The committee should:",
+   "o": [
+    "post the password",
+    "leave it",
+    "change all passwords, update firmware, remove public sharing and review placements",
+    "remove all cameras"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-23",
+   "pc": "PC3",
+   "t": "A",
+   "q": "When buying a camera, the most important question is:",
+   "o": [
+    "the box size",
+    "free stickers",
+    "whether the brand provides security updates and certification",
+    "colour options"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-24",
+   "pc": "PC3",
+   "t": "R",
+   "q": "MFA on the camera app helps by:",
+   "o": [
+    "saving storage",
+    "stopping someone with only the password from logging in",
+    "improving video quality",
+    "recording audio"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-25",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A smart speaker should be muted when:",
+   "o": [
+    "private conversations or meetings are happening",
+    "charging",
+    "playing music",
+    "never"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-26",
+   "pc": "PC4",
+   "t": "R",
+   "q": "“Unknown tracker alerts” on a phone help detect:",
+   "o": [
+    "battery faults",
+    "slow Wi-Fi",
+    "a Bluetooth tracker secretly travelling with you",
+    "spam calls"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-27",
+   "pc": "PC4",
+   "t": "A",
+   "q": "A child's smartwatch should have:",
+   "o": [
+    "a changed password and only parents in contacts",
+    "no settings",
+    "the default password",
+    "public location sharing"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-28",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Fitness apps can reveal your home address through:",
+   "o": [
+    "step counts",
+    "heart rate",
+    "public running routes",
+    "water intake"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-29",
+   "pc": "PC4",
+   "t": "R",
+   "q": "A smart TV may collect:",
+   "o": [
+    "your OTPs",
+    "only electricity data",
+    "nothing",
+    "what you watch, and keep logins of shared accounts"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-30",
+   "pc": "PC4",
+   "t": "S",
+   "q": "A woman finds an unknown tracker in her bag and fears her ex-partner. First step:",
+   "o": [
+    "confront him",
+    "throw it away immediately and go home",
+    "post on social media",
+    "safety first: photograph it and the alert, plan with police or 181 before disabling"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-31",
+   "pc": "PC4",
+   "t": "A",
+   "q": "Voice history on a smart speaker should be:",
+   "o": [
+    "emailed to friends",
+    "shared",
+    "kept forever",
+    "reviewed and deleted periodically"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-32",
+   "pc": "PC5",
+   "t": "S",
+   "q": "A family's camera video appears on a website. First action:",
+   "o": [
+    "buy a new camera only",
+    "unplug and forget",
+    "share the link to warn others",
+    "save the page URL and screenshots, then disconnect the camera"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M9-33",
+   "pc": "PC5",
+   "t": "A",
+   "q": "After one smart device is compromised, you should:",
+   "o": [
+    "check all devices on the same network and the router",
+    "turn off the internet forever",
+    "fix only that device",
+    "do nothing"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-34",
+   "pc": "PC5",
+   "t": "R",
+   "q": "Passwords for the router and devices after an incident should be changed from:",
+   "o": [
+    "the compromised device",
+    "a public PC",
+    "a clean phone or computer",
+    "the installer's phone"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-35",
+   "pc": "PC5",
+   "t": "A",
+   "q": "A leaked camera feed should be reported to:",
+   "o": [
+    "only friends",
+    "the site or platform, NCRP and police",
+    "nobody",
+    "a hacker"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-36",
+   "pc": "PC5",
+   "t": "R",
+   "q": "In smart-device incidents, the order is:",
+   "o": [
+    "report, wait, ignore",
+    "preserve, isolate, secure, check others, report",
+    "secure, delete evidence, report",
+    "reset, forget, buy new"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-37",
+   "pc": "PC5",
+   "t": "S",
+   "q": "The camera keeps rotating by itself while the owner is home. Best step:",
+   "o": [
+    "restart repeatedly",
+    "watch it",
+    "treat as compromise: preserve logs, disconnect, change passwords from a clean device, check sessions",
+    "cover the lens only"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-38",
+   "pc": "PC5",
+   "t": "A",
+   "q": "If a home device is part of a botnet, a sign may be:",
+   "o": [
+    "faster internet",
+    "better picture",
+    "unusual network traffic and slow internet when idle",
+    "lower bills"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-39",
+   "pc": "PC6",
+   "t": "S",
+   "q": "A housing society's water-pump controller behaves oddly. The First Responder should:",
+   "o": [
+    "ignore it",
+    "keep people safe, call the owner, vendor and IT lead; do not touch controls",
+    "disconnect random cables",
+    "reset the controller"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-40",
+   "pc": "PC6",
+   "t": "R",
+   "q": "Which organisations must report specified incidents to CERT-In?",
+   "o": [
+    "service providers, intermediaries, data centres, companies and government bodies",
+    "only banks",
+    "only individuals",
+    "nobody"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-41",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A clinic's medical device shows unusual messages. The safest step:",
+   "o": [
+    "unplug it during treatment",
+    "inform the clinic owner and vendor; follow clinical safety procedures",
+    "update it yourself",
+    "post online"
+   ],
+   "a": 1
+  },
+  {
+   "id": "M9-42",
+   "pc": "PC6",
+   "t": "R",
+   "q": "The First Responder's rule for OT is:",
+   "o": [
+    "escalate, never operate",
+    "operate it yourself",
+    "ignore it",
+    "reset everything"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-43",
+   "pc": "PC6",
+   "t": "A",
+   "q": "A rooftop solar inverter app shows logins from unknown places. Best advice:",
+   "o": [
+    "ignore",
+    "share the login",
+    "change the app password and MFA from a clean device, inform the vendor, check the router",
+    "remove the panels"
+   ],
+   "a": 2
+  },
+  {
+   "id": "M9-44",
+   "pc": "PC6",
+   "t": "S",
+   "q": "Lift controls in a building are reported to be accessible online. Best step:",
+   "o": [
+    "report to the building management and lift vendor; organisation reports to CERT-In if required",
+    "test it yourself",
+    "do nothing",
+    "post the link"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M9-45",
+   "pc": "PC6",
+   "t": "R",
+   "q": "OT incidents can directly affect:",
+   "o": [
+    "physical safety, such as water supply, power and lifts",
+    "only data",
+    "only games",
+    "nothing important"
+   ],
+   "a": 0
+  }
+ ]
+}

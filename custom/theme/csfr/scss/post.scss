@@ -1,0 +1,1961 @@
+// CSFR · Handbook on Moodle. The HOD's handbook look, carried onto the site: cream paper, white cards, navy,
+// and four colours with fixed jobs (teal done, mustard highlight, terracotta warning, orange frame). Moodle keeps its
+// layout and controls; lessons are drawn as handbook pages (.csfr-hb, built by setup/build.php).
+
+// Gujarati: the Gujarati siblings of Baloo 2 and Hind, under the same family names so every page keeps its look.
+@font-face {
+    font-family: "Baloo 2";
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('[[font:theme|balooBhai2.ttf]]') format('truetype');
+    unicode-range: U+0A80-0AFF, U+200C-200D, U+25CC;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('[[font:theme|hindVadodara-400.ttf]]') format('truetype');
+    unicode-range: U+0A80-0AFF, U+200C-200D, U+25CC;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500 700;
+    font-display: swap;
+    src: url('[[font:theme|hindVadodara-600.ttf]]') format('truetype');
+    unicode-range: U+0A80-0AFF, U+200C-200D, U+25CC;
+}
+@font-face {
+    font-family: "Baloo 2";
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('[[font:theme|baloo2-latin.woff2]]') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+20B9, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Baloo 2";
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('[[font:theme|baloo2-devanagari.woff2]]') format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('[[font:theme|hind-latin-400.woff2]]') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+20B9, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('[[font:theme|hind-devanagari-400.woff2]]') format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('[[font:theme|hind-latin-500.woff2]]') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+20B9, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('[[font:theme|hind-devanagari-500.woff2]]') format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('[[font:theme|hind-latin-600.woff2]]') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+20B9, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('[[font:theme|hind-devanagari-600.woff2]]') format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+
+// Tokens for plugin pages (local_csfr's styles.css reads these).
+:root {
+    --csfr-paper: #{$csfr-paper};
+    --csfr-paper-2: #{$csfr-paper-2};
+    --csfr-paper-3: #{$csfr-paper-3};
+    --csfr-card: #{$csfr-card};
+    --csfr-rule: #{$csfr-rule};
+    --csfr-ink: #{$csfr-ink};
+    --csfr-ink-2: #{$csfr-ink-2};
+    --csfr-muted: #{$csfr-muted};
+    --csfr-shell-text: #{$csfr-shell-text};
+    --csfr-shell-rule: #{$csfr-shell-rule};
+    --csfr-teal: #{$csfr-teal};
+    --csfr-teal-soft: #{$csfr-teal-soft};
+    --csfr-teal-ink: #{$csfr-teal-ink};
+    --csfr-mustard: #{$csfr-mustard};
+    --csfr-mustard-soft: #{$csfr-mustard-soft};
+    --csfr-mustard-ink: #{$csfr-mustard-ink};
+    --csfr-terra: #{$csfr-terra};
+    --csfr-terra-soft: #{$csfr-terra-soft};
+    --csfr-orange: #{$csfr-orange};
+    --csfr-error: #{$csfr-error};
+    --csfr-display: "Baloo 2", "Hind", ui-sans-serif, system-ui, sans-serif;
+    --csfr-shadow: 0 1px 2px rgba(30, 43, 74, .06), 0 6px 18px rgba(30, 43, 74, .07);
+
+    // Moodle 5.3's design system (MDS) components read these tokens: re-point them at the handbook palette.
+    --mds-font-family-base: "Hind", ui-sans-serif, system-ui, sans-serif;
+    --mds-text-default: #{$csfr-ink-2};
+    --mds-text-subtle: #{$gray-700};
+    --mds-text-muted: #{$csfr-muted};
+    --mds-text-emphasis: #{$csfr-ink};
+    --mds-text-link-primary-default: #{$csfr-ink};
+    --mds-text-link-primary-hover: #{$csfr-terra};
+    --mds-focus-default: #{$csfr-teal};
+    --mds-border-default: #{$csfr-rule};
+    --mds-border-subtle: #{$csfr-paper-3};
+    --mds-bg-surface-default: #{$csfr-paper};
+    --mds-bg-surface-subtle: #{$csfr-paper-2};
+    --mds-bg-surface-strong: #{$csfr-paper-3};
+    --mds-bg-interactive-primary-default: #{$csfr-ink};
+    --mds-bg-interactive-primary-hover: #{$csfr-ink-2};
+    --mds-bg-interactive-primary-active: #{$csfr-ink-2};
+    --mds-bg-interactive-primary-default-light: #{$csfr-paper-2};
+    --mds-border-interactive-primary-default: #{$csfr-ink};
+    --mds-border-interactive-primary-hover: #{$csfr-ink};
+    --mds-border-interactive-primary-active: #{$csfr-ink};
+    --mds-bg-nav-pill-selected: #{$csfr-paper-3};
+    --mds-bg-nav-pill-hover: #{$csfr-paper-2};
+    --mds-bg-nav-pill-pressed: #{$csfr-paper-3};
+    --mds-bg-feedback-success-default: #{$csfr-teal};
+    --mds-bg-feedback-success-light: #{$csfr-teal-soft};
+    --mds-bg-feedback-success-subtle: #{$csfr-teal-soft};
+    --mds-text-feedback-success: #{$csfr-teal-ink};
+    --mds-border-feedback-success: #{$csfr-teal-soft};
+    --mds-border-radius-md: .75rem;
+    // Activity icons by job: reading in teal, checks and tests in mustard, uploads and practicum in terracotta.
+    --mds-activity-icon-content-bg: #{$csfr-teal-soft};
+    --mds-activity-icon-content-icon: #{$csfr-teal-ink};
+    --mds-activity-icon-resource-bg: #{$csfr-teal-soft};
+    --mds-activity-icon-resource-icon: #{$csfr-teal-ink};
+    --mds-activity-icon-file-bg: #{$csfr-teal-soft};
+    --mds-activity-icon-file-icon: #{$csfr-teal-ink};
+    --mds-activity-icon-assessment-bg: #{$csfr-mustard-soft};
+    --mds-activity-icon-assessment-icon: #{$csfr-mustard-ink};
+    --mds-activity-icon-interactive-bg: #{$csfr-mustard-soft};
+    --mds-activity-icon-interactive-icon: #{$csfr-mustard-ink};
+    --mds-activity-icon-collaboration-bg: #{$csfr-terra-soft};
+    --mds-activity-icon-collaboration-icon: #{$csfr-terra};
+    --mds-activity-icon-communication-bg: #{$csfr-terra-soft};
+    --mds-activity-icon-communication-icon: #{$csfr-terra};
+    --mds-activity-icon-administration-bg: #{$csfr-paper-3};
+    --mds-activity-icon-administration-icon: #{$csfr-ink};
+    --mds-activity-icon-other-bg: #{$csfr-paper-3};
+    --mds-activity-icon-other-icon: #{$csfr-ink};
+}
+
+// Type and browser surfaces.
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+p, li {
+    text-wrap: pretty;
+}
+a {
+    text-decoration-thickness: 1px;
+    &:hover {
+        text-decoration-color: $csfr-teal;
+    }
+}
+::selection {
+    background: $csfr-teal-soft;
+    color: $csfr-teal-ink;
+}
+:focus-visible {
+    outline: 2px solid $csfr-teal;
+    outline-offset: 2px;
+}
+html {
+    scrollbar-color: $csfr-muted $csfr-paper;
+}
+body {
+    caret-color: $csfr-teal;
+    padding-bottom: 2.25rem;
+    font-variant-numeric: tabular-nums;
+}
+
+// Controls.
+.btn {
+    font-weight: 600;
+    &:focus-visible {
+        box-shadow: none;
+        outline: 2px solid $csfr-teal;
+        outline-offset: 2px;
+    }
+}
+.btn-secondary,
+.btn-outline-secondary {
+    background-color: $csfr-paper-2;
+    border-color: $csfr-rule;
+    color: $csfr-ink;
+    &:hover {
+        background-color: $csfr-paper-3;
+        border-color: $csfr-rule;
+        color: $csfr-ink;
+    }
+}
+.form-control,
+.form-select {
+    &:focus {
+        border-color: $csfr-teal;
+        box-shadow: none;
+        outline: 2px solid $csfr-teal;
+        outline-offset: -1px;
+    }
+}
+.alert-info,
+.alert-secondary {
+    background-color: $csfr-paper-2;
+    border-color: $csfr-rule;
+    color: $csfr-ink-2;
+}
+
+// The helpline: the handbook's mustard band, fixed to the foot of every page.
+.csfr-helpstrip {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1029;
+    padding: .4rem 2.75rem .4rem 1rem;
+    background: $csfr-mustard;
+    color: $csfr-ink;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    a,
+    strong {
+        color: $csfr-ink;
+    }
+    .csfr-helpstrip__x {
+        position: absolute;
+        right: .4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.6rem;
+        height: 1.6rem;
+        line-height: 1;
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+        color: $csfr-ink;
+        font-size: 1.25rem;
+        cursor: pointer;
+        opacity: .7;
+    }
+    .csfr-helpstrip__x:hover { opacity: 1; background: rgba(0, 0, 0, .08); }
+}
+.btn-footer-popover,
+#page-footer .btn-footer-popover {
+    bottom: 3.25rem !important;
+}
+// The guest notice about policies sits above the helpline band instead of over it.
+.eupopup-container-bottom {
+    bottom: 2.3rem !important;
+}
+// Its links and button in the shell's colours, not Moodle's orange.
+.eupopup-container {
+    background-color: $csfr-ink-2 !important;
+    color: $csfr-shell-text;
+    a {
+        color: $csfr-paper;
+    }
+    .eupopup-button {
+        color: $csfr-paper !important;
+        font-weight: 700;
+    }
+}
+
+// The shell: an ink bar, paper type, a teal mark under the current destination.
+.navbar.fixed-top {
+    // MDS tokens inside the bar: paper type, no pill behind the current item.
+    --mds-text-default: #{$csfr-paper};
+    --mds-text-subtle: #{$csfr-shell-text};
+    --mds-text-muted: #{$csfr-shell-text};
+    --mds-bg-nav-pill-selected: transparent;
+    --mds-bg-nav-pill-hover: #{$csfr-ink-2};
+    --mds-bg-nav-pill-pressed: #{$csfr-ink-2};
+    --mds-bg-switch-track-default: #{$csfr-shell-rule};
+    --mds-bg-switch-track-hover: #{$gray-700};
+    --mds-bg-switch-thumb-default: #{$csfr-paper};
+    --mds-bg-switch-thumb-hover: #{$csfr-paper};
+    background-color: $csfr-ink !important;
+    border-bottom: 0;
+    box-shadow: none;
+    .mds-nav-pill {
+        color: $csfr-shell-text;
+    }
+    .mds-nav-pill--selected,
+    .mds-nav-pill--selected:visited {
+        color: $csfr-paper;
+        background-color: transparent;
+        background-image: linear-gradient($csfr-teal, $csfr-teal);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: calc(100% - 1.5rem) 2px;
+        .mds-nav-pill__label {
+            font-weight: 600;
+        }
+    }
+    .mds-nav-pill__indicator {
+        display: none;
+    }
+    .mds-switch-label {
+        color: $csfr-shell-text;
+    }
+    .navbar-toggler-icon {
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fdfdfb' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-brand {
+        color: $csfr-paper;
+        font-weight: 700;
+        font-size: 1.0625rem;
+        letter-spacing: -0.02em;
+        &:hover {
+            color: $csfr-paper;
+        }
+    }
+    .nav-link,
+    .login a,
+    .navbar-toggler,
+    .popover-region-toggle,
+    .popover-region-toggle .icon,
+    .icon,
+    .usermenu .dropdown-toggle {
+        color: $csfr-shell-text !important;
+    }
+    .nav-link:hover,
+    .nav-link:focus-visible {
+        color: $csfr-paper !important;
+    }
+    .primary-navigation .navigation .nav-link {
+        border-bottom: 2px solid transparent;
+        font-weight: 400;
+        &.active {
+            color: $csfr-paper !important;
+            border-bottom-color: $csfr-teal;
+            font-weight: 600;
+        }
+    }
+    .divider {
+        border-color: $csfr-shell-rule !important;
+    }
+    .editmode-switch-form label {
+        color: $csfr-shell-text;
+    }
+    .userinitials,
+    .userpicture {
+        background-color: $csfr-paper-3;
+        color: $csfr-ink;
+    }
+    .count-container {
+        background-color: $csfr-teal;
+        color: $csfr-paper;
+    }
+}
+
+// Page header and tabs.
+#page-header {
+    h1,
+    .h1 {
+        color: $csfr-ink;
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        line-height: 1.05;
+    }
+}
+.secondary-navigation {
+    --mds-bg-nav-pill-selected: transparent;
+    border-bottom: 1px solid $csfr-rule;
+    .mds-nav-pill--selected,
+    .mds-nav-pill.active {
+        color: $csfr-ink;
+        background-color: transparent;
+        background-image: linear-gradient($csfr-ink, $csfr-ink);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: calc(100% - 1.5rem) 2px;
+        border-radius: 0;
+        .mds-nav-pill__label {
+            font-weight: 600;
+        }
+    }
+    .mds-nav-pill__indicator {
+        display: none;
+    }
+    .navigation .nav-tabs {
+        border-bottom: 0;
+        .nav-link {
+            border: 0;
+            border-bottom: 2px solid transparent;
+            border-radius: 0;
+            background: transparent;
+            color: $csfr-ink-2;
+            &.active {
+                color: $csfr-ink;
+                border-bottom-color: $csfr-ink;
+                font-weight: 600;
+            }
+            &:hover {
+                color: $csfr-ink;
+            }
+        }
+    }
+}
+.breadcrumb a {
+    color: $csfr-ink-2;
+}
+
+// The drawers: the second neutral, with the current page inked.
+.drawer {
+    background-color: $csfr-paper-2;
+}
+.drawer-left {
+    border-right: 1px solid $csfr-rule;
+}
+.drawer-right {
+    border-left: 1px solid $csfr-rule;
+}
+.courseindex {
+    .courseindex-section-title,
+    .courseindex-link {
+        color: $csfr-ink;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $csfr-teal;
+        }
+    }
+    .courseindex-section-title {
+        font-weight: 700;
+    }
+    .courseindex-item.pageitem {
+        background-color: $csfr-ink;
+        color: $csfr-paper;
+        a,
+        .courseindex-link,
+        .icon {
+            color: $csfr-paper;
+        }
+    }
+}
+
+// The course page: each module is a white card on the cream page, its number on a mustard badge beside the title,
+// its activities as rows inside. Moodle 5.3's own section box is flattened and replaced by the card.
+.course-content {
+    ul.topics,
+    ul.weeks {
+        counter-reset: csfrmod;
+    }
+    .section-item,
+    .section-content-inner {
+        padding: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+    }
+    .course-section {
+        margin: 0 0 1.25rem !important;
+        padding: 1.25rem 1.5rem 1rem !important;
+        border: 1px solid $csfr-rule !important;
+        border-radius: 1rem !important;
+        background: $csfr-card !important;
+        box-shadow: var(--csfr-shadow);
+        .sectionname {
+            font-size: 1.5rem;
+            font-weight: 700;
+            a {
+                color: $csfr-ink;
+                text-decoration: none;
+            }
+        }
+    }
+    // Modules 1 to 11 (sections 1 to 11) get their number on a mustard badge; Start here and the practicum do not.
+    li.course-section[data-number]:not([data-number="0"]) .sectionname::before {
+        content: attr(data-number);
+        display: inline-grid;
+        place-items: center;
+        min-width: 2.25rem;
+        height: 2.25rem;
+        margin-right: .75rem;
+        padding: 0 .5rem;
+        border-radius: .6rem;
+        background: $csfr-mustard;
+        color: $csfr-mustard-ink;
+        font-size: 1.125rem;
+        vertical-align: .1em;
+    }
+    // Each module keeps the colour of its lesson band: a stripe down the left and the number badge.
+    $csfr-modcolours: (1: $csfr-teal, 2: $csfr-terra, 3: $csfr-plum, 4: $csfr-red, 5: $csfr-sky, 6: $csfr-ink, 7: $csfr-teal-2,
+        8: #8c2f39, 9: #a8600c, 10: $csfr-plum, 11: $csfr-mustard);
+    @each $n, $c in $csfr-modcolours {
+        li.course-section[data-number="#{$n}"] {
+            border-left: 8px solid $c !important;
+            .sectionname::before {
+                background: $c !important;
+                color: if($n == 11, $csfr-mustard-ink, #fff) !important;
+            }
+        }
+    }
+    .course-section-header {
+        padding: 0 0 .5rem !important;
+    }
+    [data-for="sectioninfo"] {
+        padding: 0 !important;
+        .summarytext {
+            margin-bottom: .75rem;
+        }
+    }
+    .icons-collapse-expand {
+        border: 0;
+        background: transparent;
+        color: $csfr-terra;
+    }
+    li.activity {
+        margin-top: 0 !important;
+    }
+    .activity-item {
+        padding: .75rem .5rem;
+        border: 0;
+        border-top: 1px solid $csfr-rule;
+        border-radius: .5rem;
+        background-color: transparent !important;
+        &:not(.activityinline) {
+            border: 0;
+            border-top: 1px solid $csfr-rule;
+        }
+    }
+    li.activity:first-child .activity-item {
+        border-top: 0;
+    }
+    // Moodle puts .focus-control on every row, so the tint follows real focus and hover only.
+    .activity-item:focus-within,
+    .activity-item:hover {
+        background-color: $csfr-paper !important;
+    }
+    .activityname,
+    .instancename {
+        color: $csfr-ink;
+        font-weight: 600;
+    }
+    .activityname a {
+        color: $csfr-ink;
+        text-decoration: none;
+        &:hover {
+            color: $csfr-terra;
+        }
+    }
+    .activity-altcontent,
+    .activity-description {
+        color: $csfr-ink-2;
+    }
+}
+.activityiconcontainer {
+    border: 0;
+    border-radius: .75rem;
+}
+.activityiconcontainer.content {
+    background-color: $csfr-teal-soft !important;
+}
+.activityiconcontainer.assessment,
+.activityiconcontainer.interactivecontent {
+    background-color: $csfr-mustard-soft !important;
+}
+.activityiconcontainer.collaboration,
+.activityiconcontainer.communication {
+    background-color: $csfr-terra-soft !important;
+}
+.activityiconcontainer.administration {
+    background-color: $csfr-paper-3 !important;
+}
+// A lesson ends on the helpline band, not on Moodle's "Last modified" line.
+#page-mod-page-view .modified {
+    display: none;
+}
+#page-site-index .course-content .course-section {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none;
+}
+
+// Completion states: teal means done, an outline means still to do.
+.badge {
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.badge.bg-success,
+.text-bg-success,
+.automatic-completion-conditions .badge.alert-success,
+.completion-info .badge.alert-success {
+    background-color: $csfr-teal-soft !important;
+    border-color: transparent !important;
+    color: $csfr-teal-ink !important;
+}
+.badge.bg-warning,
+.text-bg-warning,
+.automatic-completion-conditions .badge:not(.alert-success),
+.completion-info .badge:not(.alert-success) {
+    background-color: transparent !important;
+    box-shadow: inset 0 0 0 1px $csfr-rule;
+    color: $csfr-muted !important;
+}
+
+// Cards and blocks: white on cream with a soft shadow.
+.card {
+    border-color: $csfr-rule;
+    box-shadow: var(--csfr-shadow);
+}
+.coursebox {
+    border: 0;
+    border-top: 1px solid $csfr-ink;
+    border-radius: 0;
+    padding: 1.25rem 0;
+    .coursename a {
+        color: $csfr-ink;
+        font-size: 1.375rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+}
+
+// Login: an ink panel with paper type, the form on paper.
+.login-layout-left {
+    background: $csfr-ink !important;
+    background-image: none !important;
+    color: $csfr-paper;
+}
+.login-layout-left-content {
+    max-width: 28rem;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: transparent;
+    color: $csfr-paper;
+    text-align: left;
+    h2 {
+        margin-bottom: 1.25rem;
+        color: $csfr-paper;
+        font-size: 3.25rem;
+        line-height: 1.02;
+        letter-spacing: -0.04em;
+    }
+    p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+    a,
+    strong {
+        color: $csfr-paper;
+    }
+}
+.login-container {
+    padding: 2.5rem 2.5rem 2rem;
+    border: 1px solid $csfr-rule;
+    border-radius: $border-radius-lg;
+    box-shadow: none;
+}
+
+// Site home: the same hero as the landing page.
+.csfr-hero {
+    margin-bottom: 1rem;
+    padding: 2.5rem 0 2.5rem;
+    border-bottom: 1px solid $csfr-ink;
+    h2 {
+        max-width: 12ch;
+        margin-bottom: 1.25rem;
+        font-size: 4rem;
+        line-height: 1;
+        letter-spacing: -0.04em;
+    }
+    .lead {
+        max-width: 40ch;
+        margin-bottom: 1.75rem;
+        color: $csfr-ink-2;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+.csfr-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+#page-site-index #region-main > .card,
+#page-site-index .sitetopic {
+    border: 0;
+    background: transparent;
+}
+// On site home the hero leads: no page title above it, no second rule under it.
+#page-site-index #page-header {
+    display: none;
+}
+#page-site-index .course-content ul.section,
+#page-site-index .sitetopic ul.section {
+    border-top: 0;
+}
+
+// Lesson pages: the handbook's pages as a web page. Cream page, white rounded cards, navy pill headings, terracotta
+// subheads, teal for safe habits, mustard for the helpline. Built by setup/build.php (csfr_lesson).
+.csfr-lesson,
+.csfr-hb {
+    max-width: 52rem;
+    margin-inline: auto;          // centre the reading column when the content region is wider than the article
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: $csfr-ink-2;
+    h3,
+    h4 {
+        font-family: $headings-font-family;
+        letter-spacing: 0;
+    }
+}
+.csfr-lesson {
+    h3 {
+        margin: 2.25rem 0 .75rem;
+        font-size: 1.5rem;
+    }
+    .lead {
+        margin: .5rem 0 1rem;
+        color: $csfr-terra;
+        font-family: $headings-font-family;
+        font-size: 1.375rem;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .csfr-tag {
+        display: inline-block;
+        padding: .2rem .8rem;
+        border-radius: 999px;
+        background: $csfr-mustard;
+        color: $csfr-mustard-ink;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+    .csfr-callout {
+        margin: 1.5rem 0;
+        padding: 1rem 1.25rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-teal-soft;
+        color: $csfr-teal-ink;
+    }
+    .csfr-warning {
+        margin: 2rem 0 0;
+        padding: 1rem 1.25rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-terra;
+        color: #fff;
+        a,
+        strong {
+            color: #fff;
+        }
+    }
+    blockquote {
+        margin: 1rem 0;
+        padding: 1rem 1.25rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        box-shadow: var(--csfr-shadow);
+    }
+    table {
+        overflow: hidden;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        box-shadow: var(--csfr-shadow);
+        th {
+            background: $csfr-ink;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+.csfr-hb {
+    .hb-tagline {
+        margin: 0 0 1.25rem;
+        color: $csfr-terra;
+        font-family: $headings-font-family;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.25;
+        text-wrap: balance;
+    }
+    .hb-text {
+        max-width: 68ch;
+        margin: 0 0 1rem;
+    }
+    // The module film: a white card, the video full width at 16:9, title and length under it, transcript folded away.
+    .csfr-film {
+        margin: 0 0 1.75rem;
+        padding: .75rem;
+        background: #fff;
+        border-radius: $border-radius-lg;
+        box-shadow: var(--csfr-shadow);
+    }
+    .csfr-film__v {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        background: $csfr-ink;
+        border-radius: $border-radius;
+    }
+    .csfr-film__cap {
+        display: grid;
+        gap: .15rem;
+        padding: .85rem .5rem .25rem;
+    }
+    .csfr-film__k {
+        justify-self: start;
+        padding: .1rem .6rem;
+        border-radius: 999px;
+        background: $csfr-mustard;
+        color: $csfr-ink;
+        font-size: .8125rem;
+        font-weight: 700;
+    }
+    .csfr-film__t {
+        font-family: $headings-font-family;
+        font-size: 1.375rem;
+        line-height: 1.2;
+        color: $csfr-ink;
+    }
+    .csfr-film__d {
+        color: $text-muted;
+        font-size: .9375rem;
+    }
+    .csfr-film__tr {
+        margin: .5rem .5rem .25rem;
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: $csfr-teal;
+        }
+        ol {
+            margin: .75rem 0 0;
+            padding: 0;
+            list-style: none;
+            max-height: 22rem;
+            overflow-y: auto;
+        }
+        li {
+            display: grid;
+            grid-template-columns: 3.25rem 1fr;
+            column-gap: .5rem;
+            padding: .5rem 0;
+            border-top: 1px solid $csfr-rule;
+        }
+        p {
+            grid-column: 2;
+            margin: 0;
+        }
+        p[lang="hi"] {
+            color: $text-muted;
+        }
+    }
+    .csfr-film__ts {
+        grid-row: span 2;
+        font-variant-numeric: tabular-nums;
+        color: $text-muted;
+        font-size: .875rem;
+        padding-top: .1rem;
+    }
+    .hb-text--lead {
+        font-size: 1.125rem;
+    }
+    // Module number and hours, as the handbook's tiles under the title.
+    .hb-chips {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: .75rem;
+        margin: 0 0 1.5rem;
+        padding: 0;
+        list-style: none;
+        li {
+            display: grid;
+            justify-items: center;
+            padding: .75rem .5rem;
+            border: 1px solid $csfr-rule;
+            border-radius: $border-radius-lg;
+            background: $csfr-card;
+            text-align: center;
+        }
+        li:first-child {
+            border-color: transparent;
+            background: $csfr-mustard;
+            b,
+            span {
+                color: $csfr-mustard-ink;
+            }
+        }
+        b {
+            color: $csfr-terra;
+            font-family: $headings-font-family;
+            font-size: 1.5rem;
+            line-height: 1.1;
+        }
+        span {
+            color: $csfr-muted;
+            font-size: .9375rem;
+        }
+    }
+    // Navy pill headings, centred, as in the handbook.
+    .hb-pill {
+        display: table;
+        margin: 2.75rem auto 1.25rem;
+        padding: .35rem 1.25rem .2rem;
+        border-radius: .5rem;
+        background: $csfr-ink;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .hb-pill--terra {
+        background: $csfr-terra;
+    }
+    .hb-pill--teal {
+        background: $csfr-teal;
+    }
+    .hb-card {
+        margin: 0 0 1rem;
+        padding: 1.25rem 1.5rem;
+        border: 1px solid $csfr-rule;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        box-shadow: var(--csfr-shadow);
+        p {
+            margin: 0;
+        }
+    }
+    .hb-card--tight {
+        margin: 0;
+        padding: 1rem 1.25rem;
+    }
+    .hb-card__h {
+        margin: 0 0 .5rem;
+        color: $csfr-terra;
+        font-size: 1.1875rem;
+        font-weight: 700;
+    }
+    .hb-card--safe {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: .75rem;
+        align-items: start;
+        .fa {
+            margin-top: .2rem;
+            color: $csfr-teal;
+            font-size: 1.125rem;
+        }
+    }
+    .hb-card--activity {
+        margin-top: 2.5rem;
+        border-color: transparent;
+        background: $csfr-mustard-soft;
+        box-shadow: none;
+        .hb-card__h {
+            color: $csfr-ink;
+        }
+    }
+    .hb-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    .hb-ticks {
+        display: grid;
+        gap: .4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: grid;
+            grid-template-columns: 1.5rem minmax(0, 1fr);
+            gap: .5rem;
+            align-items: start;
+        }
+        .fa {
+            display: grid;
+            place-items: center;
+            width: 1.375rem;
+            height: 1.375rem;
+            margin-top: .1rem;
+            border-radius: .3rem;
+            background: $csfr-teal;
+            color: #fff;
+            font-size: .75rem;
+        }
+    }
+    // Ask yourself: tick each one; the yellow "?" turns into a teal tick.
+    .hb-ask {
+        display: grid;
+        gap: .5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+        }
+        label {
+            display: grid;
+            grid-template-columns: 2rem minmax(0, 1fr);
+            gap: .75rem;
+            align-items: center;
+            min-height: 3.25rem;
+            margin: 0;
+            padding: .6rem 1rem;
+            border: 1px solid $csfr-rule;
+            border-radius: $border-radius-lg;
+            background: $csfr-card;
+            cursor: pointer;
+            transition: background-color .2s cubic-bezier(.16, 1, .3, 1), border-color .2s cubic-bezier(.16, 1, .3, 1);
+        }
+        label:hover {
+            border-color: $csfr-mustard;
+        }
+        .hb-ask__mark {
+            display: grid;
+            place-items: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: .4rem;
+            background: $csfr-mustard;
+            color: $csfr-mustard-ink;
+            .fa-check {
+                display: none;
+            }
+        }
+        input:checked + label {
+            border-color: $csfr-teal;
+            background: $csfr-teal-soft;
+            color: $csfr-teal-ink;
+            .hb-ask__mark {
+                background: $csfr-teal;
+                color: #fff;
+            }
+            .fa-question {
+                display: none;
+            }
+            .fa-check {
+                display: inline;
+            }
+        }
+        input:focus-visible + label {
+            outline: 2px solid $csfr-teal;
+            outline-offset: 2px;
+        }
+    }
+    // Stop, Save, Report: numbered terracotta steps.
+    .hb-steps {
+        display: grid;
+        gap: .75rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: hbstep;
+        > li {
+            counter-increment: hbstep;
+            display: grid;
+            grid-template-columns: 2.5rem minmax(0, 1fr);
+            column-gap: 1rem;
+            padding: 1rem 1.25rem;
+            border-radius: $border-radius-lg;
+            background: $csfr-terra-soft;
+            &::before {
+                content: counter(hbstep);
+                grid-row: span 2;
+                display: grid;
+                place-items: center;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                background: $csfr-terra;
+                color: #fff;
+                font-family: $headings-font-family;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+        h4 {
+            margin: .25rem 0;
+            color: $csfr-terra;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        ul {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+    }
+    // Remember: the handbook's teal rule tiles.
+    .hb-rules {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: .75rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: grid;
+            place-items: center;
+            min-height: 5.5rem;
+            padding: 1rem;
+            border-radius: $border-radius-lg;
+            background: $csfr-teal;
+            color: #fff;
+            font-family: $headings-font-family;
+            font-size: 1.1875rem;
+            font-weight: 700;
+            line-height: 1.25;
+            text-align: center;
+            text-wrap: balance;
+        }
+    }
+    // Check yourself: tap a question to reveal the answer.
+    .hb-reveals {
+        display: grid;
+        gap: .5rem;
+    }
+    .hb-reveal {
+        border: 1px solid $csfr-rule;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        summary {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: .875rem 1.25rem;
+            color: $csfr-ink;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            &::-webkit-details-marker {
+                display: none;
+            }
+            .fa {
+                color: $csfr-terra;
+                transition: transform .25s cubic-bezier(.16, 1, .3, 1);
+            }
+        }
+        &[open] summary .fa {
+            transform: rotate(180deg);
+        }
+    }
+    .hb-reveal__opts {
+        display: grid;
+        gap: .375rem;
+        margin: 0;
+        padding: 0 1.25rem 1rem;
+        list-style: none;
+        li {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            padding: .4rem .75rem;
+            border-radius: .5rem;
+            background: $csfr-paper;
+            color: $csfr-muted;
+        }
+        li.is-right {
+            background: $csfr-teal-soft;
+            color: $csfr-teal-ink;
+            font-weight: 600;
+            .fa {
+                color: $csfr-teal;
+            }
+        }
+    }
+    // Module 4's triage game: pick a colour per case; feedback appears at once.
+    .hb-case {
+        position: relative;
+        margin: 0 0 .75rem;
+        padding: 1rem 1.25rem;
+        border: 1px solid $csfr-rule;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        box-shadow: var(--csfr-shadow);
+        legend {
+            float: left;
+            width: 100%;
+            margin: 0 0 .75rem;
+            color: $csfr-ink;
+            font-size: 1.0625rem;
+            font-weight: 600;
+            line-height: 1.45;
+        }
+    }
+    .hb-case__opts {
+        clear: both;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: .5rem;
+    }
+    .hb-case__in {
+        position: absolute;
+        opacity: 0;
+    }
+    .hb-case__opt {
+        display: grid;
+        place-items: center;
+        min-height: 2.75rem;
+        margin: 0;
+        border-radius: .6rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform .15s cubic-bezier(.16, 1, .3, 1), box-shadow .15s cubic-bezier(.16, 1, .3, 1);
+        &:hover {
+            transform: translateY(-1px);
+        }
+    }
+    .hb-case__opt--red {
+        background: #c62f2f;
+        color: #fff;
+    }
+    .hb-case__opt--amber {
+        background: $csfr-orange;
+        color: #2b1600;
+    }
+    .hb-case__opt--yellow {
+        background: $csfr-mustard;
+        color: $csfr-mustard-ink;
+    }
+    .hb-case__opt--green {
+        background: $csfr-teal;
+        color: #fff;
+    }
+    .hb-case__in:checked + .hb-case__opt {
+        box-shadow: 0 0 0 3px $csfr-card, 0 0 0 5px $csfr-ink;
+    }
+    .hb-case__in:focus-visible + .hb-case__opt {
+        outline: 2px solid $csfr-ink;
+        outline-offset: 3px;
+    }
+    .hb-case__fb {
+        display: none;
+        margin: .75rem 0 0;
+        padding: .6rem .875rem;
+        border-radius: .5rem;
+    }
+    .hb-case__fb--right {
+        background: $csfr-teal-soft;
+        color: $csfr-teal-ink;
+    }
+    .hb-case__fb--wrong {
+        background: $csfr-terra-soft;
+        color: $csfr-terra;
+    }
+    .hb-case:has(.is-right:checked) .hb-case__fb--right,
+    .hb-case:has(.hb-case__in:not(.is-right):checked) .hb-case__fb--wrong {
+        display: block;
+    }
+    // ───── November 2026: brighter sections and the interactive pieces ─────
+    // The tagline becomes the module's colour band.
+    .hb-tagline {
+        margin: 0 0 1.25rem;
+        padding: 1.1rem 1.5rem;
+        border-radius: $border-radius-lg;
+        background: var(--hb-band, #{$csfr-ink});
+        color: #fff;
+        box-shadow: var(--csfr-shadow);
+    }
+    &.csfr-hb--m1 { --hb-band: #{$csfr-teal}; }
+    &.csfr-hb--m2 { --hb-band: #{$csfr-terra}; }
+    &.csfr-hb--m3 { --hb-band: #{$csfr-plum}; }
+    &.csfr-hb--m4 { --hb-band: #{$csfr-red}; }
+    &.csfr-hb--m5 { --hb-band: #{$csfr-sky}; }
+    &.csfr-hb--m6 { --hb-band: #{$csfr-ink}; }
+    &.csfr-hb--m7 { --hb-band: #{$csfr-teal-2}; }
+    &.csfr-hb--m8 { --hb-band: #8c2f39; }
+    &.csfr-hb--m9 { --hb-band: #a8600c; }
+    &.csfr-hb--m10 { --hb-band: #{$csfr-plum}; }
+    .hb-pill--navy { background: $csfr-sky; }
+    .hb-pill--red { background: $csfr-red; }
+    .hb-pill--plum { background: $csfr-plum; }
+    .hb-pill--mustard { background: $csfr-mustard; color: $csfr-mustard-ink; }
+    .hb-pill .fa { margin-right: .15rem; }
+    // Cards carry a coloured stripe on top, in the colour of their section.
+    .hb-card--terra { border-top: 4px solid $csfr-terra; }
+    .hb-card--navy { border-top: 4px solid $csfr-sky; .hb-card__h { color: $csfr-sky; } }
+    .hb-card--safe { border-top: 4px solid $csfr-teal-2; .hb-card__h { color: $csfr-teal; margin-bottom: .25rem; } }
+    .hb-card--outcomes { border-left: 6px solid $csfr-mustard; }
+    .hb-card--rules {
+        margin-top: 1.25rem;
+        border-color: transparent;
+        background: $csfr-teal-soft;
+        .hb-card__h { color: $csfr-teal-ink; }
+    }
+    .hb-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .hb-steps > li { background: $csfr-red-soft; &::before { background: $csfr-red; } }
+    .hb-steps h4 { color: $csfr-red; }
+    // Coloured section surfaces: each interactive piece sits on its own panel.
+    .hb-myths, .hb-game, .hb-stepper, .hb-flips-wrap, .hb-tabs, .hb-roleplay, .hb-sheet {
+        margin: 2.5rem 0 0;
+        padding: .25rem 1.25rem 1.25rem;
+        border-radius: 1.25rem;
+        > .hb-pill { margin-top: -1rem; transform: translateY(-.25rem); }
+    }
+    .hb-myths, .hb-roleplay { background: $csfr-plum-soft; }
+    .hb-game { background: $csfr-mustard-soft; }
+    .hb-stepper { background: $csfr-teal-soft; }
+    .hb-flips-wrap { background: $csfr-terra-soft; }
+    .hb-tabs { background: $csfr-sky-soft; }
+    .hb-sheet { background: $csfr-mustard-soft; }
+    // Myth or fact.
+    .hb-case__opt--plain { background: $csfr-card; color: $csfr-ink; border: 2px solid $csfr-rule; }
+    .hb-case__opt--myth { background: $csfr-plum; color: #fff; }
+    .hb-case__opt--fact { background: $csfr-teal-2; color: #fff; }
+    .hb-myths .hb-case__opts { grid-template-columns: repeat(2, minmax(0, 12rem)); }
+    .hb-game .hb-case__opts:has(.hb-case__opt--plain) { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+    // A strip of warning signs as chips.
+    .hb-signs {
+        margin: 1.5rem 0 0;
+        padding: 1rem 1.25rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-red-soft;
+        h4 { margin: 0 0 .6rem; color: $csfr-red; font-size: 1.125rem; font-weight: 700; }
+        ul { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+        li { padding: .3rem .75rem; border-radius: 999px; background: $csfr-card; color: $csfr-ink; font-size: .9375rem; }
+    }
+    // Callouts and notes.
+    .hb-callout {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 1rem;
+        align-items: start;
+        margin: 1.25rem 0 0;
+        padding: 1.1rem 1.25rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-mustard;
+        color: $csfr-mustard-ink;
+        font-weight: 600;
+        .fa { font-size: 1.5rem; margin-top: .1rem; }
+        p { margin: 0; }
+    }
+    .hb-note {
+        margin: 1.25rem 0 0;
+        padding: 1rem 1.25rem;
+        border-left: 6px solid $csfr-sky;
+        border-radius: $border-radius;
+        background: $csfr-sky-soft;
+        h4 { margin: 0 0 .35rem; color: $csfr-sky; font-size: 1.0625rem; font-weight: 700; }
+        p { margin: 0; }
+    }
+    .hb-note--teal { border-color: $csfr-teal-2; background: $csfr-card; h4 { color: $csfr-teal; } }
+    // Tables (what to save, the reporting map, the law).
+    .hb-tablewrap { overflow-x: auto; border-radius: $border-radius-lg; box-shadow: var(--csfr-shadow); }
+    .hb-table {
+        width: 100%;
+        margin: 0;
+        border-collapse: collapse;
+        background: $csfr-card;
+        thead th { background: $csfr-sky; color: #fff; font-weight: 700; padding: .65rem 1rem; text-align: left; }
+        tbody th { width: 34%; color: $csfr-ink; font-weight: 600; }
+        tbody th, tbody td { padding: .65rem 1rem; border-top: 1px solid $csfr-rule; vertical-align: top; }
+        tbody tr:nth-child(even) { background: $csfr-paper; }
+    }
+    .hb-list { ol, ul { margin: 0; padding-left: 1.25rem; } li + li { margin-top: .35rem; } }
+    .hb-list--num ol { counter-reset: none; }
+    // Module 4's urgency table: one coloured row per level.
+    .hb-urgency { display: grid; gap: .6rem; }
+    .hb-urgency__row {
+        display: grid;
+        grid-template-columns: 9rem minmax(0, 1.4fr) minmax(0, 1.2fr) 8rem;
+        gap: 1rem;
+        align-items: center;
+        padding: .8rem 1rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        border-left: 10px solid var(--u);
+        box-shadow: var(--csfr-shadow);
+        p { margin: 0; }
+    }
+    .hb-urgency__row--red { --u: #{$csfr-red}; }
+    .hb-urgency__row--amber { --u: #{$csfr-orange}; }
+    .hb-urgency__row--yellow { --u: #{$csfr-mustard}; }
+    .hb-urgency__row--green { --u: #{$csfr-teal-2}; }
+    .hb-urgency__lvl { display: grid; b { color: var(--u); font-family: $headings-font-family; font-size: 1.5rem; line-height: 1; } span { color: $csfr-muted; font-size: .875rem; } }
+    .hb-urgency__act { font-weight: 600; color: $csfr-ink; }
+    .hb-urgency__in { color: $csfr-ink; font-weight: 700; font-size: .9375rem; }
+    // The four-step method as a stepper: tap a number to see that step.
+    .hb-stepper__in, .hb-tabs__in { position: absolute; opacity: 0; pointer-events: none; }
+    .hb-stepper__tabs {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: .5rem;
+        label {
+            display: grid;
+            grid-template-columns: 2.25rem minmax(0, 1fr);
+            gap: .5rem;
+            align-items: center;
+            margin: 0;
+            padding: .6rem .75rem;
+            border-radius: $border-radius;
+            background: $csfr-card;
+            color: $csfr-ink;
+            font-weight: 600;
+            font-size: .9375rem;
+            line-height: 1.2;
+            cursor: pointer;
+            b { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: $csfr-teal-soft; color: $csfr-teal; font-family: $headings-font-family; font-size: 1.125rem; }
+        }
+    }
+    .hb-stepper__panels > div, .hb-tabs__panels > div { display: none; }
+    .hb-stepper__panel, .hb-tabs__panel {
+        margin: .75rem 0 0;
+        padding: 1.1rem 1.25rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        box-shadow: var(--csfr-shadow);
+        h4 { margin: 0 0 .4rem; color: $csfr-teal; font-size: 1.1875rem; font-weight: 700; }
+        p { margin: 0; }
+    }
+    @for $i from 0 through 3 {
+        :is(#hb-st#{$i}, [id^="hb-st#{$i}-"]):checked ~ .hb-stepper__tabs label:nth-child(#{$i + 1}) { background: $csfr-teal; color: #fff; b { background: #fff; color: $csfr-teal; } }
+        :is(#hb-st#{$i}, [id^="hb-st#{$i}-"]):checked ~ .hb-stepper__panels > div:nth-child(#{$i + 1}) { display: block; }
+        :is(#hb-lab#{$i}, [id^="hb-lab#{$i}-"]):checked ~ .hb-tabs__bar label:nth-child(#{$i + 1}) { background: $csfr-sky; color: #fff; }
+        :is(#hb-lab#{$i}, [id^="hb-lab#{$i}-"]):checked ~ .hb-tabs__panels > div:nth-child(#{$i + 1}) { display: block; }
+        :is(#hb-st#{$i}, [id^="hb-st#{$i}-"]):focus-visible ~ .hb-stepper__tabs label:nth-child(#{$i + 1}),
+        :is(#hb-lab#{$i}, [id^="hb-lab#{$i}-"]):focus-visible ~ .hb-tabs__bar label:nth-child(#{$i + 1}) { outline: 2px solid $csfr-ink; outline-offset: 2px; }
+    }
+    .hb-think {
+        margin: 1rem 0 0;
+        padding: 1rem 1.25rem;
+        border: 2px dashed $csfr-teal-2;
+        border-radius: $border-radius-lg;
+        background: rgba(255, 255, 255, .6);
+        h4 { margin: 0 0 .35rem; color: $csfr-teal; font-size: 1.0625rem; font-weight: 700; }
+        p { margin: 0 0 .6rem; }
+    }
+    .hb-think__done { display: inline-flex; gap: .5rem; align-items: center; margin: 0; font-weight: 600; color: $csfr-teal-ink; cursor: pointer; }
+    // Flip cards: tap to turn from the situation to the safe response.
+    .hb-flips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .hb-flip { display: block !important; width: 100%; max-width: none; margin: 0; perspective: 1200px; cursor: pointer; }
+    .hb-flip__in { position: absolute; opacity: 0; }
+    .hb-flip__card { position: relative; display: grid; width: 100%; height: 100%; min-height: 15rem; transition: transform .5s cubic-bezier(.16, 1, .3, 1); transform-style: preserve-3d; }
+    .hb-flip__face {
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        padding: 1.1rem 1.2rem;
+        border-radius: $border-radius-lg;
+        backface-visibility: hidden;
+        box-shadow: var(--csfr-shadow);
+        b { font-family: $headings-font-family; font-size: 1.1875rem; line-height: 1.2; }
+        i { font-style: normal; font-size: .8125rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+        em { margin-top: auto; font-style: normal; font-size: .875rem; font-weight: 600; }
+    }
+    .hb-flip__front { background: $csfr-card; color: $csfr-ink-2; b { color: $csfr-terra; } i { color: $csfr-muted; } em { color: $csfr-terra; } }
+    .hb-flip__back { background: $csfr-terra; color: #fff; transform: rotateY(180deg); i { color: $csfr-mustard-soft; } }
+    .hb-flip__in:checked + .hb-flip__card { transform: rotateY(180deg); }
+    .hb-flip__in:focus-visible + .hb-flip__card .hb-flip__face { outline: 3px solid $csfr-ink; outline-offset: 2px; }
+    .hb-flip:hover .hb-flip__front { box-shadow: 0 2px 4px rgba(30, 43, 74, .08), 0 10px 24px rgba(178, 64, 31, .18); }
+    // Lab stations as tabs.
+    .hb-tabs__bar {
+        display: flex;
+        gap: .5rem;
+        flex-wrap: wrap;
+        label { margin: 0; padding: .5rem 1.1rem; border-radius: 999px; background: $csfr-card; color: $csfr-sky; font-weight: 700; cursor: pointer; }
+    }
+    .hb-tabs__panel h4 { color: $csfr-sky; }
+    .hb-expect { margin: .9rem 0 0; padding: .75rem 1rem; border-radius: $border-radius; background: $csfr-card; .fa { color: $csfr-sky; } }
+    // Role-plays and the self-scoring rubric.
+    .hb-card--case { border-top: 4px solid $csfr-plum; .hb-card__h { color: $csfr-plum; } }
+    .hb-case__tag { display: inline-block; margin: 0 0 .4rem; padding: .1rem .6rem; border-radius: 999px; background: $csfr-plum; color: #fff; font-size: .8125rem; font-weight: 700; }
+    .hb-rubric {
+        margin: 1rem 0 0;
+        padding: .25rem 1.1rem 1rem;
+        border-radius: $border-radius-lg;
+        background: $csfr-card;
+        box-shadow: var(--csfr-shadow);
+        counter-reset: hbscore;
+        summary { padding: .65rem 0; color: $csfr-plum; font-weight: 700; cursor: pointer; }
+    }
+    .hb-rubric__rows { display: grid; gap: .4rem; }
+    .hb-rubric__row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 1rem;
+        align-items: center;
+        padding: .4rem 0;
+        border-top: 1px solid $csfr-rule;
+    }
+    .hb-rubric__opts { display: flex; gap: .35rem; }
+    .hb-rubric__in { position: absolute; opacity: 0; }
+    .hb-rubric__in + label { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; margin: 0; border-radius: 50%; background: $csfr-plum-soft; color: $csfr-plum; font-weight: 700; cursor: pointer; }
+    .hb-rubric__in:checked + label { background: $csfr-plum; color: #fff; }
+    .hb-rubric__in:focus-visible + label { outline: 2px solid $csfr-ink; outline-offset: 2px; }
+    .hb-rubric__in--1:checked { counter-increment: hbscore 1; }
+    .hb-rubric__in--2:checked { counter-increment: hbscore 2; }
+    .hb-rubric__total {
+        margin: .75rem 0 0;
+        padding: .6rem 1rem;
+        border-radius: $border-radius;
+        background: $csfr-plum;
+        color: #fff;
+        font-weight: 700;
+        text-align: right;
+        &::after { content: ": " counter(hbscore) " / " attr(data-max); }
+    }
+    .hb-discuss, .hb-selfcheck { margin: 1rem 0 0; padding: .75rem 1rem; border-radius: $border-radius; background: rgba(255, 255, 255, .7); .fa { color: $csfr-plum; } }
+    // The worksheet script, as a speech card.
+    .hb-script {
+        margin: 1rem 0 0;
+        padding: 1rem 1.25rem;
+        border-radius: $border-radius-lg $border-radius-lg $border-radius-lg .25rem;
+        background: $csfr-ink;
+        color: #fff;
+        h4 { margin: 0 0 .4rem; color: $csfr-mustard; font-size: 1.0625rem; font-weight: 700; }
+        p { margin: 0; font-size: 1.0625rem; line-height: 1.55; }
+    }
+    .hb-sheet .hb-ask .hb-ask__mark { background: $csfr-card; color: $csfr-mustard-ink; }
+    // The booklet's topics: numbered chips, the chosen topic's pages below.
+    .hb-topics {
+        margin: 2rem 0 0;
+        padding: .25rem 1.25rem 1.25rem;
+        border-radius: 1.25rem;
+        background: $csfr-sky-soft;
+        > .hb-pill { margin-top: -1rem; transform: translateY(-.25rem); }
+    }
+    .hb-topics__bar {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+        gap: .5rem;
+        label {
+            display: grid;
+            grid-template-columns: 2rem minmax(0, 1fr);
+            gap: .5rem;
+            align-items: center;
+            margin: 0;
+            padding: .5rem .75rem;
+            border-radius: $border-radius;
+            background: $csfr-card;
+            color: $csfr-ink;
+            font-weight: 600;
+            font-size: .9375rem;
+            line-height: 1.25;
+            cursor: pointer;
+            b { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: $csfr-sky-soft; color: $csfr-sky; font-family: $headings-font-family; }
+        }
+    }
+    .hb-topics__panels > div { display: none; }
+    .hb-topics__panel {
+        margin: .9rem 0 0;
+        h4 { margin: 0 0 .6rem; color: $csfr-sky; font-size: 1.1875rem; font-weight: 700; }
+        img { display: block; width: 100%; height: auto; margin: 0 0 .75rem; border-radius: $border-radius; background: #fff; box-shadow: var(--csfr-shadow); }
+    }
+    @for $i from 0 through 6 {
+        :is(#hb-tp#{$i}, [id^="hb-tp#{$i}-"]):checked ~ .hb-topics__bar label:nth-child(#{$i + 1}) { background: $csfr-sky; color: #fff; b { background: #fff; } }
+        :is(#hb-tp#{$i}, [id^="hb-tp#{$i}-"]):checked ~ .hb-topics__panels > div:nth-child(#{$i + 1}) { display: block; }
+        :is(#hb-tp#{$i}, [id^="hb-tp#{$i}-"]):focus-visible ~ .hb-topics__bar label:nth-child(#{$i + 1}) { outline: 2px solid $csfr-ink; outline-offset: 2px; }
+    }
+    // The crossword: a grid of squares beside its clues.
+    .hb-xword {
+        --xc: 2.4rem;
+        margin: 2.5rem 0 0;
+        padding: .25rem 1.25rem 1.25rem;
+        border-radius: 1.25rem;
+        background: $csfr-sky-soft;
+        > .hb-pill { margin-top: -1rem; transform: translateY(-.25rem); }
+    }
+    .hb-xword__body { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+    .hb-xword__grid { display: grid; gap: 3px; justify-content: start; overflow-x: auto; padding: 2px; }
+    .hb-xword__cell {
+        position: relative;
+        width: var(--xc);
+        height: var(--xc);
+        border-radius: .35rem;
+        background: $csfr-card;
+        box-shadow: 0 0 0 2px $csfr-ink;
+        span { position: absolute; top: 1px; left: 3px; color: $csfr-sky; font-size: .625rem; font-weight: 700; line-height: 1; pointer-events: none; }
+        input {
+            width: 100%;
+            height: 100%;
+            padding: .5rem 0 0;
+            border: 0;
+            border-radius: .35rem;
+            background: transparent;
+            color: $csfr-ink;
+            font-family: $headings-font-family;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            caret-color: transparent;
+            &:focus { outline: 0; background: $csfr-mustard-soft; box-shadow: inset 0 0 0 3px $csfr-mustard; }
+        }
+        &.is-right { background: $csfr-teal-soft; input { color: $csfr-teal-ink; } }
+        &.is-wrong { background: $csfr-terra-soft; input { color: $csfr-terra; } }
+    }
+    .hb-xword__cell.is-empty { background: transparent; box-shadow: none; }
+    .hb-xword__clues {
+        h4 { margin: 0 0 .4rem; color: $csfr-sky; font-size: 1.0625rem; font-weight: 700; }
+        h4 + ol { margin-bottom: 1rem; }
+        ol { margin: 0; padding-left: 1.6rem; }
+        li { margin: 0 0 .3rem; }
+    }
+    .hb-xword__bar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: 1rem; }
+    .hb-xword__msg { font-weight: 700; color: $csfr-ink; }
+    // "Practise it": the divider before pages 4-8.
+    .hb-part {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 3.5rem 0 0;
+        color: $csfr-plum;
+        font-family: $headings-font-family;
+        font-size: 1.5rem;
+        font-weight: 700;
+        &::before, &::after { content: ""; flex: 1; height: 3px; border-radius: 3px; background: $csfr-plum; opacity: .35; }
+    }
+    // The capstone: the five-step frame, the timeline, the injects, the model response.
+    .hb-flow, .hb-timeline { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1rem; padding: 0; list-style: none; }
+    .hb-flow li { padding: .4rem .9rem; border-radius: 999px; background: $csfr-plum; color: #fff; font-weight: 700; }
+    .hb-flow li + li::before { content: "→ "; opacity: .7; }
+    .hb-timeline li { display: grid; padding: .5rem .9rem; border-radius: $border-radius; background: $csfr-card; box-shadow: var(--csfr-shadow); b { color: $csfr-plum; } }
+    .hb-script--case { background: $csfr-terra; h4 { color: #fff; } }
+    .hb-injects { display: grid; gap: .5rem; }
+    .hb-inject {
+        border-radius: $border-radius-lg;
+        background: $csfr-red-soft;
+        summary { padding: .75rem 1.1rem; color: $csfr-red; font-weight: 700; cursor: pointer; .fa { margin-left: .4rem; } }
+        p { margin: 0; padding: 0 1.1rem .9rem; color: $csfr-ink; font-size: 1.0625rem; }
+        &[open] { background: $csfr-card; box-shadow: var(--csfr-shadow); }
+    }
+    .hb-model {
+        margin: 1.25rem 0 0;
+        border-radius: $border-radius-lg;
+        background: $csfr-teal-soft;
+        summary { padding: .8rem 1.1rem; color: $csfr-teal-ink; font-weight: 700; cursor: pointer; }
+        dl { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: .35rem 1rem; margin: 0; padding: 0 1.1rem 1rem; }
+        dt { color: $csfr-teal; font-weight: 700; }
+        dd { margin: 0; }
+    }
+    // The handbook's mustard helpline band, closing every lesson.
+    .hb-help {
+        display: table;
+        margin: 2.5rem auto 0;
+        padding: .6rem 1.5rem .5rem;
+        border-radius: 999px;
+        background: $csfr-mustard;
+        color: $csfr-ink;
+        font-weight: 600;
+        text-align: center;
+        .fa {
+            margin-right: .4rem;
+        }
+    }
+}
+
+@media (max-width: 40rem) {
+    .csfr-hb {
+        .hb-chips,
+        .hb-rules,
+        .hb-case__opts {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .hb-grid,
+        .hb-grid--3,
+        .hb-flips {
+            grid-template-columns: minmax(0, 1fr);
+        }
+        .hb-stepper__tabs {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .hb-urgency__row {
+            grid-template-columns: minmax(0, 1fr);
+            gap: .35rem;
+        }
+        .hb-rubric__row {
+            grid-template-columns: minmax(0, 1fr);
+        }
+        .hb-model dl {
+            grid-template-columns: minmax(0, 1fr);
+        }
+        .hb-xword {
+            --xc: 1.9rem;
+        }
+        .hb-xword__body {
+            grid-template-columns: minmax(0, 1fr);
+        }
+        .hb-myths, .hb-game, .hb-stepper, .hb-flips-wrap, .hb-tabs, .hb-roleplay, .hb-sheet {
+            padding-right: .75rem;
+            padding-left: .75rem;
+        }
+    }
+}
+@media (min-width: 40.01rem) and (max-width: 62rem) {
+    .csfr-hb .hb-flips {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .csfr-hb .hb-flip__card {
+        transition: none;
+    }
+}
+
+// First login: reading and agreeing to the policies (tool_policy on the secure layout), as one reading column.
+#page-admin-tool-policy-view,
+#page-admin-tool-policy-index {
+    #page-header {
+        display: none;
+    }
+    // Moodle's own top padding on #page clears the fixed bar, so the column only sets its sides and foot.
+    #page {
+        max-width: 46rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-bottom: 6rem;
+        padding-left: 1rem;
+    }
+    [role="main"] {
+        padding-top: 3rem;
+    }
+    [role="main"] h2 {
+        margin: 0;
+        color: $csfr-ink;
+        font-size: unquote("clamp(1.875rem, 1.4rem + 1.6vw, 2.5rem)");
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.035em;
+    }
+    hr {
+        margin: 1.75rem 0;
+        border: 0;
+        border-top: 1px solid $csfr-ink;
+        opacity: 1;
+    }
+}
+#page-admin-tool-policy-view {
+    // "Policy 1 of 3" reads as the step above the title, not a note floated beside it.
+    [role="main"] > .clearfix:first-of-type {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: .75rem;
+        .float-start,
+        .float-end {
+            float: none !important;
+        }
+        .float-end {
+            color: $csfr-teal;
+            font-size: .9375rem;
+            font-weight: 600;
+        }
+    }
+    [role="main"] > .clearfix.mt-2 h3 {
+        margin: .25rem 0 0;
+        color: $csfr-muted;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    .policy_document {
+        color: $csfr-ink-2;
+        font-size: 1.0625rem;
+        line-height: 1.65;
+        h2, h3, h4 {
+            margin: 2.25rem 0 .5rem;
+            color: $csfr-ink;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+        }
+        ul {
+            padding-left: 1.25rem;
+        }
+        li + li {
+            margin-top: .25rem;
+        }
+    }
+    .policy_document_summary {
+        color: $csfr-ink;
+        font-size: 1.1875rem;
+    }
+    .policy_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn {
+            padding: .75rem 2rem;
+            font-size: 1.0625rem;
+        }
+        .float-end {
+            float: none !important;
+        }
+    }
+}
+#page-admin-tool-policy-index {
+    // Moodle opens this page with an error-styled "must agree" notice before anything is answered; here it is a plain note.
+    .alert-danger {
+        border: 1px solid $csfr-rule;
+        border-radius: .75rem;
+        background: $csfr-paper-2;
+        color: $csfr-ink;
+        margin-bottom: 2rem;
+    }
+    #agreedocsform > .clearfix.mt-2:not(.agreedoc-policy) h3 {
+        margin: .75rem 0 0;
+        color: $csfr-muted;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    .agreedoc-policy {
+        margin: 0 !important;
+        padding: 1.75rem 0;
+        border-bottom: 1px solid $csfr-rule;
+        h3 {
+            margin-bottom: .375rem;
+            color: $csfr-ink;
+            font-size: 1.375rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+    }
+    .agreedoc-summary {
+        color: $csfr-ink-2;
+    }
+    .agreedoc-msg {
+        color: $csfr-muted;
+        font-size: .9375rem;
+    }
+    // Each answer is a whole tappable row; the chosen one turns teal.
+    .agreedoc-form {
+        margin-top: 1rem !important;
+        label {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            min-height: 3rem;
+            margin: 0;
+            padding: .625rem 1rem;
+            border: 1px solid $csfr-rule;
+            border-radius: .625rem;
+            background: $csfr-paper;
+            color: $csfr-ink;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover {
+                border-color: $csfr-ink;
+            }
+            &:has(input:checked) {
+                border-color: $csfr-teal;
+                background: $csfr-teal-soft;
+                color: $csfr-teal-ink;
+            }
+        }
+        input {
+            flex: none;
+            width: 1.125rem;
+            height: 1.125rem;
+            margin: 0;
+            accent-color: $csfr-teal;
+        }
+        .icon {
+            margin-left: auto;
+        }
+    }
+    .agreedoc-radios {
+        display: grid;
+        gap: .5rem;
+    }
+    #agreedocsform > input[type="submit"] {
+        padding: .75rem 2rem;
+        font-size: 1.0625rem;
+    }
+}
+
+// Lesson language copies: show the one matching the interface language, English otherwise.
+.csfr-l10n { display: none; }
+html:not([lang|="hi"]):not([lang|="mr"]):not([lang|="gu"]) .csfr-l10n[lang="en"],
+html[lang|="hi"] .csfr-l10n[lang="hi"],
+html[lang|="mr"] .csfr-l10n[lang="mr"],
+html[lang|="gu"] .csfr-l10n[lang="gu"] { display: block; }
+
+// Booklet topics rendered as sharp web text (csfr_booklet_blocks).
+.hb-bk {
+    .hb-bk__h { font-size: 1.05rem; font-weight: 700; color: $csfr-plum; margin: 1.1rem 0 .4rem; }
+    .hb-bk__h:first-child { margin-top: .2rem; }
+    .hb-text { margin: 0 0 .7rem; }
+    .hb-bk__tbl { width: 100%; border-collapse: collapse; margin: .3rem 0 1rem; font-size: .95rem; }
+    .hb-bk__tbl th, .hb-bk__tbl td { border: 1px solid $csfr-rule; padding: .45rem .6rem; text-align: left; vertical-align: top; }
+    .hb-bk__tbl thead th { background: $csfr-plum; color: #fff; }
+    .hb-bk__tbl tbody th { background: $csfr-card; color: $csfr-plum; width: 32%; font-weight: 700; }
+    .hb-steps--bk { margin: .4rem 0 1rem; }
+    .hb-steps--bk p { margin: .2rem 0 0; }
+    .hb-note { margin: .6rem 0 1rem; }
+}
+.hb-bk__orig {
+    margin-top: .6rem; border-top: 1px dashed $csfr-rule; padding-top: .6rem;
+    summary { cursor: pointer; color: $csfr-sky; font-weight: 600; font-size: .92rem; }
+    .hb-bk__pages { margin-top: .6rem; }
+}
+.hb-bk__pages img { width: 100%; height: auto; border: 1px solid $csfr-rule; border-radius: 10px; margin-bottom: .8rem; }
+
+// Reading pages (lessons and the info pages built from mod/page) read as one tidy centred column: the page chrome
+// lines up with the centred article instead of spanning the full wide content region. Dense pages (the course page,
+// dashboards, quizzes) keep the full width set by $course-content-maxwidth.
+#page-mod-page-view {
+    #region-main .activity-header,
+    #region-main-box > #region-main > div[role="main"],
+    #region-main .box.py-3 {
+        max-width: 54rem;
+        margin-inline: auto;
+    }
+}
+
+// Cisco-style lesson gate: a fixed progress bar that must be completed before the assessment unlocks.
+body.csfr-has-gate { padding-bottom: 4rem; }
+.csfr-gate {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 1031;
+    background: $csfr-ink; color: #fff; box-shadow: 0 -3px 14px rgba(0, 0, 0, .22);
+    .csfr-gate__in { max-width: 60rem; margin: 0 auto; display: flex; align-items: center; gap: 1rem; padding: .6rem 1rem; }
+    .csfr-gate__txt { flex: 1; font-size: .92rem; line-height: 1.3; b { color: $csfr-mustard; } }
+    .csfr-gate__track { width: 130px; height: 8px; background: rgba(255, 255, 255, .25); border-radius: 5px; overflow: hidden; flex: none; }
+    .csfr-gate__track i { display: block; height: 100%; width: 0; background: $csfr-teal-2; transition: width .3s ease; }
+    .csfr-gate__btn { flex: none; background: $csfr-teal-2; color: #fff; border: 0; border-radius: 8px; padding: .5rem 1rem; font-weight: 600; cursor: pointer; }
+    .csfr-gate__btn:disabled { opacity: .45; cursor: not-allowed; }
+    .csfr-gate__btn:not(:disabled):hover { filter: brightness(1.08); }
+}
+// the gate sits over the helpline strip while a lesson is in progress
+body.csfr-has-gate .csfr-helpstrip { display: none; }
+@media (max-width: 40rem) {
+    .csfr-gate .csfr-gate__in { flex-wrap: wrap; gap: .5rem; }
+    .csfr-gate .csfr-gate__txt { flex: 1 0 100%; order: -1; }
+}

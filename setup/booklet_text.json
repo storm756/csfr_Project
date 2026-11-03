@@ -1,0 +1,2741 @@
+{
+ "1": {
+  "0": {
+   "title": "Introduction to cyber hygiene",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Cyber hygiene is the set of small, regular habits that keep your phone, accounts, money and personal data safe — just as washing hands keeps germs away. It is not a one-time setting; it is a routine. Most frauds in India do not “hack” a system. They trick a person into giving away an OTP, a PIN, a password or access to a phone. Good habits close those doors before anyone knocks."
+    },
+    {
+     "type": "p",
+     "text": "Key term            Figure 1.3 · Six everyday risks that cyber hygiene protects against Cyber hygiene           Meaning Social engineering      Simple, regular habits that protect devices, accounts and personal data Phishing                Tricking people with urgency, fear or greed instead of breaking technology A fake message, call or website that pretends to be trusted in order to steal details"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A shopping site Ravi once used was breached. Criminals tried his leaked email and password on Instagram and Gmail — they worked, because he used the same password everywhere. Within an hour his friends received “urgent” requests for money from his account. Lesson: one reused password turned one leak into three takeovers. Unique passphrases and two-step verification would have stopped it."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Am I careful when clicking links, downloading files or sharing information online?",
+      "Do I use the same password for more than one important account?",
+      "Is two-step verification on for my WhatsApp, email and banking apps?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Stop interacting with anything suspicious: do not reply, click or forward.",
+     "save": "Screenshot the message, number, link and time before deleting anything.",
+     "report": "Suspicious call or SMS: Chakshu on sancharsaathi.gov.in. Money lost: 1930 and cybercrime.gov.in."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Your OTP, UPI PIN, CVV, password and WhatsApp code are keys, not information. No bank, police officer or company will ever ask for them."
+      }
+     ]
+    }
+   ]
+  },
+  "1": {
+   "title": "Password and account security",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A weak password is short or personal (a name, a birth year, 12345678). A strong one is long, random and used for only one account. A passphrase of four random words is both strong and easy to remember. Multi-factor authentication (MFA) adds a second check after the password: a code from an app, a prompt on your phone, a passkey or a fingerprint. Even if a password leaks, the account stays locked."
+    },
+    {
+     "type": "p",
+     "text": "Tool or setting    What it does                                       Where to set it Password manager Creates and remembers a unique password for        Built into Google and Apple accounts, Passkey            every account; you remember one strong master      or a reputable manager app passphrase WhatsApp two-step verification       Signs you in with fingerprint or face; nothing to  Google, Apple and many banking and Google 2-Step      phish                                              shopping sites Verification Recovery details   Asks for your own 6-digit PIN when the number is   WhatsApp → Settings → Account → registered on a new phone                          Two-step verification"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Adds a prompt or code at sign-in",
+       "myaccount.google.com → Security"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Lets you regain the account if locked out",
+       "Keep recovery phone and email current; store backup codes offline"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Suspicious login alert? Act in this order"
+    },
+    {
+     "type": "p",
+     "text": "1 Do not click the link in the alert · 2 Open the official app and check login activity · 3 Log out unknown sessions · 4 Change the password from a safe device · 5 Turn on MFA · 6 Warn contacts if messages were sent in your name."
+    }
+   ]
+  },
+  "2": {
+   "title": "Device security and app permissions",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Your phone holds bank apps, photos, contacts and OTPs. Device security rests on four building blocks: a screen lock, updates, apps from trusted sources only, and minimum permissions. A permission is an app's request to use the camera, microphone, contacts, location, SMS or files. Give each app only what it needs to do its job. An app installed from a link (an APK file) can read OTPs and mirror your screen."
+    },
+    {
+     "type": "p",
+     "text": "Building block   Why it matters                               Good practice Screen lock Updates          An unlocked phone lets anyone read OTPs or 6-digit PIN or biometric; auto-lock within 30 Trusted sources open UPI                                     seconds"
+    },
+    {
+     "type": "p",
+     "text": "Updates close security holes that criminals  Automatic updates on for the system and already know about                           apps"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Fake apps and APK files carry malware",
+       "Install only from Google Play or the App Store; check the developer name"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Phone                                 Figure 1.8 · Permission traffic light Android Where to review permissions (menu names vary by brand and version) iPhone   Settings → Security and privacy → Privacy → Permission manager; also Settings → Apps → [app] → Permissions Settings → Privacy & Security → choose Camera, Microphone, Location Services, Contacts"
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Is my phone protected with a screen lock that is not easy to guess?",
+      "Are automatic updates switched on?",
+      "Does every app have only the permissions it really needs?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Phone hot, slow, unknown apps or OTPs you did not request? Switch on airplane mode.",
+     "save": "Note the app name and when it was installed; screenshot unusual activity.",
+     "report": "Remove the app; change passwords from another device; report money loss on 1930."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Keep your devices secure and allow applications access only to the features they genuinely need."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Privacy and personal information",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Personal information identifies you (name, phone, address, date of birth, photos). Sensitive information can cause serious harm if misused (Aadhaar, PAN, bank details, health records). Your digital footprint is everything about you online — what you post, what others post and what apps collect. Under the Digital Personal Data Protection Act 2023, you have the right to know how your data is used, to correct it, to ask for its erasure and to complain to the organisation and then the Data Protection Board."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Platform",
+       "Privacy setting to check"
+      ],
+      [
+       "WhatsApp",
+       "Settings → Privacy: profile photo, last seen and about to “My contacts”; groups to “My"
+      ],
+      [
+       "Instagram / Facebook",
+       "contacts”; turn on Silence unknown callers"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Private account; limit who can tag you; switch off location on posts; review apps connected to the account"
+    },
+    {
+     "type": "p",
+     "text": "Phone gallery and camera  Turn off location tagging on photos before sharing Google account            myaccount.google.com → Data and privacy: review activity controls and location history"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Neha posted a week-long holiday with live location while her house in Pune stood empty. A neighbour's CCTV later showed strangers checking the door. Lesson: share trips after you return, switch off live location on posts, and keep the account private."
+      }
+     ]
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Your digital footprint can stay online for years. Think before you share, and share sensitive documents only in masked form and only for a verified need."
+      }
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "Safe internet practices",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Safe internet use is about where you connect, what you click and what you keep a copy of. A fake website looks exactly like the real one; the difference is in the address and in how you arrived there."
+    },
+    {
+     "type": "p",
+     "text": "Term                        Figure 1.11 · The 10-second website check Look-alike domain Meaning Fake hotspot       An address that imitates a real one by adding words or changing letters, such as sbi-kyc- update.in A Wi-Fi network named like a café or station network, set up to watch your traffic"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Situation                   Safer choice",
+       "Why"
+      ],
+      [
+       "Use your own mobile data",
+       "You control the connection"
+      ],
+      [
+       "travelling                  Browse only; no banking or passwords",
+       "Others may watch the traffic or run a fake"
+      ],
+      [
+       "Free Wi-Fi at a station or",
+       "hotspot"
+      ],
+      [
+       "Cybercafé or shared         Private window; never tick “remember me”;",
+       "The next user can open your accounts"
+      ],
+      [
+       "Official store or the organisation's own",
+       "Links in messages often carry malware"
+      ],
+      [
+       "Phone lost or stolen        Automatic cloud backup plus an offline",
+       "Backups defeat ransomware and phone"
+      ],
+      [
+       "copy",
+       "loss"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Block it through CEIR on Sanchar Saathi",
+       "Stops misuse of the handset and number"
+      ]
+     ]
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Priya logged in to her email on a cybercafé computer and left without logging out. The next user reset her social media passwords through her inbox. Lesson: private window, no saved passwords, log out, close the browser — every time."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Is the network I am using trustworthy?",
+      "Did I check the full website address before entering details?",
+      "Do I have a backup of my important files?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Entered details on a suspicious page? Stop and change that password from a safe device.",
+     "save": "Note the website address, time and what was entered.",
+     "report": "Inform the bank if card or UPI details were shared; report on cybercrime.gov.in."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Always verify before connecting, clicking, downloading or sharing information online."
+      }
+     ]
+    }
+   ]
+  },
+  "5": {
+   "title": "Basic cyber incident response",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Responder"
+    },
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A cyber incident is any event that harms or may harm someone's accounts, devices, money or safety. A guides the person to the right channel. You do not investigate the criminal, promise that money will come back, ask for the person's password or OTP, or take their phone without consent."
+    },
+    {
+     "type": "p",
+     "text": "Ask                                Figure 1.12 · The First Responder path What happened?                Why When?                         In their own words; do not interrupt Is money or data involved?    Exact time; for money loss, the first hour matters most Is anything still happening?  Decides whether 1930 and the bank come first Is anyone in danger?          New debits, calls or messages mean act now What evidence exists?         Threats or a child involved: 112 / 1098 first Screenshots, numbers, links, transaction IDs"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Login alert or OTP you did not",
+       "Someone has your password  Check login activity in the official app; change"
+      ],
+      [
+       "request",
+       "password; MFA on"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Friends receive messages you did not Account taken over",
+       "Recover via the app; warn contacts; report to"
+      ],
+      [
+       "send",
+       "the platform"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Unknown app, fast battery drain,  Malware or remote access",
+       "Airplane mode; remove the app; change"
+      ],
+      [
+       "screen activity",
+       "passwords from a clean device"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Role limits"
+    },
+    {
+     "type": "p",
+     "text": "A First Responder identifies, stabilises, preserves and routes. Complex or high-risk cases go to the police, the bank, CERT-In (for organisations) or other authorised professionals. This is covered in depth in Modules 4 to 6."
+    }
+   ]
+  }
+ },
+ "2": {
+  "0": {
+   "title": "How online frauds work",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "HOW ONLINE FRAUDS WORK"
+    },
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "An online fraud is a trick that uses a phone, app, website or message to make a person give away money, details or access. Almost every fraud is social engineering: it targets feelings — fear, greed, urgency, trust or kindness — rather than technology. Once you know the pattern, you can spot a scam you have never seen before."
+    },
+    {
+     "type": "p",
+     "text": "Why money disappears so fast"
+    },
+    {
+     "type": "p",
+     "text": "UPI and IMPS move money in seconds, at any hour. Fraudsters pass it through several mule accounts — accounts rented or opened in other people's names — and withdraw it as cash or crypto. Reporting on 1930 lets banks place a hold on money still in those accounts; every minute of delay lets more of it leave."
+    }
+   ]
+  },
+  "1": {
+   "title": "Phishing: fake messages and websites",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Phishing is a fake message, email or website that pretends to come from a trusted organisation — a bank, electricity company, courier, tax department or employer — to steal login details, card numbers or OTPs, or to make you install a harmful app. Smishing is phishing by SMS; vishing is by voice call."
+    },
+    {
+     "type": "p",
+     "text": "Common phishing lure   What it says                            The truth Electricity or gas Courier or India Post  “Connection cut tonight; call this officer” Utilities send notices through their app and bill; Income tax refund                                                                they never use a personal mobile Traffic challan “Parcel held; pay ₹25 to update         The link collects card details and OTP address”"
+    },
+    {
+     "type": "p",
+     "text": "“Refund approved; verify your account”  Refunds go to the account already in your tax profile; no link is needed"
+    },
+    {
+     "type": "p",
+     "text": "“Pay your e-challan” with a look-alike  Check only on the official Parivahan e-challan site link or APK"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Sunita received an SMS saying her bank reward points would expire today. The link opened a page that looked exactly like her bank. She entered her customer ID, password and then the OTP. Within minutes, ₹48,000 was transferred out. Lesson: the page address ended in a different domain, and the bank's real app would never ask for an OTP to “redeem points”. Opening the official app, instead of the link, would have stopped the loss."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Did I expect this message, and does it create a deadline or a threat?",
+      "Does the link's real owner (read right to left) match the organisation?",
+      "Is it asking for a login, OTP, card number or an app install?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Do not tap the link, call the number or install anything.",
+     "save": "Screenshot the message showing sender, link and time.",
+     "report": "Report the SMS or call on Chakshu (sancharsaathi.gov.in); forward spam SMS to 1909 as per TRAI's DND process."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Never open a bank, tax or utility service from a link in a message. Type the address yourself or use the official app."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "UPI, QR code and OTP frauds",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "UPI is safe when you understand one rule: the UPI PIN authorises money to leave your account. Fraudsters invent stories that make you enter it while believing you will receive money — a refund, a prize, an advance payment or a “wrong transfer” to return."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Trick            How it works",
+       "Safe response"
+      ],
+      [
+       "Fake screenshot  A request titled “refund” or “cashback” appears;",
+       "Decline unknown requests; read the"
+      ],
+      [
+       "OTP request      approving it sends money",
+       "screen before entering the PIN"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "“Buyer” sends a fake payment screenshot, then",
+       "Check your own bank app or statement,"
+      ],
+      [
+       "asks you to return an “excess” amount",
+       "never the screenshot"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Caller asks for an OTP “to verify” or “to cancel” a  An OTP is a key; share it with no one transaction"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Arjun listed his old sofa online. A “buyer” said he was being transferred and would send ₹10,000 in advance. He sent a QR code and said, “Scan and enter your PIN to receive.” ₹10,000 left Arjun's account. The “buyer” said it was a mistake and asked him to try again. Lesson: you never scan a code or enter a PIN to receive money. Stop at the first request."
+      },
+      {
+       "type": "p",
+       "text": "Shopkeepers: protect your QR"
+      },
+      {
+       "type": "ul",
+       "items": [
+        "Check the sound-box or app alert for every payment; never trust a customer's phone screen.",
+        "Check periodically that the QR sticker at your counter has not been covered with a fraudster's sticker.",
+        "Use separate UPI IDs or accounts for business and savings, and set daily limits."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Receiving money needs nothing from you. PIN, QR scan or OTP to “receive” = fraud, every time."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Fake bank, KYC and customer-care frauds",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "The caller says your KYC has expired, your card will be blocked, or you have a pending reward. Or you search online for a company's helpline and call a fake number placed by fraudsters. Either way, the “executive” asks for card details or OTP, or asks you to install a screen-sharing or remote-access app so they can “help”. RBI and banks repeatedly warn: no bank employee will ask for your PIN, OTP, CVV or password, or ask you to install a remote-access app. KYC is updated through the branch, the official app or the official website."
+    },
+    {
+     "type": "p",
+     "text": "“Your KYC expires today; card will be Sends written notice; KYC updated at     Hang up; call the number on your card blocked”                                  branch or in the official app Refuse; if installed, uninstall and “Install AnyDesk/TeamViewer so I          Never asks you to install a remote-  switch on airplane mode can fix it”                               access app Hang up; block card from the official “Tell me the OTP to stop the debit” Never needs your OTP for anything          app"
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Where did this phone number come from — my card, or a search result or message?",
+      "Is the caller asking for a PIN, OTP or app installation?",
+      "Is there a threat of blocking or a deadline?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "End the call. Do not install anything or read out any code.",
+     "save": "Note the number, time and what was said; screenshot call logs.",
+     "report": "Call the bank on the number on your card; report the call on Chakshu; money lost → 1930."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Get every helpline number from the source: your card, passbook, or the official app or website you type yourself."
+      }
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "Job, investment and \"digital arrest\" scams",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "These scams use greed or fear. Task-based job scams pay small amounts for liking videos or rating hotels, then demand ever-larger “investments”. Investment scams add victims to WhatsApp or Telegram “stock tips” groups and fake trading apps showing false profits. In a digital arrest scam, callers pose as police, CBI, customs or narcotics officers on video and keep the victim on camera until money is paid."
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kavya earned ₹150 for liking three videos and was moved to a Telegram group of “earners”. Over four days she paid ₹1.8 lakh in “merchant tasks”. Her dashboard showed ₹3 lakh, but withdrawal needed a 20% “tax”. Lesson: a job that asks you to pay is not a job."
+      },
+      {
+       "type": "p",
+       "text": "Before you trust…                        Check here (official sources) An investment adviser, research analyst or broker                                SEBI website → Intermediaries / Market Infrastructure Institutions → A trading app or platform for forex or   registered intermediaries list; complain on SEBI SCORES crypto A deposit or chit scheme promising high  RBI Alert List of unauthorised forex trading platforms; crypto service returns                                  providers must be registered with FIU-IND A loan app or lender RBI Sachet portal (sachet.rbi.org.in) to check and report unauthorised A job offer                              schemes"
+      },
+      {
+       "type": "p",
+       "text": "Lender must be an RBI-regulated bank or NBFC; check the NBFC list on the RBI website and the lender named in the app"
+      },
+      {
+       "type": "p",
+       "text": "Company's own careers page; National Career Service portal; no genuine employer charges a fee"
+      },
+      {
+       "type": "p",
+       "text": "Red flags in money offers"
+      },
+      {
+       "type": "ul",
+       "items": [
+        "Guaranteed or very high returns (“double in 30 days”) · • Pay first to earn · • Contact only on WhatsApp or Telegram · • Pressure to recruit others · • Withdrawal blocked until you pay a fee or tax"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "There is no “digital arrest” in Indian law. No agency demands money on a video call. Hang up, call 1930, and tell your family."
+      }
+     ]
+    }
+   ]
+  },
+  "5": {
+   "title": "Impersonation and recovery scams",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Fraudsters pretend to be someone you trust: a relative in trouble abroad, a friend whose WhatsApp has been taken over, a senior officer, a soldier buying your goods. New AI tools can clone a voice from a short clip. After a fraud, victims are often targeted again by fake recovery agents who promise to get the money back for a fee."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Situation",
+       "Verify before you pay Call the person's old number or a family member; ask a family code"
+      ],
+      [
+       "“Mum, I lost my phone, send money to this new",
+       "question"
+      ],
+      [
+       "number”",
+       "Call the friend by voice; the account may be hijacked Same QR rule: you never scan or enter a PIN to receive"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "“Army officer” wants to buy or rent and pays by QR"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Mr Iyer received a call in his grandson's voice: “Dadu, I've had an accident, please send ₹50,000 to this number, don't tell Mum.” He paid. Later the grandson was found safe at college. Lesson: agree a family code word, and always call back on the number you already have."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Have I verified the person through a number I already had?",
+      "Is the message asking for secrecy (“don't tell anyone”)?",
+      "Is anyone asking for a fee to recover money already lost?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Pause the payment; end the call or chat.",
+     "save": "Save the chat, number, UPI ID and any voice notes.",
+     "report": "1930 and cybercrime.gov.in; report the hijacked account to the platform; warn contacts."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Trust, but verify on a channel you already know. Police and banks never charge to recover money."
+      }
+     ]
+    }
+   ]
+  },
+  "6": {
+   "title": "Reporting and golden-hour response",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "The golden hour is the first hour after a fraudulent transaction. A call to the 1930 helpline (run under the Indian Cyber Crime Coordination Centre, MHA) sends the details to banks and payment apps so they can try to hold the money before it leaves mule accounts. The complaint is then completed on cybercrime.gov.in (the National Cyber Crime Reporting Portal, NCRP)."
+    },
+    {
+     "type": "p",
+     "text": "Keep ready                         Figure 2.13 · The golden-hour timeline UTR or transaction ID         Where to find it Amount, date, time, bank and  UPI app → transaction history → transaction details (12-digit UTR for UPI) account                       Bank SMS or app statement Suspect details Screenshots                   Phone number, UPI ID, account number, website or app name, social media profile Chats, call log, payment screen, website — taken before anything is deleted"
+    },
+    {
+     "type": "p",
+     "text": "Your right                  What it means Report to the bank quickly Under RBI's customer-protection rules, reporting an unauthorised electronic transaction Bank must act and respond   within three working days protects you from liability where the fault lies elsewhere in the Escalate if not resolved    system; delays increase your share of the loss"
+    },
+    {
+     "type": "p",
+     "text": "The bank must register the complaint and give a reference; it resolves the complaint within the timelines in RBI rules"
+    },
+    {
+     "type": "p",
+     "text": "If the bank does not reply within 30 days or the reply is unsatisfactory, complain under the RBI Integrated Ombudsman Scheme at cms.rbi.org.in"
+    },
+    {
+     "type": "p",
+     "text": "Role of the First Responder"
+    },
+    {
+     "type": "p",
+     "text": "Do: stay calm; stop further payments; call 1930 with the victim; call the bank; save evidence; help file on NCRP; note every reference number and time; follow up. Never: ask for the victim's PIN, OTP or password; call or threaten the fraudster; promise the money will return; charge any fee; delete evidence."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Takeaway",
+       "KEY TAKEAWAYS FROM MODULE 2"
+      ],
+      [
+       "PIN = Pay",
+       "In one line"
+      ],
+      [
+       "Numbers from the source",
+       "Hook, hurry, ask, cash-out: urgency + money + secrecy = fraud"
+      ],
+      [
+       "Verify money offers",
+       "Receiving money never needs a PIN, scan or OTP"
+      ],
+      [
+       "The golden hour",
+       "Card, passbook, official app — never a search result or message SEBI, RBI and FIU-IND lists; no genuine job charges a fee Stop, 1930, bank, evidence, NCRP — and record every reference"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "3": {
+  "0": {
+   "title": "Deepfakes and AI-generated content",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Artificial intelligence (AI) is software that learns patterns from very large amounts of data and then uses those patterns to predict, sort or create. Generative AI creates new content — a paragraph, a picture, a song or a video — from a short instruction. A deepfake is a photo, video or audio clip made or altered with AI so that a real person seems to say or do something they never did. The word joins “deep learning” (the AI method) and “fake”."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Genuine or AI-generated? Genuine content usually…",
+       "AI-generated or manipulated content often…"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Origin",
+       "Can be traced to a known camera, author or  Has no clear original; first appears in outlet                                      forwards or a new account"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Details  Has natural imperfections; consistent",
+       "Looks too smooth, or shows odd hands, teeth,"
+      ],
+      [
+       "shadows and text",
+       "ears or text"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Context  Fits the date, place and other reliable reports Cannot be matched with any real event or reliable report"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Purpose  Informs, entertains or reports",
+       "Pushes you to act fast: pay, click, forward or keep a secret"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Helpful and legitimate uses                               Harmful misuse Dubbing films and lessons into many languages, with       Voice-clone calls that fake an emergency to get money consent Restoring a voice for people who have lost it to illness  Fake videos of celebrities promoting “money-doubling” trading apps Training simulations in schools, hospitals and industry   Morphed or sexual images made to shame or blackmail a person Clearly labelled art, satire and entertainment            Fake audio or video of leaders spreading rumours during elections or disasters"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "In early 2024, an employee of a multinational firm's Hong Kong office joined a video call with people who looked and sounded like the company's finance chief and colleagues. On their instructions he made a series of transfers worth about US$25 million. Every other person on the call was a deepfake. Lesson: seeing a familiar face on a live call is no longer proof. Large or unusual requests must be confirmed through a separate, known channel."
+      }
+     ]
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "The technology is neutral. Consent, labelling and intent make the difference between creative work and a crime."
+      }
+     ]
+    }
+   ]
+  },
+  "1": {
+   "title": "AI-generated images, videos and voices",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "AI can now produce a photograph of a person who does not exist, swap one face onto another in a video, make a real person's lips match new words (lip-sync), and clone a voice from a short sample so that it can say anything typed into it. Some clues can reveal manipulation, especially in quickly made fakes. But tools improve every month, and a good fake may show no clue at all. Clues raise suspicion; they do not prove anything either way."
+    },
+    {
+     "type": "p",
+     "text": "Type             How it is made                                What to check first AI photo Face swap video  Generated from a text prompt or edited by AI  Hands, text, jewellery, background objects; Lip-sync video   (“remove”, “add”, “change face”)              reverse image search for the original Voice clone A face from photos is mapped onto another     Face edges, skin tone at the neck, blinking, person's body                                 head turns"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Real video of the person; only the mouth is",
+       "Lips against sounds such as “p”, “b”, “m”; teeth;"
+      ],
+      [
+       "changed to new audio",
+       "voice quality"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "AI copies voice from reels, videos or voice notes Emotion, breathing, background noise; above all, call back on a known number"
+    },
+    {
+     "type": "p",
+     "text": "Detection tools: useful, but not a judge"
+    },
+    {
+     "type": "p",
+     "text": "Online “deepfake detectors” give a percentage such as “72% AI”. Treat this as one clue. Detectors can be wrong both ways, can be fooled by compression on WhatsApp, and are not accepted as proof by themselves. A call- back, the original source or a fact-check carries far more weight."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Myth",
+       "Fact"
+      ],
+      [
+       "“I can always tell a fake by looking.”",
+       "Studies and real cases show that people are often fooled; verification beats"
+      ],
+      [
+       "“If the detector says real, it is real.”",
+       "eyesight"
+      ],
+      [
+       "“Only famous people are deepfaked.”",
+       "Detectors miss new methods and compressed files"
+      ],
+      [
+       "“A live video call cannot be faked.”",
+       "Ordinary people are targeted for sextortion, harassment and voice-clone fraud"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Real-time face and voice swapping is available to criminals"
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Where did this image, video or voice come from first?",
+      "Am I relying on how it looks, or on where it came from?",
+      "Is it asking me to pay, click, forward or keep a secret?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Do not forward, pay or act on the content yet.",
+     "save": "Save the link, account name, date and time; screenshot the post (not intimate content).",
+     "report": "Report fake profiles and content to the platform; fraud or threats to cybercrime.gov.in."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Clues raise suspicion; only source, context and independent confirmation settle the question."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Fake news and misinformation",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "rumours"
+    },
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "False information ranges from honest mistakes to deliberate campaigns. It spreads fastest when it triggers fear, anger or pride, and when it arrives from someone we trust. In India, false forwards have caused panic during health emergencies and disasters, and have even led to mob violence."
+    },
+    {
+     "type": "p",
+     "text": "Common pattern        Example                                         How to check Old photo, new claim  Flood picture from another country shared as    Reverse image search for the earliest date Misleading headline   “our city today”                                and place Fake official notice  Headline says “ban”; article says “proposal     Read the full article and the official source Miracle health cure   under study” Edited clip           “Government gives ₹5,000 to all students —      Official ministry website; PIB Fact Check register here” “This kitchen remedy cures diabetes in 7 days”  Doctor or official health ministry advice; reliable fact-checkers Speech cut to reverse its meaning               Find the full video from the original channel"
+    },
+    {
+     "type": "p",
+     "text": "Where to check"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "PIB Fact Check (factcheck.pib.gov.in) checks claims about the Government of India; claims can be sent to its WhatsApp tipline."
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Independent fact-checkers that follow the International Fact-Checking Network code, and reliable news outlets that name their sources."
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Official websites of the ministry, department, police or company concerned — typed by you, not opened from the message."
+     ]
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "If you cannot verify it, do not forward it. Silence does no harm; a false forward can."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Impersonation and manipulated media",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Impersonation means pretending to be someone else — through a fake profile using their photos, a hijacked account, or AI media of their face or voice. Morphing is editing a person's photo, often onto a sexual image, to shame or blackmail them. Sextortion is threatening to share intimate or morphed images unless the victim pays or sends more images. The person shown is a victim, whether the image is real or fake. Shame keeps victims silent, which is exactly what the criminal relies on."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Do",
+       "Never"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Say clearly: “This is not your fault. You are not in trouble.”  Blame the victim for posting photos or chatting"
+    },
+    {
+     "type": "p",
+     "text": "Check immediate safety and distress; involve a trusted adult Ask to see the image, or ask the victim to send it to you for a minor"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Save the profile link, username, chat and time",
+       "Copy, forward or store the image — even as “evidence”"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Use StopNCII.org (adults) or Take It Down (under 18) to",
+       "Pay the demand or negotiate with the criminal"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Report to the platform, cybercrime.gov.in and police; 181 or Promise that every copy will disappear from the internet 1098 as needed"
+    },
+    {
+     "type": "p",
+     "text": "What the law and platforms provide"
+    },
+    {
+     "type": "p",
+     "text": "Under the IT Rules 2021, platforms must act on a complaint about intimate or morphed images of a person within 24 hours. Publishing such material is an offence under the IT Act 2000 (ss. 66E, 67, 67A; s. 67B for children) and the Bharatiya Nyaya Sanhita 2023; impersonation online is an offence under IT Act s. 66D. Child sexual material is reported at once; it is never copied or viewed (Modules 5 and 7)."
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Ayesha, 22, received a message with a morphed image made from her public Instagram photos and a demand for ₹5,000. A friend trained as a First Responder told her it was not her fault, helped her save the account link and chat, used StopNCII to create a hash of the image on her own phone, reported the account and filed on cybercrime.gov.in. The account was removed; no payment was made."
+      }
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "AI-based cyber threats and phishing",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Criminals use AI to make old scams more convincing: cloned voices of relatives, flawless phishing messages in any language, deepfake adverts of celebrities and business leaders promoting trading apps, and live face-swap video calls pretending to be police or company officials. The defence is the same as in Module 2 — check the request, not the polish — plus one new habit: verify through a channel you already trust."
+    },
+    {
+     "type": "p",
+     "text": "Threat                  What it looks like                                   Safe response Voice-clone emergency Relative's voice: accident, arrest, hospital; money  Hang up; call back on the saved Deepfake investment     now; don't tell anyone                               number; family code word advert Famous face recommends an app or WhatsApp            No genuine celebrity endorses Fake video call by      group with “guaranteed” returns                      guaranteed returns; check SEBI “officials”                                                                  registration (Module 2) AI chatbot scam         Uniform, office backdrop, demand for money or secrecy                                              End the call; there is no digital arrest; Fake boss or colleague                                                       1930 Friendly “customer support” or “recruiter” that answers every question                               Contact the company only through its official website or app Voice note or video from a senior asking for an urgent transfer or gift cards                        Confirm in person or on a known number; follow the organisation's approval rules"
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Did I verify this person through a number or channel I already had?",
+      "Is there a request for money, secrecy or speed?",
+      "Would the real person or organisation ask this way?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "End the call or chat; do not decide under pressure.",
+     "save": "Save the number, voice note or video link, and the time.",
+     "report": "Money lost: 1930 and cybercrime.gov.in. No loss: report the number on Chakshu (sancharsaathi.gov.in)."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A familiar voice or face is no longer proof. Call back on a number you already know."
+      }
+     ]
+    }
+   ]
+  },
+  "5": {
+   "title": "Verification, responsible AI use and privacy",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "image and voice"
+    },
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Verification is a routine, not a feeling. The S·I·F·T routine — Stop, Investigate the source, Find better coverage, Trace to the original — works on photos, videos, voice notes and headlines alike. The honest result is one of three verdicts: genuine, fake, or cannot verify yet."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Google Lens / Bing Visual Search /",
+       "Finding earlier copies of a photo or video  May not find very new or private"
+      ],
+      [
+       "TinEye",
+       "frame                                       images"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Video keyframe tools (e.g. InVID-",
+       "Splitting a video into frames to search them Needs a browser on a computer"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Official websites and PIB Fact Check  Claims about government schemes and",
+       "Covers government-related"
+      ],
+      [
+       "notices",
+       "claims only"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Responsible AI: the consent rule"
+    },
+    {
+     "type": "p",
+     "text": "Creating AI images, video or voice of a real person without their consent can violate their privacy and dignity and may be an offence. Under the DPDP Act 2023, a person's image and voice are personal data. Label AI-generated content you share, never use AI to sexualise, mock or impersonate a real person, and never feed someone else's private photos into an AI tool."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Takeaway",
+       "KEY TAKEAWAYS FROM MODULE 3"
+      ],
+      [
+       "Clues are not proof",
+       "In one line"
+      ],
+      [
+       "S·I·F·T every time",
+       "Faces and voices can be faked cheaply; source and context decide"
+      ],
+      [
+       "Victims are never to blame",
+       "Neither are detector scores; use them only as a reason to check"
+      ],
+      [
+       "Consent first",
+       "Stop · Investigate the source · Find better coverage · Trace to the original Save links, not images; StopNCII or Take It Down; report No AI media of real people without consent; label what you create"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "4": {
+  "0": {
+   "title": "What triage is, and your role",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Triage comes from hospital emergency rooms: patients are seen in order of danger, not in order of arrival. Cyber triage does the same with incidents. A ₹500 debit that is happening now is more urgent than a ₹2 lakh loss from last month, because the first can still be stopped. A Community Cyber First Responder is the first trained person a citizen meets. Their job is to identify what is happening, stabilise it, preserve what matters and route the case to the agency that can act — and to stay with it until the hand-over is confirmed."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "The First Responder does",
+       "The First Responder does not Investigate who the criminal is"
+      ],
+      [
+       "Listen, ask the six questions, write things down",
+       "Scan, trace or hack devices or accounts Take, unlock, reset or wipe the citizen's device"
+      ],
+      [
+       "Grade urgency and explain the reason",
+       "Contact, bait or threaten the suspect"
+      ],
+      [
+       "Help the citizen stop active loss (bank, 1930, airplane",
+       "Promise a freeze, refund or arrest"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Preserve identifiers and records (Module 5)"
+    },
+    {
+     "type": "p",
+     "text": "Route to police, bank, telecom, platform or IT lead (Module 6)"
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "At a community help desk, Mr Rao arrives first: he lost ₹2 lakh in an investment scam three weeks ago. Five minutes later Sunita arrives: her phone lost signal this morning and ₹18,400 has just been debited. A trained responder apologises to Mr Rao, helps Sunita call her bank and 1930 immediately, and then returns to Mr Rao's case, which still needs a complaint the same day. Lesson: urgency follows present danger and active loss. Both cases matter; one cannot wait."
+      }
+     ]
+    }
+   ]
+  },
+  "1": {
+   "title": "The structured intake",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A structured intake is a short interview that collects only what is needed to decide and act. The six questions are asked in a fixed order so nothing important is missed, even when the citizen is upset. Write down the citizen's words; do not tidy them into your own conclusions."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Time            Meaning",
+       "Why it matters"
+      ],
+      [
+       "09:48)",
+       "Banks and 1930 work from transaction"
+      ],
+      [
+       "Discovery time  When the citizen noticed it (e.g. 10:05)",
+       "times"
+      ],
+      [
+       "Report time     When it was first reported to anyone (e.g. 10:10)",
+       "Shows how quickly the loss was found"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Matters for bank liability and the golden hour"
+    },
+    {
+     "type": "p",
+     "text": "Consent and secrets"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Ask before you write: “May I note down what happened so we can report it?” Record that consent was given.",
+      "Offer a safe call-back number and preferred language. Ask whether it is safe to talk where they are.",
+      "If a password, OTP or PIN must be entered, the citizen types it on their own device. You never hear, see or"
+     ]
+    },
+    {
+     "type": "p",
+     "text": "record it."
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Did I let the citizen tell the story before I asked questions?",
+      "Have I recorded event, discovery and report times separately?",
+      "Have I written facts, the citizen's account and my guesses in separate places?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "If loss or threats are active, pause the interview and act first.",
+     "save": "Note the six answers with times in IST and the consent given.",
+     "report": "Route according to the colour (Topic 4)."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Listen first, ask the six questions in order, and never write a guess as a fact."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Six incident categories",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Every intake is given at least one category. Categories decide which agencies are involved and which evidence matters. Real incidents often overlap: a SIM takeover leads to financial fraud; a fake profile leads to harassment. Record a primary category (the most harmful) and any secondary ones."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Incident as described",
+       "Primary                   Secondary Financial fraud"
+      ],
+      [
+       "“My phone lost signal and money is going from my",
+       "Child safety              Account, SIM or device"
+      ],
+      [
+       "account”",
+       "Harassment and extortion  takeover"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "“Someone made a fake profile of my daughter (15) and",
+       "Impersonation and false"
+      ],
+      [
+       "is messaging boys”",
+       "content"
+      ]
+     ]
+    },
+    {
+     "type": "cols",
+     "head": [
+      "“A loan app is sending my photos to my contacts” “The school computer shows a ransom message”",
+      "Malware and ransomware",
+      "Financial fraud (if money was taken) Child safety (children's"
+     ],
+     "rows": [
+      [
+       "“A voice that sounds like my son asked for money; I paid”",
+       "Financial fraud",
+       "records) Impersonation (voice clone)"
+      ]
+     ]
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Choose the most harmful category as primary. One incident can need several routes at once."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "The four-colour urgency scale",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "The urgency colour tells everyone how fast to act and what to do first. It is decided by present danger, active loss and spread. A colour is always written with a reason (“AMBER: second debit during intake; possible SIM takeover”). When a material fact changes, the colour is re-graded and the new reason recorded."
+    },
+    {
+     "type": "p",
+     "text": "New fact during the intake                         Typical re-grade  Why A new debit appears                                YELLOW → AMBER    Loss is now active Threat to share intimate images, or talk of self-  Any → RED         Risk to safety overrides everything harm A child is involved in sexual exploitation         Any → RED         Safeguarding: police and 1098 now Ransomware reaches other computers on the network                                            AMBER (stays), escalate to IT Spreading organisational harm Bank confirms card and UPI blocked; no new         lead activity AMBER → YELLOW    Active loss stopped; complaint the same day"
+    },
+    {
+     "type": "p",
+     "text": "Golden rules of grading"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Never wait for a complete form before calling for help in a RED or AMBER case.",
+      "An old case with a new threat is urgent.",
+      "If you are unsure between two colours, choose the higher one and tell the mentor."
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "Stabilise safely",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Stabilising means stopping the harm from getting worse while keeping evidence intact. Most stabilising actions are simple: end the call, stop payments, call the bank from a clean phone, cut the network connection of a device that may be controlled remotely. The mistakes that destroy evidence — resetting, uninstalling, deleting chats — are also the ones frightened people try first."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Situation              Stabilising action",
+       "Never"
+      ],
+      [
+       "Remote-access app      End the call; no more payments",
+       "Stay on the line “to find out more”"
+      ],
+      [
+       "Active debits          Airplane mode; Wi-Fi and Bluetooth off; use",
+       "Uninstall the app or factory-reset"
+      ],
+      [
+       "SIM suddenly dead      another phone for the bank",
+       "first"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Call the telecom provider from another phone; alert Buy a new SIM later and ignore it the bank"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Unplug the network cable; inform the IT lead;",
+       "Pay, decrypt or power off"
+      ],
+      [
+       "photograph the screen",
+       "repeatedly"
+      ]
+     ]
+    }
+   ]
+  },
+  "5": {
+   "title": "Records, consent and hand-over",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A case is not finished when the citizen leaves; it is finished when the right agency has accepted it and the next check is scheduled. The record is short, factual and time-ordered, and it never contains secrets. Keep the citizen's identity off shared groups and dashboards."
+    },
+    {
+     "type": "p",
+     "text": "KEY TAKEAWAYS FROM MODULE 4"
+    },
+    {
+     "type": "p",
+     "text": "Takeaway                      In one line Danger first                  Present danger, active loss and spread decide urgency — not the amount Six questions                 What, when, still active, who or what, safety, already done Facts apart from guesses      Observed fact · citizen's account · working hypothesis Colour plus reason            And re-grade when a material fact changes Stabilise without destroying  No reset, uninstall or deletion Own the hand-over             Receiver, reference and next check recorded"
+    }
+   ]
+  }
+ },
+ "5": {
+  "0": {
+   "title": "What digital evidence is",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Digital evidence is any record that helps establish what happened: chats, call logs, bank messages and statements, emails, web addresses (URLs), profile IDs, app details, photos of a screen, and device information. Collect the minimum evidence the agencies need to act — enough to identify the transaction, the account and the suspect identifiers — without delaying help. Safety and live loss always come before evidence capture."
+    },
+    {
+     "type": "p",
+     "text": "Identifier                  Why it matters                      Where to find it UTR / transaction ID        Lets banks trace and hold money     UPI app → history → transaction details; bank SMS Suspect phone number and    Lets telecom and payment providers  Call log; chat header; payment screen UPI ID                      act Profile URL or user ID      Display names change; IDs do not    Profile → share → copy link Website address (full URL)  Allows take-down and tracing        Browser address bar; long-press link → copy Email headers               Show the real sending server        Email app → “Show original” or “View source”"
+    }
+   ]
+  },
+  "1": {
+   "title": "Native record and working copy",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "The native record is the original item where it lives — the chat inside WhatsApp, the email in the mailbox, the transaction in the bank's system. A working copy is a screenshot, export or download made from it. Copies are useful, but the original must stay untouched so that the police can collect it properly later."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Good capture        How",
+       "Poor capture"
+      ],
+      [
+       "Scrolling sequence  Shows the sender's number or profile, the date and the full",
+       "Cropped image of one"
+      ],
+      [
+       "Chat export         message thread, with the phone's status bar",
+       "message"
+      ],
+      [
+       "Web page            Several screenshots in order, numbered E-01a, E-01b…",
+       "Random screenshots with gaps"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Chat → More → Export chat (with media if needed); keeps the",
+       "Forwarding messages to"
+      ],
+      [
+       "original in the app",
+       "yourself"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Official PDF statement or transaction detail from the bank app Photo of the bank SMS only"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Screenshot showing the full address bar plus the URL copied",
+       "Screenshot without the"
+      ],
+      [
+       "as text",
+       "address"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Does every screenshot show who sent it, when, and the full context?",
+      "Is the original still on the citizen's device or account?",
+      "Have I avoided moving evidence through personal chats or groups?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Ask the citizen not to delete, reset or uninstall anything.",
+     "save": "Capture full screenshots and exports as working copies; save the master once.",
+     "report": "Hand copies to the agency through its portal or in person, with a receipt."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Copies help; the original still matters. Never delete the original, even after screenshots."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Time, time zones and metadata",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Every item has at least three times: when it happened, when it was captured, and when it was transferred. Confusing them is one of the commonest reasons complaints are delayed. Always write the date, the time and “IST”. Metadata is “data about data”: when a file was created, by which device, sometimes where. Social media and messaging apps often strip or change metadata, which is another reason to keep the native record and to note times yourself."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Situation",
+       "What to do"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "App or email shows time in UTC (GMT)  Add 5 hours 30 minutes and write IST; note “converted from UTC”"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Citizen's phone clock is wrong",
+       "Note the difference against a reliable clock at capture time"
+      ],
+      [
+       "Citizen is unsure when it happened",
+       "Record “approx.” and the reason; never invent a precise time"
+      ],
+      [
+       "Several transactions",
+       "One register row per transaction, each with its own UTR and time"
+      ]
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Evidence register and chain of custody",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "The evidence register is a simple table with one row per item. The chain of custody is the record of every person who has held the item, when and why. Together they let anyone check that the evidence is complete and has not been tampered with."
+    },
+    {
+     "type": "p",
+     "text": "EXAMPLE REGISTER (TRAINING CASE M5-008)"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "E-01  WhatsApp chat with +91 9XXXX      30 Oct 18:20  31 Oct 10:32",
+       "Chat export + 4  Folder M5-008 · SHA-"
+      ],
+      [
+       "XX201 (suspect), citizen's phone  IST           IST",
+       "screenshots      256 9f2c…03f5"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Transfer receipt field",
+       "Example"
+      ],
+      [
+       "Items",
+       "E-01 to E-03 (working copies) with hashes listed"
+      ],
+      [
+       "From / to",
+       "Responder R. Patil → Cyber Police Station, Constable S. Khan"
+      ],
+      [
+       "Date and time",
+       "31 Oct 2026, 15:10 IST"
+      ],
+      [
+       "Purpose",
+       "Attachment to complaint; NCRP acknowledgement noted"
+      ],
+      [
+       "Signatures",
+       "Giver and receiver; copy kept in case file"
+      ]
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "Integrity hashing with SHA-256",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A hash is a fixed-length “fingerprint” calculated from a file. SHA-256 is a widely used hash method. If even one dot of the file changes, the hash changes completely. Recording the hash of the master copy lets anyone later show that a working copy is identical."
+    },
+    {
+     "type": "p",
+     "text": "Device            How to compute SHA-256 (training files only) Windows           Command Prompt: certutil -hashfile E-01.png SHA256 · or PowerShell: Get-FileHash E-01.png macOS / Linux     Terminal: shasum -a 256 E-01.png (macOS) · sha256sum E-01.png (Linux) Android / iPhone  A trusted hash-calculator app from the official store, approved by the programme"
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Hash the master once, record it, and never open the master for editing. Compare hashes whenever a copy changes hands."
+      }
+     ]
+    }
+   ]
+  },
+  "5": {
+   "title": "Safeguarding, the law and your role",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Some evidence is itself harmful. Copying or forwarding intimate images re-victimises the person, and possessing or sharing child sexual abuse material is a serious offence even when the intention is to help. For such material the First Responder preserves only identifiers — links, usernames, platform and time — and reports."
+    },
+    {
+     "type": "p",
+     "text": "Law                                   What it says, in simple words Bharatiya Sakshya Adhiniyam 2023, s. 61                                    An electronic record cannot be refused as evidence merely because it is BSA 2023, ss. 62–63                   electronic"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "POCSO Act 2012, s. 19",
+       "The contents of an electronic record are proved in the prescribed way, usually with a certificate identifying the record and how it was produced"
+      ],
+      [
+       "IT Act 2000, s. 67B",
+       "Anyone who knows that a child is being sexually abused or exploited must report it to the police or the Special Juvenile Police Unit"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Publishing, transmitting, browsing or storing child sexual material electronically is an offence"
+    },
+    {
+     "type": "p",
+     "text": "The preservation boundary"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "In the role: advise the citizen not to delete; capture working copies of what the citizen shows you, with consent; register, hash and hand over."
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Outside the role: unlocking or taking the device, forensic imaging, recovering deleted data, accessing the suspect's accounts, analysing malware. Refer these to the police or the IT lead."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Takeaway                 KEY TAKEAWAYS FROM MODULE 5 Minimum, complete, fast Original untouched           In one line Three times, in IST          Save what the agency needs to act, without delaying help Register and receipt         Work on copies; never delete, reset or uninstall Hash shows sameness          Event · capture · transfer Links, not images            Every item, every transfer, every signature Not authorship or truth For intimate or child-related material — and report"
+    }
+   ]
+  }
+ },
+ "6": {
+  "0": {
+   "title": "The national reporting system",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "India has a coordinated system for citizens to report cyber-crime. The Indian Cyber Crime Coordination Centre (I4C) under the Ministry of Home Affairs runs the 1930 helpline for financial cyber fraud and the National Cyber Crime Reporting Portal (cybercrime.gov.in) for all cyber-crime complaints. Complaints reach the police of the relevant state, and financial-fraud reports reach banks and payment providers so they can try to hold money."
+    },
+    {
+     "type": "p",
+     "text": "Channel                      Use it for                                   Note 1930 Money lost to online fraud, especially within Gives an acknowledgement; complete the cybercrime.gov.in hours                                        NCRP complaint afterwards Chakshu (sancharsaathi.gov.in)       All cyber-crime complaints; tracking status  “Women/child related” complaints can be CEIR (sancharsaathi.gov.in)                                               made without login; CSAM can be reported anonymously Know your mobile connections                  Suspected fraud calls, SMS and WhatsApp      Helps disconnect fraudulent numbers Cyber Dost (I4C)             messages with no money lost"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Blocking a lost or stolen phone",
+       "Also report to the police and the telecom provider"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Checking SIMs registered in your name",
+       "Report numbers you do not recognise"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Official awareness posts and alerts",
+       "Awareness only, not a complaint channel"
+      ]
+     ]
+    }
+   ]
+  },
+  "1": {
+   "title": "The reporting map",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Most incidents need more than one route. The primary route is the first call that stops harm; parallel routes handle the other parts of the case. Decide the order with three questions: Is anyone in danger? Is money moving? Is an account or SIM taken over?"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "WhatsApp or social account taken  In-app recovery; warn contacts",
+       "Platform report; NCRP; contacts who paid call"
+      ],
+      [
+       "over",
+       "1930"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Sextortion or morphed images",
+       "Safety; platform report; StopNCII / Take  NCRP (women/child); police; 181 or 1098 It Down"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Personal data misused by a company Company's grievance officer",
+       "Data Protection Board under the DPDP Act after the grievance"
+      ]
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Filing on cybercrime.gov.in",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A complaint on the portal is only as good as the information in it. Before starting, open the evidence register (Module 5) and the intake form (Module 4). The citizen logs in with their own mobile number and OTP. After submission, the portal gives an acknowledgement number by SMS and email: this is the key to tracking."
+    },
+    {
+     "type": "p",
+     "text": "Keep ready before filing"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Citizen's mobile phone (for OTP) and, if asked, an identity document.",
+      "For each transaction: bank, account or card (last four digits only), amount, date and time, UTR or transaction"
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Suspect identifiers: phone numbers, UPI IDs, account numbers, URLs, profile links, app names.",
+      "Working copies of evidence from the register, with item IDs."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Is the citizen typing their own OTP and password?",
+      "Does every transaction have its own UTR, amount and time?",
+      "Have I noted the acknowledgement number and told the citizen where it is?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Do not submit duplic the same incident.",
+     "save": "ate complaints for Save the acknowledgement SMS and email; note it in the case file.",
+     "report": "Track status on the portal; share the acknowledgement with the bank."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "The acknowledgement is not an FIR — but it is the key to everything that follows."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Writing an actionable complaint",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "An actionable complaint lets an officer act without calling the citizen back. It is neutral (facts, not feelings or accusations), time-ordered, and full of identifiers. It ends with what has been done and what is requested."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Before (vague and emotional)",
+       "After (neutral and actionable)"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "“I was cheated by a fraud company. They  On 31 Oct 2026 at 18:20 IST I received a WhatsApp message from +91 took all my money. Please help urgently  9XXXX XX201 offering a part-time job. Between 19:05 and 21:40 IST I made and catch them.”                         three UPI payments from my XYZ Bank account: ₹2,000 (UTR 4301XXXX1101), ₹8,000 (UTR 4301XXXX1144) and ₹15,000 (UTR 4301XXXX1190) to UPI ID taskpay@XXX. When I asked to withdraw, I was asked for a ₹10,000 “tax”. I called 1930 at 21:55 IST (ack. no. noted) and informed my bank at 22:05 IST. I request that the amounts be held and the matter investigated. Evidence: chat export and screenshots E-01 to E-06."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Facts, times, identifiers, actions taken, request. No adjectives needed."
+      }
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "Escalation and follow-up",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Follow-up means checking at agreed times whether each agency has acted, and recording what was said. Escalation means moving to the next level when a route does not respond in reasonable time — always with the earlier references and dates."
+    },
+    {
+     "type": "p",
+     "text": "Route           Rule a First Responder should know Bank Report unauthorised electronic transactions to the bank immediately, and in writing within 3 Platform        working days, to protect the customer's rights under RBI rules. If the bank does not resolve the complaint within 30 days, or the reply is unsatisfactory, the customer may complain under the RBI Securities      Integrated Ombudsman Scheme at cms.rbi.org.in Organisations Under the IT Rules 2021, platforms have a grievance officer who must acknowledge complaints Police          and resolve them within set timelines; intimate or morphed images must be acted on within 24 Follow-up log:  hours. Appeals go to the Grievance Appellate Committee (gac.gov.in) date Complain first to the broker or adviser; then on SEBI SCORES"
+    },
+    {
+     "type": "p",
+     "text": "Service providers, intermediaries, data centres, companies and government bodies must report specified cyber incidents to CERT-In within 6 hours of noticing them (CERT-In directions, 2022). Citizens and small organisations can also report to CERT-In"
+    },
+    {
+     "type": "p",
+     "text": "If a station refuses because of jurisdiction, ask for a Zero FIR; an e-FIR given electronically must be signed within three days (BNSS s.173)"
+    },
+    {
+     "type": "p",
+     "text": "Agency and reference  What was said  Next check and owner"
+    }
+   ]
+  },
+  "5": {
+   "title": "Legal quick reference and honest expectations",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A First Responder does not give legal advice, but should be able to explain, in a sentence, which laws protect the citizen and what rights they have. The new criminal laws — Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS) and Bharatiya Sakshya Adhiniyam (BSA) — replaced the IPC, CrPC and Evidence Act from 1 July 2024."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "The citizen asks…",
+       "What a First Responder can say"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "“Will I get my money back?”",
+       "“Reporting fast gives the best chance that the bank can hold money still in the accounts. I cannot promise a refund or a date; the bank and police decide.”"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "“The station says it is not their area.” “You can ask for a Zero FIR; it will be transferred to the right station.”"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "“Can the company keep using my",
+       "“Under the DPDP Act you can ask the company what data it holds, ask for"
+      ],
+      [
+       "data?”",
+       "correction or erasure, and complain to it; if unresolved, to the Data Protection Board.”"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "“Is it a crime if he shares my photo?”  “Sharing private or morphed images without consent is an offence under the IT Act and the BNS. Let us report it and stop the spread.”"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Takeaway",
+       "KEY TAKEAWAYS FROM MODULE 6"
+      ],
+      [
+       "Primary plus parallel",
+       "In one line"
+      ],
+      [
+       "Actionable complaint",
+       "Decide the order of routes with three questions"
+      ],
+      [
+       "Acknowledgement ≠ FIR",
+       "Most cases need more than one agency"
+      ],
+      [
+       "Escalate with references",
+       "Seven elements, neutral, time-ordered"
+      ],
+      [
+       "Never promise outcomes",
+       "Track it; ask for a Zero FIR when needed Bank → RBI Ombudsman; platform → GAC; police → senior officer Explain who acts and what happens next"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "7": {
+  "0": {
+   "title": "The impact of cyber harm",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Cyber-crime is often treated as “just money” or “just online”. For victims it can feel like a burglary of the mind: someone they trusted turned out to be a criminal, private images may be seen by others, and family savings may be gone. Many victims blame themselves and hide what happened. Secondary victimisation is harm caused by the reaction of others — family, police, bank staff or helpers — through blame, disbelief or insensitive questions. A First Responder's first job is to make sure it does not happen at their desk."
+    },
+    {
+     "type": "p",
+     "text": "Myth                                           Fact “Only foolish or greedy people get scammed.” Scams are designed by professionals to exploit normal human trust, “If she had not shared photos, this would not  fear and kindness; educated people are frequent victims happen.” Many images are stolen or AI-morphed; responsibility lies with the person who threatens or shares"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "“Men are not harassed online.”",
+       "Anyone can be targeted; boys and men often find it harder to ask for"
+      ],
+      [
+       "“Old people should not use smartphones.”",
+       "help"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Senior citizens have every right to digital services; they need support, not exclusion"
+    }
+   ]
+  },
+  "1": {
+   "title": "Psychological first aid: look, listen, link",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Psychological first aid (PFA) is humane, supportive and practical help for people in distress. It is not counselling or therapy, and it never forces people to talk about what happened. Its three action principles are Look (for safety, urgent needs and severe reactions), Listen (to needs and concerns, and help people feel calm) and Link (to practical help, information, loved ones and services)."
+    },
+    {
+     "type": "p",
+     "text": "Active listening skill          Figure 7.5 · What to say — and what to avoid Attending               What it looks like Reflecting feelings     Face the person; put your phone away; nod; allow silence Summarising             “It sounds like you feel embarrassed and worried about your family.” Open questions          “So the call came at 10, you paid twice, and now he wants more. Is that right?” Respecting pace         “What happened next?” rather than “Did you give him the OTP?” in an accusing tone Let the person stop; return to practical steps when they are ready"
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Did I let the person speak before I started fixing things?",
+      "Did any of my words sound like blame?",
+      "Did I offer choices rather than take over?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "If the person is overwhelmed, pause the technical steps and focus on calm and safety.",
+     "save": "Note feelings and needs only as far as relevant, with consent.",
+     "report": "Link to practical help and services; agree the next contact."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Look, listen, link. Practical help is psychological help."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Distress, self-harm and safeguarding",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Sextortion, large financial loss and online abuse can push people into crisis. A First Responder must notice the warning signs and act at once. Safety overrides every other part of the case — evidence, forms and reports can wait."
+    },
+    {
+     "type": "p",
+     "text": "If a person talks about suicide  Do                                            Do not or self-harm                                                                   Avoid the question or hint around it Ask                              “Are you thinking about ending your life?” —  Leave them alone, even briefly clearly and calmly                            Promise to keep it secret Stay                             Stay with them or on the line; remove         Assume it has passed because they immediate means if safe                       seem calmer Connect                          112 if in immediate danger; Tele-MANAS 14416; a trusted person; inform the mentor Follow up                        Agree when you will check in; record actions"
+    },
+    {
+     "type": "p",
+     "text": "Child safeguarding"
+    },
+    {
+     "type": "p",
+     "text": "If a child may be at risk of sexual abuse or exploitation — including online grooming or a planned meeting with an adult — inform the police or Special Juvenile Police Unit and Childline 1098 at once. Reporting is a legal duty under POCSO s.19. Do not question the child repeatedly; let trained officers do that. Involve a parent or guardian unless they may be the source of harm."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Ask directly about safety. Stay. Connect. Never keep a risk to life secret."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Adapting communication to the person",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Trauma-informed support means assuming that the person may be affected by trauma and avoiding anything that re-traumatises them. Five principles guide every conversation. Then the message is adapted to the listener — the same next step may need different words, pace and format."
+    },
+    {
+     "type": "p",
+     "text": "Report the fraud to  “Let us call 1930 together now. I   “This is not your fault. Let's tell  “Two minutes: call 1930 now 1930 now             will dial; you speak. I will write  your mum and call 1930               with the UTR from your sound- the numbers on this card.”          together — the sooner, the           box app; I will help you finish better.”                             the complaint after.”"
+    },
+    {
+     "type": "p",
+     "text": "Checking understanding"
+    },
+    {
+     "type": "p",
+     "text": "Instead of “Do you understand?”, ask the person to say back the next step: “Just so I know I explained it well, what will you do when you get home?” This is called teach-back, and it is the same method used in V1 assessments."
+    }
+   ]
+  },
+  "4": {
+   "title": "Supporting specific harms and referral",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Each type of harm brings its own fears and needs. A First Responder combines the technical first response from Modules 2–6 with the emotional support of this module, and links the person to services that can do more than the Responder can."
+    },
+    {
+     "type": "p",
+     "text": "Service                            Contact                   For Emergency Response Support System  112 National cyber-crime helpline      1930 · cybercrime.gov.in  Any emergency, danger to life"
+    },
+    {
+     "type": "cols",
+     "head": [
+      "Childline",
+      "1098",
+      "Financial fraud; all cyber-crime"
+     ],
+     "rows": [
+      [
+       "Women Helpline Tele-MANAS (mental health) Elder Line NALSA legal aid One Stop Centres (Sakhi)",
+       "181 14416 14567 15100 Through 181 or district administration",
+       "complaints Children in need of care and protection Women facing violence, including online Free, confidential mental health support, 24×7, many languages Senior citizens: information, guidance, emotional support"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Free legal services for eligible persons"
+    },
+    {
+     "type": "p",
+     "text": "Integrated support for women affected by violence"
+    },
+    {
+     "type": "p",
+     "text": "Tech-enabled abuse: a careful approach"
+    },
+    {
+     "type": "p",
+     "text": "When a partner or family member monitors or controls someone through their phone (stalkerware, location sharing, account access), removing it suddenly may alert the abuser and increase danger. First talk about safety, use a safe device for help-seeking, and refer to police, 181 or a One Stop Centre for a safety plan before changing settings."
+    }
+   ]
+  },
+  "5": {
+   "title": "Confidentiality, closure and self-care",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "A citizen's story, identity and evidence belong to them. Share only what an agency needs, only with consent (except where the law requires reporting, such as child sexual abuse), and never on social media or group chats. A case is closed well when the person knows what happens next and how to reach help."
+    },
+    {
+     "type": "p",
+     "text": "Confidentiality rule       In practice Consent                    Ask before recording or sharing; explain who will see the information Minimum data               Collect only what is needed; no secrets; no copies of intimate material Private space              Move away from queues and family members unless the person wants them present Limits of confidentiality  Explain early: risk to life and child abuse must be reported Secure records             Case files in the agreed system; no names on shared dashboards"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Look · Listen · Link",
+       "KEY TAKEAWAYS FROM MODULE 7"
+      ],
+      [
+       "Adapt and check",
+       "In one line"
+      ],
+      [
+       "Refer, protect, recover",
+       "The criminal is responsible; say so Calm, practical, choice-giving help Ask directly, stay, connect — risk overrides everything Right words for the person; teach-back to confirm Link to services; keep confidentiality; look after yourself"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "8": {
+  "0": {
+   "title": "Malware in plain words",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Malware (malicious software) is any program designed to harm a device, spy on its user or steal from them. For most citizens in India, the biggest risks are fake Android apps (APKs) sent by link — “electricity bill”, “KYC update”, “wedding invitation”, “traffic challan” — and real screen-sharing apps installed because a scammer asked."
+    },
+    {
+     "type": "cols",
+     "head": [
+      "How malware arrives",
+      "Example",
+      "Prevention Install only from Google Play or the App"
+     ],
+     "rows": [
+      [
+       "Link to an APK file",
+       "“Download the bill app to avoid disconnection”",
+       "Store; block unknown sources Never install apps on a caller's instruction"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Scammer-guided install    “Install this support app so I can help you  Do not open unexpected attachments; with KYC”                                    verify with the sender Use licensed or free official software Email attachment or fake  “Invoice_Oct.zip” on an office computer invoice                                                                Automatic updates on"
+    },
+    {
+     "type": "p",
+     "text": "Pirated software and cracked Free “premium” software games"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Unpatched systems",
+       "Old router or Windows version without updates"
+      ]
+     ]
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Mr Thomas received a WhatsApp message from an unknown number: “Wedding invitation — open the card”. The file was an APK. After installing it, his phone began forwarding SMS to the criminals. That night, OTPs were used to add his card to a payment wallet and ₹62,000 was spent. Lesson: an invitation is a picture or PDF, never an app. Any file ending in .apk sent on chat is a red flag."
+      }
+     ]
+    }
+   ]
+  },
+  "1": {
+   "title": "Signs of compromise",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Compromise rarely announces itself, except in ransomware. Most signs are small: OTPs you did not request, a phone that heats up while idle, a recovery email that has changed. One sign is a reason to check carefully; several together call for isolation."
+    },
+    {
+     "type": "p",
+     "text": "Two signs experts check first"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Accessibility permission (Android): malicious apps ask for it because it lets them read the screen and tap buttons. Settings → Accessibility → check for any app you do not recognise."
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Email forwarding rules: after taking over an email account, criminals often add a rule that silently forwards bank and security emails to themselves — and keep it even after the password is changed. Check the email settings for forwarding and filters."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Ask yourself"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Did OTPs, alerts or messages arrive that the person did not expect?",
+      "Is there an app the person does not remember installing, or one with accessibility or admin rights?",
+      "Have recovery details, forwarding rules or logged-in devices changed?"
+     ]
+    },
+    {
+     "type": "ssr",
+     "stop": "Disconnect the device (Topic 3); stop any ongoing call with a “helper”.",
+     "save": "Photograph the screen and app list with another phone; note times.",
+     "report": "Bank and 1930 if money is involved; route as per the triage colour."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Several small signs together mean: isolate first, investigate later — by the right people."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Isolate and preserve",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Isolation cuts the attacker's connection to the device; preservation keeps the device as it is so that the police or IT lead can examine it. Both are done in the first ten minutes. The instinct to reset, uninstall or run a “cleaner” app must be resisted until the case has been routed."
+    },
+    {
+     "type": "p",
+     "text": "Windows or Mac computer Unplug the network cable; turn Wi-Fi off; Do not shut down repeatedly; photograph the"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "unplug USB drives",
+       "screen; note time and user"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Shared office network  IT lead disconnects affected machines or  Note which machines are affected and when segment"
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Disconnect — do not wipe. A reset may remove the attacker, but it also removes the evidence and may leave stolen accounts open."
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "title": "Account recovery and lockdown",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "When an account has been taken over, recovery must be done from a clean device — one the attacker has never controlled — using official recovery routes. Recovery is not complete until the attacker is locked out: all other sessions signed out, a new unique password set, MFA turned on, recovery details corrected and hidden settings checked."
+    },
+    {
+     "type": "p",
+     "text": "Account               Official recovery route                            Lockdown checks Google / Gmail WhatsApp              g.co/recover; then myaccount.google.com →          Your devices → sign out unknown; 2-Step Security                                           Verification; recovery phone and email; Gmail Instagram / Facebook                                                     forwarding and filters UPI and banking apps Re-register the number on the phone and enter the  Turn on two-step verification; check Linked SMS code. If the attacker set a two-step PIN,      devices; warn contacts; email WhatsApp WhatsApp may require a waiting period before it    support to deactivate if the phone is lost can be reset"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "instagram.com/hacked · facebook.com/hacked",
+       "Log out of all sessions; two-factor authentication; check email and phone on the account; remove unknown linked apps"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Bank helpline from the card number; block UPI and Reset UPI PIN only after the bank confirms the"
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "cards",
+       "phone is safe; review linked accounts"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Why the email account comes first"
+    },
+    {
+     "type": "p",
+     "text": "Most other accounts reset their passwords by email. If the attacker still controls the email, they can take back everything else. Secure the email first, then the accounts that depend on it."
+    }
+   ]
+  },
+  "4": {
+   "title": "SIM swap and banking trojans",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "In a SIM swap, a criminal gets a new SIM issued for the victim's number — by fraud at a store or by tricking the victim into a “SIM upgrade” — and then receives all OTPs. A banking trojan reads OTPs and screens directly on the victim's phone. Both often come together with a hijacked email account. The sign is a phone that suddenly shows “No Service”, or OTPs and debits the person did not initiate."
+    },
+    {
+     "type": "p",
+     "text": "Prevention                             How Never “upgrade” a SIM on a phone call  Telecom companies do not ask you to send SMS or codes to upgrade to 5G Know your connections                  Check SIMs in your name on Sanchar Saathi; report unknown ones App-based MFA                          Prefer app prompts or passkeys over SMS codes for email Act on “No Service”                    If the phone loses service unexpectedly, call the telecom provider and bank from another phone at once"
+    }
+   ]
+  },
+  "5": {
+   "title": "Ransomware in small organisations, and prevention",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Ransomware encrypts files and demands payment. Schools, clinics, shops and small offices are frequent victims because they often lack backups and IT staff. The First Responder's job is to contain, escalate and record — never to negotiate, pay or attempt decryption."
+    },
+    {
+     "type": "p",
+     "text": "Rules every First Responder should know"
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Organisations such as service providers, intermediaries, data centres, companies and government bodies must report specified cyber incidents, including ransomware, to CERT-In within 6 hours of noticing them (CERT-In directions, 2022). Citizens and small organisations can also report to CERT-In."
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "No More Ransom (nomoreransom.org), a law-enforcement and industry project, offers free decryption tools for some ransomware families; the IT lead checks it."
+     ]
+    },
+    {
+     "type": "ul",
+     "items": [
+      "Cyber Swachhta Kendra (csk.gov.in), run by CERT-In, provides free tools and advice to clean infected devices."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "KEY TAKEAWAYS FROM MODULE 8"
+    },
+    {
+     "type": "p",
+     "text": "Takeaway                              In one line Apps from links are the biggest risk  An invitation, bill or KYC update is never an APK Disconnect, do not wipe               Isolate first; preserve for examination Clean device, email first             Then lock out the attacker everywhere Order matters in SIM swaps            Bank, 1930, telecom, email, other accounts, NCRP Never pay, always escalate            IT lead, CERT-In route, police 3-2-1 backups                         One copy offline, and test the restore"
+    }
+   ]
+  }
+ },
+ "9": {
+  "0": {
+   "title": "What IoT and OT are",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "IoT devices are ordinary objects with an internet connection: cameras, TVs, speakers, watches, plugs, doorbells, baby monitors. OT systems control physical processes: a society's water pump, a rooftop solar inverter, a lift, a fire alarm. Both are computers, but they are rarely treated as computers — so they are rarely updated or secured."
+    },
+    {
+     "type": "p",
+     "text": "Setting                                  Figure 9.3 · A typical connected home Home                        Common connected devices School                      Router, smart TV, camera, smart speaker, doorbell, children's smartwatch, fitness band Shop or clinic              Classroom displays, CCTV, biometric attendance, Wi-Fi access points, lab computers Housing society or village  CCTV, billing PC, POS terminal, UPI sound-box, medical devices, router Water-pump controller, gate access, intercom, solar inverter, lifts"
+    }
+   ]
+  },
+  "1": {
+   "title": "Why smart devices get hacked",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Most smart-device attacks need no special skill. Lists of default usernames and passwords are public, and automated programs scan the internet for devices that still use them. In 2016, the Mirai botnet took over hundreds of thousands of cameras and video recorders with default passwords and used them to knock major websites offline."
+    },
+    {
+     "type": "remember",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "If a device came with a password printed on a sticker, change it the day you install it."
+      }
+     ]
+    }
+   ]
+  },
+  "2": {
+   "title": "Securing the home or shop router",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "The router is the front door of every device behind it. Two passwords matter: the Wi-Fi password that devices use to join, and the admin password that opens the router's settings page. Many routers supplied by internet providers still use a default admin password."
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Setting",
+       "Where to find it (names vary by brand)            Good value"
+      ],
+      [
+       "Admin password",
+       "Router page (often 192.168.0.1 or 192.168.1.1) → System / Administration                           Unique passphrase, different from"
+      ],
+      [
+       "Wi-Fi security",
+       "Wireless → Security                               Wi-Fi password"
+      ]
+     ]
+    },
+    {
+     "type": "kv",
+     "rows": [
+      [
+       "Firmware           System → Firmware upgrade",
+       "WPA3 or WPA2-AES (never WEP or “open”)"
+      ],
+      [
+       "WPS / remote       Wireless → WPS; System → Remote management;",
+       "Latest version; automatic updates"
+      ],
+      [
+       "management / UPnP  Advanced → UPnP",
+       "if offered"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "On, for smart devices and visitors"
+    },
+    {
+     "type": "p",
+     "text": "Off unless specifically needed"
+    },
+    {
+     "type": "p",
+     "text": "If the router belongs to the internet provider"
+    },
+    {
+     "type": "p",
+     "text": "Ask the provider to change the admin password or update firmware if you cannot. If the router no longer receives updates, ask for a replacement."
+    }
+   ]
+  },
+  "3": {
+   "title": "Smart cameras and CCTV",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Cameras protect homes and shops — and, if hijacked, expose them. A secure camera has a changed password, current firmware, MFA on its app and no unnecessary remote access. A respectful camera covers only what it needs to, never private spaces of others, and people know it is there. Under the DPDP Act 2023, video of identifiable people is personal data."
+    },
+    {
+     "type": "case",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A housing society installed eight cameras with an online viewing app and left the installer's default password. A resident's teenage son found the live feed listed on a website of exposed cameras. The committee changed all passwords, updated the recorder's firmware, removed public cloud sharing, moved one camera that overlooked a flat's balcony, and put up a notice."
+      }
+     ]
+    }
+   ]
+  },
+  "4": {
+   "title": "Wearables, speakers, TVs and trackers",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Smart speakers listen for a wake word; smart TVs record viewing habits; fitness bands record routes and health data; children's watches share location. Each has privacy settings that are rarely changed. Small Bluetooth trackers, meant for finding keys, can be misused to follow a person; modern phones can alert you to an unknown tracker travelling with you."
+    },
+    {
+     "type": "p",
+     "text": "If an unknown tracker is found"
+    },
+    {
+     "type": "p",
+     "text": "Safety first: a tracker placed on someone may be part of stalking or domestic abuse. Note and photograph it and the phone alert; do not go home if the person feels unsafe; contact the police or 181. Disabling it may alert the person who placed it, so plan with the person and the police (Module 7)."
+    }
+   ]
+  },
+  "5": {
+   "title": "Smart-device incidents and OT basics",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "What is it?"
+    },
+    {
+     "type": "p",
+     "text": "Smart-device incidents combine privacy, safety and evidence. Preserve first (screenshots of the app, the leaked page address, the tracker alert), then isolate and secure — and check every other device on the same network, because one weak device usually means others."
+    },
+    {
+     "type": "p",
+     "text": "KEY TAKEAWAYS FROM MODULE 9"
+    },
+    {
+     "type": "p",
+     "text": "Takeaway                              In one line Change every default password         On day one, on every device Router first                          Admin password, WPA2/WPA3, firmware, guest network, WPS off Respectful cameras                    Secure, limited view, notice, short retention Ask “who else can see this?”          For every speaker, TV, watch and tracker Preserve, isolate, secure, check all  Then report OT: escalate, never operate           Owner, vendor, IT lead, CERT-In route"
+    }
+   ]
+  }
+ }
+}

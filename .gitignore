@@ -1,0 +1,19 @@
+# secrets — never commit
+.env
+.env.*
+
+# tooling output / caches
+.hallmark/
+.claude/
+node_modules/
+*.log
+
+# large source media — kept on D: (see HANDOFF.md §3). Derived JSON (booklet_text.json etc.) IS committed.
+setup/files/videos/*.mp4
+setup/files/*.pdf
+setup/files/modules/*.pdf
+landing/media/*.mp4
+
+# build artifacts
+setup/scorm/dist/
+*.zip

@@ -1,0 +1,93 @@
+// CSFR · Handbook: the look of the HOD's participant handbook, carried onto the site. Cream paper, white cards,
+// navy ink, and four colours with fixed jobs: teal = done and safe habits, mustard = highlight and the helpline,
+// terracotta = subheads and warnings, orange = the frame. Baloo 2 for headings, Hind for reading; both have Devanagari.
+
+// Widen Boost's capped content column so wide screens don't leave big empty gutters on the left and right.
+// Boost anchors the drawers to this width, so a larger value also pulls the course-index drawer toward the edge.
+$course-content-maxwidth: 1500px;
+
+$csfr-paper:    #fdf8ef;   // the handbook's cream page, a shade lighter so the colours carry
+$csfr-paper-2:  #f4ead8;   // a step deeper, for panels and the drawers
+$csfr-paper-3:  #ebdcc0;
+$csfr-card:     #ffffff;   // white cards on cream
+$csfr-rule:     #e6d7bb;
+$csfr-ink:      #1e2b4a;   // navy
+$csfr-ink-2:    #34405c;
+$csfr-muted:    #5d6276;
+$csfr-teal:     #14756a;
+$csfr-teal-soft: #d6efe9;
+$csfr-teal-ink: #0b3d36;
+$csfr-mustard:  #f2b634;
+$csfr-mustard-soft: #fcecc4;
+$csfr-mustard-ink: #4a3505;
+$csfr-terra:    #b2401f;   // terracotta, text-safe on cream and white
+$csfr-terra-soft: #f9e0d6;
+$csfr-orange:   #e8892b;
+// Brighter companions (November 2026 refresh): each section of a lesson has its own colour surface.
+$csfr-plum:     #7b3f98;   // games and role-plays
+$csfr-plum-soft: #f3e6f8;
+$csfr-sky:      #1f63c6;   // labs and tables
+$csfr-sky-soft: #e2ecfb;
+$csfr-red:      #c62f2f;   // "if it has happened"
+$csfr-red-soft: #fde3df;
+$csfr-teal-2:   #0f8f80;   // a livelier teal for surfaces and stripes
+$csfr-error:    #b2401f;
+$csfr-shell-text: #d7dceb;  // light type on the navy bar
+$csfr-shell-rule: #34405c;
+
+$red: $csfr-error;
+$white: $csfr-card;
+$black: $csfr-ink;
+$gray-100: $csfr-paper-2;
+$gray-200: $csfr-paper-3;
+$gray-300: $csfr-rule;
+$gray-400: #c9b99b;
+$gray-500: #8d8a82;
+$gray-600: $csfr-muted;
+$gray-700: #444b60;
+$gray-800: $csfr-ink-2;
+$gray-900: $csfr-ink;
+
+$primary: $csfr-ink;
+$secondary: $csfr-paper-3;
+$success: $csfr-teal;
+$info: $csfr-teal;
+$warning: #9a6408;
+$danger: $csfr-error;
+$light: $csfr-paper-2;
+$dark: $csfr-ink;
+
+$body-bg: $csfr-paper;
+$body-color: $csfr-ink-2;
+$headings-color: $csfr-ink;
+$headings-font-weight: 700;
+$headings-font-family: "Baloo 2", "Hind", ui-sans-serif, system-ui, sans-serif;
+$link-color: $csfr-ink;
+$link-hover-color: $csfr-terra;
+$link-decoration: underline;
+$link-underline-offset: .16em;
+
+$font-family-sans-serif: "Hind", ui-sans-serif, system-ui, sans-serif;
+$font-size-base: 1.0625rem;
+
+$border-color: $csfr-rule;
+$border-radius: .75rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1rem;
+$card-border-color: $csfr-rule;
+$input-border-color: #a39a86;
+$input-focus-border-color: $csfr-teal;
+$btn-font-weight: 600;
+$box-shadow: 0 1px 2px rgba(30, 43, 74, .06), 0 4px 14px rgba(30, 43, 74, .06);
+$box-shadow-sm: 0 1px 2px rgba(30, 43, 74, .08);
+
+// Activity icons by job (Moodle draws them with an SVG filter from this map): reading teal, checks and tests a dark
+// mustard, uploads and practicum terracotta, admin navy. Each sits on the matching soft tile (post.scss).
+$activity-icon-colors: (
+    "administration": $csfr-ink,
+    "assessment": #8a5a06,
+    "collaboration": $csfr-terra,
+    "communication": $csfr-terra,
+    "content": $csfr-teal,
+    "interactivecontent": #8a5a06,
+);

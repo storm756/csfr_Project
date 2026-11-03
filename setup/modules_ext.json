@@ -1,0 +1,1271 @@
+{
+ "1": {
+  "steps": {
+   "title": "Secure your digital life in four steps",
+   "intro": "Digital safety starts with a few decisions that protect many accounts at once. The learner should be able to demonstrate these steps on a practice phone or describe them accurately without sharing private information.",
+   "steps": [
+    {
+     "h": "Protect the phone and main email",
+     "p": "Use a screen lock that strangers cannot guess, enable automatic locking, and check who controls your recovery email and phone number. Your main email deserves special attention because it can reset passwords for many other accounts."
+    },
+    {
+     "h": "Use a different login for every account",
+     "p": "Choose long, unique passphrases or a reputable password manager. A passkey is a good option when a trusted service offers one. Never reuse your email password on a shopping, gaming, or social-media service."
+    },
+    {
+     "h": "Add a second check and keep recovery options",
+     "p": "Turn on two-step verification for email, WhatsApp, and social accounts. Learn how recovery codes work and store them safely. An OTP or WhatsApp registration code is never something you should read aloud to a caller."
+    },
+    {
+     "h": "Update, back up, and review apps",
+     "p": "Install system and app updates; use official app stores; inspect SMS, Accessibility, notification, and device-admin permissions. Set a backup you can restore. A simple monthly check catches problems before an emergency."
+    }
+   ],
+   "check": "Think aloud: If someone takes over your main email, which other accounts could they reset? Name two protections that would make that chain harder. Now explain why a screen lock and a backup protect different things."
+  },
+  "cards": {
+   "title": "Spot the risk and choose the next step",
+   "intro": "A safe decision starts by checking what the message or device is asking you to do. Do not assume that a familiar logo, sender name, or contact photo makes a request trustworthy.",
+   "cards": [
+    {
+     "h": "New login alert",
+     "k1": "Signal",
+     "v1": "You receive a login alert from a device you do not recognise.",
+     "k2": "Response",
+     "v2": "Open the service directly, review active sessions, change the password if needed, and turn on two-step verification."
+    },
+    {
+     "h": "Qr to receive money",
+     "k1": "Signal",
+     "v1": "A buyer says you must enter your UPI PIN to accept a refund.",
+     "k2": "Response",
+     "v2": "Pause. A PIN authorises payment; check the request in your own UPI app without following the buyer’s instructions."
+    },
+    {
+     "h": "APK in a family chat",
+     "k1": "Signal",
+     "v1": "A ‘bill update’ app is sent by a relative on WhatsApp.",
+     "k2": "Response",
+     "v2": "Verify separately and do not install it. Even a trusted account may have been taken over."
+    },
+    {
+     "h": "Phone shows no service",
+     "k1": "Signal",
+     "v1": "Your SIM suddenly loses network while you receive bank alerts on another device.",
+     "k2": "Response",
+     "v2": "Contact your telecom operator and bank through official channels immediately."
+    },
+    {
+     "h": "Reused password exposed",
+     "k1": "Signal",
+     "v1": "A shopping website reports a breach and you used that password elsewhere.",
+     "k2": "Response",
+     "v2": "Replace the reused password on each affected service, starting with email and banking."
+    },
+    {
+     "h": "Untrusted public Wi-Fi",
+     "k1": "Signal",
+     "v1": "A free hotspot asks you to install a certificate or enter an email password.",
+     "k2": "Response",
+     "v2": "Disconnect. Use trusted mobile data or a network you can verify."
+    }
+   ],
+   "thinkk": "Decision test",
+   "think": "Ask three questions: “Who is making the request?”, “What access or money could I lose?”, and “Can I verify this independently?” A request to share a secret, install unknown software, or act immediately is a reason to stop and check. A suspicious message does not automatically mean the account is compromised."
+  },
+  "lab": {
+   "title": "Guided lab: a 20-minute safety check",
+   "intro": "The trainer demonstrates each step on a test device. Learners repeat it on their own phone only if comfortable, or use screenshots of a demonstration device. Never collect actual passwords, OTPs, or recovery codes.",
+   "stations": [
+    {
+     "h": "Device and permissions (7 min)",
+     "k": "Station 1",
+     "p": "Locate the screen-lock setting, system updates, app permissions, and the list of installed apps. Identify one unnecessary permission in a fictional example, explain the risk, and describe how the owner could remove it. Check whether backups are enabled without viewing personal data."
+    },
+    {
+     "h": "Accounts and recovery (7 min)",
+     "k": "Station 2",
+     "p": "On a demo account, find the two-step-verification menu, recovery email, and signed-in devices. Explain how to remove an unfamiliar session. Compare a long unique passphrase, passkey, and SMS code; identify which details must never be read aloud or written on the class worksheet."
+    },
+    {
+     "h": "Teach back to a neighbour (6 min)",
+     "k": "Station 3",
+     "p": "In pairs, one learner plays a neighbour who says: “My bank officer asked for the WhatsApp code.” Give a calm 45-second explanation, suggest a safe verification method, and ask the neighbour to repeat the rule in their own words."
+    }
+   ],
+   "expect": "The learner identifies the correct settings, explains what each protection achieves, refuses to share sensitive codes, and gives instructions without touching another person’s private information."
+  },
+  "cases": {
+   "title": "Practise real conversations",
+   "intro": "Work in groups of three: citizen, responder, observer. Give each group three minutes to understand a case, three minutes to advise safely, and two minutes to receive feedback. Rotate roles.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The pension KYC call",
+     "p": "A retired teacher says a caller knew her full name and bank branch. He insists she must install an app before 5 p.m. or lose her pension. She has not installed anything. Show how to explain the red flags and guide her to a trusted bank contact."
+    },
+    {
+     "k": "Case B",
+     "h": "The shared WhatsApp code",
+     "p": "A college student shared a six-digit WhatsApp code, then was signed out. His friends now receive payment requests from his number. Explain what to do now, how to warn contacts, and which account-recovery steps are appropriate."
+    },
+    {
+     "k": "Case C",
+     "h": "The possible sim swap",
+     "p": "A shopkeeper’s phone suddenly says “No service”. A business partner reports an unusual bank transaction. The shopkeeper wants to try every random customer-care number found online. Explain which official channels to contact first and what to record."
+    }
+   ],
+   "rubric": [
+    "Recognised the actual warning signs",
+    "Gave safe, practical steps in the right order",
+    "Verified contact details through official sources",
+    "Explained without blaming or alarming the citizen",
+    "Protected passwords, OTPs, and personal data"
+   ],
+   "discuss": "Which case required urgent bank contact? Which involved an already compromised account? How would your advice change if no money or access had been lost?"
+  },
+  "sheet": {
+   "title": "My cyber hygiene action plan",
+   "intro": "Use this sheet for a personal practice plan or a fictional citizen. Do not write real passwords, OTPs, account numbers, or recovery codes anywhere on it.",
+   "questions": [
+    "What protects the phone screen and prevents casual access?",
+    "Which main email account needs a recovery review?",
+    "Where will two-step verification or passkeys be enabled?",
+    "Which apps or permissions should be checked this month?",
+    "Where are backups stored, and has a restore been tested?",
+    "Which family member will receive a five-habit teach-back?"
+   ],
+   "scripth": "The five-habit teach-back",
+   "script": "“Lock your phone. Keep software updated. Use unique passwords or passkeys. Enable two-step verification. Stop and verify any request for money, codes, or app installation.” Ask the learner’s partner to explain one habit back in their own words.",
+   "selfcheck": "Can you demonstrate three settings and explain two fraud warning signs without asking anyone for a secret?"
+  }
+ },
+ "2": {
+  "steps": {
+   "title": "Follow the scam from contact to loss",
+   "intro": "Fraud becomes easier to recognise when you follow the sequence of events. Teach the learner to separate the scammer’s story from the action the scammer is trying to make the citizen take.",
+   "steps": [
+    {
+     "h": "Contact: the scammer gets attention",
+     "p": "A text, advertisement, call, or group invitation promises help, money, employment, or an urgent solution. Record where the first contact came from. A familiar logo or profile picture is not proof of identity."
+    },
+    {
+     "h": "Trust: the scammer creates a role",
+     "p": "The person pretends to be bank staff, a recruiter, a trader, a courier officer, or a buyer. They may send forged badges or small initial payments to appear genuine. Verify the claim using the real organisation’s independently located contact."
+    },
+    {
+     "h": "Pressure: the scammer forces a choice",
+     "p": "Typical instructions include paying a “tax”, approving a collect request, installing an APK, sharing an OTP, or keeping the conversation secret. Explain what the requested action actually does before touching a device."
+    },
+    {
+     "h": "Loss and repeat: the demand continues",
+     "p": "Once money or access is obtained, the criminal may demand more or offer fake recovery help. Stop communication, call 1930 and the bank promptly if money moved, preserve records, and help the citizen report without promising a refund."
+    }
+   ],
+   "check": "Teach-back: In a fake job offer that demands a training fee, identify the contact, trust, pressure, and loss stages. Which single fact would you verify independently before taking any action?"
+  },
+  "cards": {
+   "title": "Translate the message into its real action",
+   "intro": "Read the instruction behind each offer. The same fraud can be described as a refund, KYC update, investment opportunity, or part-time job.",
+   "cards": [
+    {
+     "h": "“Scan to receive”",
+     "k1": "Actual request",
+     "v1": "Scan a code and possibly authorise a debit.",
+     "k2": "Safe response",
+     "v2": "Receiving money does not require a UPI PIN; check your own app."
+    },
+    {
+     "h": "“Verify your account today”",
+     "k1": "Actual request",
+     "v1": "Open a link and enter credentials or install software.",
+     "k2": "Safe response",
+     "v2": "Visit the service through its official app or known website."
+    },
+    {
+     "h": "“Unlock your profit”",
+     "k1": "Actual request",
+     "v1": "Send another payment before a fake withdrawal.",
+     "k2": "Safe response",
+     "v2": "Stop paying and preserve all payment references."
+    },
+    {
+     "h": "“Prepay to get tasks”",
+     "k1": "Actual request",
+     "v1": "Deposit money to obtain work or commission.",
+     "k2": "Safe response",
+     "v2": "Decline; verify the employer’s real careers process."
+    },
+    {
+     "h": "“Install customer support”",
+     "k1": "Actual request",
+     "v1": "Give a stranger remote control or screen access.",
+     "k2": "Safe response",
+     "v2": "End the call; use official support and review device access."
+    },
+    {
+     "h": "“Pay to recover money”",
+     "k1": "Actual request",
+     "v1": "A second fee after the first fraud.",
+     "k2": "Safe response",
+     "v2": "Report the recovery scam too; official reporting is not a paid refund service."
+    }
+   ],
+   "thinkk": "Key reasoning",
+   "think": "A scammer’s claimed identity and urgent deadline do not change what a PIN, bank transfer, app permission, or OTP does. Ask “What will happen to the citizen’s money or account if they follow this instruction?” If funds were transferred, do not wait for a perfect case file before contacting 1930 and the bank."
+  },
+  "lab": {
+   "title": "Guided lab: recognise a fraud path",
+   "intro": "Use fictional messages and printed transaction receipts. Learners should practise identifying the requested action and reporting details without sending money or opening suspicious links.",
+   "stations": [
+    {
+     "h": "Read three messages",
+     "k": "Station 1",
+     "p": "Classify one fake electricity notice, one investment-group withdrawal demand, and one “buyer refund” message. Underline the claimed authority, pressure phrase, requested action, and independent verification route. Give a one-sentence explanation for each."
+    },
+    {
+     "h": "Read a payment receipt",
+     "k": "Station 2",
+     "p": "Use a fictional UPI receipt to locate the amount, date, time, transaction ID, and payment application. State which details the citizen should have ready for 1930 and the bank. Explain that the First Responder must never ask for the UPI PIN."
+    },
+    {
+     "h": "Practise the urgent call",
+     "k": "Station 3",
+     "p": "In pairs, one learner plays a citizen who paid 20 minutes ago; the other guides them to the official 1930 helpline and bank. The learner states the key facts in a clear order, then explains how to complete the portal complaint."
+    }
+   ],
+   "expect": "The learner identifies the risky action, distinguishes a suspicious attempt from an actual loss, finds a transaction reference, and routes a financial fraud promptly without promising recovery."
+  },
+  "cases": {
+   "title": "Three scams, three different responses",
+   "intro": "Assign citizen, First Responder, and observer roles. The observer listens for accurate explanations, timely reporting, and protection of sensitive information.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The new marketplace buyer",
+     "p": "A buyer says he has transferred ₹9,000 for a used laptop, but the seller must scan a code and enter a UPI PIN to release it. No money has moved yet. Explain the request and guide the seller to check only their own bank app."
+    },
+    {
+     "k": "Case B",
+     "h": "The “VIP task” group",
+     "p": "A student earned ₹250 for rating products, then paid ₹18,000 to unlock higher tasks. The group now demands ₹35,000 more. The latest payment was 25 minutes ago. Show the immediate fraud response and the evidence details to retain."
+    },
+    {
+     "k": "Case C",
+     "h": "The fake investment profit",
+     "p": "A senior citizen invested repeatedly in a trading app that displays large profits but blocks withdrawals without a “tax”. He paid yesterday and wants to pay again. Explain why the displayed balance proves nothing and where to report all transfers."
+    }
+   ],
+   "rubric": [
+    "Identified the scammer’s requested action",
+    "Separated attempted fraud from actual financial loss",
+    "Advised no further payments or code sharing",
+    "Routed loss promptly to 1930 and the bank",
+    "Explained evidence and next steps without promises"
+   ],
+   "discuss": "Which case needed immediate 1930 action? What would you say if the citizen insists the investment app is genuine?"
+  },
+  "sheet": {
+   "title": "Financial fraud first-action worksheet",
+   "intro": "Complete this only with fictional case data during training. When supporting a real citizen, help them enter their details into official channels themselves.",
+   "questions": [
+    "What story or identity did the scammer use?",
+    "What exact action did the scammer request?",
+    "Was there a completed payment or only an attempt?",
+    "What amount, date, time, and transaction ID are known?",
+    "Which official bank contact and reporting channel are needed?",
+    "What must the citizen stop doing and retain as evidence?"
+   ],
+   "scripth": "The 60-second fraud explanation",
+   "script": "“This request is trying to make you [action]. Please stop further payments or code sharing. If money has moved, let us contact 1930 and your bank using official contact details now. Keep the transaction reference and messages. I cannot guarantee recovery, but quick reporting matters.”",
+   "selfcheck": "Can you explain why a UPI PIN is for authorising payment and why a second “recovery fee” is another warning sign?"
+  }
+ },
+ "3": {
+  "steps": {
+   "title": "Verify the claim, not just the image",
+   "intro": "AI can create convincing voices, faces, and messages. Teach a repeatable verification routine that works even when the media looks and sounds realistic.",
+   "steps": [
+    {
+     "h": "Pause before paying or sharing",
+     "p": "If a clip creates fear, anger, urgency, or secrecy, stop the immediate action. A convincing voice and face do not prove who created the content or whether the event happened."
+    },
+    {
+     "h": "Find the original source",
+     "p": "Ask who posted the content first, what date and place are claimed, and whether the complete version is available. A cropped video or forwarded voice note may omit important context."
+    },
+    {
+     "h": "Check through an independent channel",
+     "p": "Call a relative on a number already saved, visit the official organisation’s site, or compare reports from reliable independent sources. For a public claim, use a reverse-image search as a lead, not as final proof."
+    },
+    {
+     "h": "Make a safe decision and document it",
+     "p": "If verification fails, do not forward the media or send money. Save the original link and relevant threat messages if harm occurred. Report impersonation, extortion, or financial fraud through the appropriate channel."
+    }
+   ],
+   "check": "Try this: A voice message sounds exactly like a friend and asks for urgent money. List two ways to verify the request that do not depend on judging the sound quality. Explain why “the lips look normal” is not reliable proof."
+  },
+  "cards": {
+   "title": "Separate media clues from strong evidence",
+   "intro": "Visual glitches may suggest manipulation but can disappear as AI improves. The most useful skill is checking source, context, and independent confirmation.",
+   "cards": [
+    {
+     "h": "Familiar voice, unknown number",
+     "k1": "Clue",
+     "v1": "A crying voice demands a transfer.",
+     "k2": "Better check",
+     "v2": "Call the relative through an existing number or another trusted family member."
+    },
+    {
+     "h": "Celebrity “investment ad”",
+     "k1": "Clue",
+     "v1": "A video shows a celebrity promising guaranteed returns.",
+     "k2": "Better check",
+     "v2": "Verify the official account and financial-regulator information."
+    },
+    {
+     "h": "Morphed private photo",
+     "k1": "Clue",
+     "v1": "Someone threatens to share an altered intimate image.",
+     "k2": "Better check",
+     "v2": "Treat the threat as real harm regardless of whether the image is authentic."
+    },
+    {
+     "h": "Old video, new caption",
+     "k1": "Clue",
+     "v1": "A disaster clip circulates as if recorded today.",
+     "k2": "Better check",
+     "v2": "Search for earlier appearances and compare the date and location."
+    },
+    {
+     "h": "Fake police video call",
+     "k1": "Clue",
+     "v1": "A uniformed caller demands secrecy and money.",
+     "k2": "Better check",
+     "v2": "End the call and contact official police channels independently."
+    },
+    {
+     "h": "Perfectly written phishing",
+     "k1": "Clue",
+     "v1": "A message uses flawless local-language grammar.",
+     "k2": "Better check",
+     "v2": "Inspect the request and independent source, not the writing style."
+    }
+   ],
+   "thinkk": "Evidence ladder",
+   "think": "A forwarded clip is a claim, not confirmation. Source details and an original post improve context; independent official confirmation is stronger. Reverse-image searches, watermark labels, and visual artefacts can help, but none proves authenticity by itself."
+  },
+  "lab": {
+   "title": "Guided lab: verify three claims",
+   "intro": "Use trainer-prepared fictional or licensed examples. Do not search for or display intimate images, and do not forward harmful media as part of a class exercise.",
+   "stations": [
+    {
+     "h": "Trace a caption",
+     "k": "Station 1",
+     "p": "Compare two screenshots of the same photograph with different dates and locations. Identify what is known, what remains unverified, and where you would look for the original post. Practise wording a careful conclusion without claiming more than the evidence supports."
+    },
+    {
+     "h": "Verify an emergency voice",
+     "k": "Station 2",
+     "p": "A trainer reads a fictional “I need money now” voice-clone scenario. Write a two-step callback plan using an already-known contact and an independent family member. Explain why asking the caller for a name is insufficient."
+    },
+    {
+     "h": "Report without amplifying",
+     "k": "Station 3",
+     "p": "For a fictional fake profile, note the profile URL, date, platform, and type of impersonation. Demonstrate where the platform reporting control would be. Explain how to support a targeted person without reposting or circulating the material."
+    }
+   ],
+   "expect": "The learner states what is verified and what is not, selects a reliable second channel, avoids unnecessary sharing, and chooses a protective reporting action when actual harm occurs."
+  },
+  "cases": {
+   "title": "Choose a safe verification route",
+   "intro": "Each group receives one example at a time. The citizen presses for a quick answer; the responder must slow the decision and use independent checks.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The son’s emergency voice",
+     "p": "A parent receives a call that sounds like her son, saying he has been detained and needs ₹40,000. The caller forbids contacting anyone else. Show the callback rule and give reassurance without deciding whether the audio is real."
+    },
+    {
+     "k": "Case B",
+     "h": "The viral flood video",
+     "p": "A neighbourhood group forwards a dramatic flood video labelled “Mumbai today”. A student finds the same footage posted three years earlier in another country. Explain a careful correction that avoids embarrassing the sender."
+    },
+    {
+     "k": "Case C",
+     "h": "The morphed photo threat",
+     "p": "A young adult reports that someone has made a sexualised fake image and demands payment. They are afraid it will reach their family. Check safety, avoid requesting the image, and explain preservation and reporting options."
+    }
+   ],
+   "rubric": [
+    "Paused urgent action and assessed harm",
+    "Checked source, date, and context",
+    "Used a genuinely independent verification route",
+    "Protected the targeted person’s privacy",
+    "Communicated uncertainty and safe next steps"
+   ],
+   "discuss": "When does a fake image still create real harm? Why is an independent callback stronger than searching for facial glitches?"
+  },
+  "sheet": {
+   "title": "Media verification record",
+   "intro": "Use this for a fictional claim, safe public post, or authorised classroom example. Never paste intimate or child-related material into the worksheet.",
+   "questions": [
+    "What exact claim is the media making?",
+    "Where and when did the claim first appear, if known?",
+    "Who is presented as the original source?",
+    "What independent evidence supports or contradicts it?",
+    "What important facts remain uncertain?",
+    "Should you pause, correct, report, or seek urgent help? Why?"
+   ],
+   "scripth": "A respectful correction script",
+   "script": "“This clip may not show what the caption says. I found an earlier version dated [date] from [source]. I cannot confirm the new claim, so let us pause sharing and check an official update.” For a threat or extortion case, shift from fact-checking to personal safety and reporting.",
+   "selfcheck": "Can you explain why a deepfake detector score alone is not proof that a clip is genuine or false?"
+  }
+ },
+ "4": {
+  "steps": {
+   "title": "Learn the six-question triage interview",
+   "intro": "Triage is a short, structured conversation that identifies danger, active harm, and the next safe action. A First Responder must not investigate, diagnose a person, or keep questioning while urgent help is needed.",
+   "steps": [
+    {
+     "h": "Open with safety and permission",
+     "p": "Start with “Are you safe right now?” and “May I ask a few short questions so we can decide what to do first?” If there is immediate danger, serious distress, or a child in immediate danger, stop routine questioning and activate emergency or safeguarding help."
+    },
+    {
+     "h": "Get the story and exact timeline",
+     "p": "Ask what happened in the citizen’s words and when they first noticed it. Confirm the last payment, message, login, or threat. Record times in a clear format; distinguish the citizen’s report from a fact you independently observed."
+    },
+    {
+     "h": "Check money, active harm, and available records",
+     "p": "Ask whether money moved, whether a fraudster is still in contact or controlling an account, and what evidence exists. A UTR or screenshot can be recorded after the urgent reporting call; do not delay the first action while gathering every detail."
+    },
+    {
+     "h": "Classify, explain, and hand over",
+     "p": "List all relevant incident categories, assign a priority colour, and say why in one sentence. Choose the next safe action and official route. Write the case ID, referral, acknowledgement, mentor contact, and agreed follow-up."
+    }
+   ],
+   "check": "Practice wording: Replace “Why did you give him the code?” with a non-blaming question. Then explain what the six questions uncover: incident, time, money, safety, ongoing access, and evidence. Which answer would make you stop the interview immediately?"
+  },
+  "cards": {
+   "title": "What new facts change the triage colour?",
+   "intro": "An incident label does not decide urgency by itself. New information may reveal immediate danger or ongoing loss. Practise revising the priority without changing the facts already recorded.",
+   "cards": [
+    {
+     "h": "Suspicious UPI message",
+     "k1": "Initial facts",
+     "v1": "No payment, no code shared: GREEN advisory.",
+     "k2": "New fact",
+     "v2": "₹22,000 left 10 minutes ago: AMBER; call 1930 and the bank now."
+    },
+    {
+     "h": "Fake social profile",
+     "k1": "Initial facts",
+     "v1": "Impersonation without threat: YELLOW.",
+     "k2": "New fact",
+     "v2": "The account threatens to visit the citizen tonight: check immediate safety; RED if danger is imminent."
+    },
+    {
+     "h": "WhatsApp account loss",
+     "k1": "Initial facts",
+     "v1": "A user cannot log in; abuse is unconfirmed: assess promptly.",
+     "k2": "New fact",
+     "v2": "Contacts receive money requests right now: AMBER, active compromise."
+    },
+    {
+     "h": "Child contacted online",
+     "k1": "Initial facts",
+     "v1": "An adult is sending sexual requests: urgent child-safeguarding referral.",
+     "k2": "New fact",
+     "v2": "The adult knows the child’s live location: RED if danger is immediate."
+    },
+    {
+     "h": "Remote access app",
+     "k1": "Initial facts",
+     "v1": "An unknown app is installed: assess device risk.",
+     "k2": "New fact",
+     "v2": "A stranger is controlling the screen during banking: AMBER; stop access safely and notify bank."
+    },
+    {
+     "h": "Old financial loss",
+     "k1": "Initial facts",
+     "v1": "Transfer occurred four days ago: YELLOW if no active threat.",
+     "k2": "New fact",
+     "v2": "Another payment is being demanded now: stop further loss and escalate active risk."
+    }
+   ],
+   "thinkk": "Decision rule",
+   "think": "RED means immediate safety danger, serious distress, or active coercion. AMBER means money or account access is under active threat. YELLOW means harm needs timely action but no immediate escalation is identified. GREEN means advice for a suspicious attempt without current loss or harm. If uncertain, seek mentor guidance; do not postpone an emergency or 1930 call."
+  },
+  "lab": {
+   "title": "Guided lab: from question to handover",
+   "intro": "The trainer demonstrates one two-minute interview using a fictional case. Learners then practise the same sequence with a timed case sheet, an urgency card, and the intake form.",
+   "stations": [
+    {
+     "h": "The six-question interview (8 min)",
+     "k": "Station 1",
+     "p": "The citizen says, “Someone has taken money.” The responder must ask what happened, exact time, amount and method, personal safety, whether access remains, and what records are available. The observer marks any leading, blaming, or repeated questions. Stop the interview if the trainer introduces imminent danger."
+    },
+    {
+     "h": "Priority reasoning (7 min)",
+     "k": "Station 2",
+     "p": "Sort six short cards into RED, AMBER, YELLOW, and GREEN. For each, complete: “I chose [colour] because [specific risk].” Then the trainer adds a new fact. Reassess without erasing the earlier decision so the change can be explained to a mentor."
+    },
+    {
+     "h": "First action and handover (10 min)",
+     "k": "Station 3",
+     "p": "Practise a mock urgent financial-fraud call using fictional UTR data, then write a brief handover. State category, current risk, time, action, official channel, reference, and follow-up. Do not use live 1930 or emergency lines during training."
+    }
+   ],
+   "expect": "The learner asks all six questions, recognises when to stop questioning, assigns priority with a clear reason, takes the right first action, and delivers a concise handover without collecting unnecessary personal data."
+  },
+  "cases": {
+   "title": "Simulation: the case changes while you work",
+   "intro": "Groups of three rotate citizen, responder, and observer roles. The trainer reveals a new fact halfway through each role-play. Record the initial colour, revised colour, and reason for the change.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The lost ₹18,000",
+     "p": "A shopkeeper reports a UPI transfer made 15 minutes ago after a refund scam. Initially there is no safety threat. Inject: “The caller is still asking for a second payment.” The responder must start 1930 and bank contact without waiting for all screenshots."
+    },
+    {
+     "k": "Case B",
+     "h": "The school profile",
+     "p": "A parent reports a fake social profile using a 14-year-old’s photo. Inject: “An adult has sent threats and says he is outside the school.” The responder must recognise a possible immediate child-safety emergency, involve the responsible adults and police, and alert the mentor."
+    },
+    {
+     "k": "Case C",
+     "h": "The remote-control app",
+     "p": "A caller says a support agent installed a remote-access app yesterday. Inject: “The screen is moving by itself and a new banking alert just arrived.” The responder must recognise active compromise, advise safe disconnection, and use bank channels promptly."
+    }
+   ],
+   "rubric": [
+    "Used all six questions without blaming",
+    "Recognised immediate safety concerns",
+    "Classified the mixed incident accurately",
+    "Explained initial and revised urgency",
+    "Routed, documented, and handed over safely"
+   ],
+   "discuss": "What did the new fact change? When should questioning stop? Can the learner explain the priority in one sentence?"
+  },
+  "sheet": {
+   "title": "Triage decision and handover record",
+   "intro": "Use this for a fictional or supervised case. Enter minimal facts and keep the citizen’s passwords, images, and identity documents out of the training sheet.",
+   "questions": [
+    "What happened, in the person’s own words?",
+    "When did it start? When was the latest event?",
+    "Was money involved? Is any person unsafe?",
+    "Is the incident still active? What evidence exists?",
+    "What categories and urgency apply, and why?",
+    "What first action, reporting route, and follow-up were agreed?"
+   ],
+   "scripth": "The thirty-second handover",
+   "script": "“At [time], [citizen/case ID] reported [incident]. The known loss or safety risk is [fact], and [harm] is still ongoing or has stopped. I assigned [colour] because [reason]. We took [action], used [official channel], and recorded [reference]. [Person] will [next step] by [time].” Non-negotiable: Safety first; act on recent money loss promptly; keep a clear record; never investigate the suspect.",
+   "selfcheck": ""
+  }
+ },
+ "5": {
+  "steps": {
+   "title": "Save what happened without changing it",
+   "intro": "Evidence preservation is about protecting the citizen’s original records and making the incident understandable to authorised investigators. A First Responder gives instructions and documents a minimum evidence list; they are not a forensic examiner.",
+   "steps": [
+    {
+     "h": "Identify the original record",
+     "p": "Ask where the relevant message, payment receipt, email, call, image, or device record is stored. Record the source and time. A screenshot may help, but it should not replace the original record when the original can be kept safely."
+    },
+    {
+     "h": "Capture context, not just the claim",
+     "p": "Save the visible sender or account identifier, date, time, full transaction reference, and a link or URL where relevant. Overlapping screenshots can preserve a longer conversation. Do not crop, annotate, or alter a master copy."
+    },
+    {
+     "h": "Record who saved what and when",
+     "p": "Write a simple evidence-log entry for each item: description, incident time, collection time, device or source, person who saved it, and safe storage location. Keep original files separate from notes or copies used for explanation."
+    },
+    {
+     "h": "Protect privacy and hand off correctly",
+     "p": "Ask permission, collect only what is necessary, and encourage the citizen to retain their own evidence. Never take custody of devices casually. Do not download, forward, or store intimate images or sexual material involving minors; refer through official safeguarding channels."
+    }
+   ],
+   "check": "Compare: One screenshot shows only “Pay now”. Another shows the sender’s number, date, entire message, and payment demand. Which is more useful and why? What should be written in the evidence log if the citizen saved it on their own phone?"
+  },
+  "cards": {
+   "title": "Choose useful evidence for the incident",
+   "intro": "Ask what details will identify the event, route the complaint, and allow a later investigator to trace it. Do not ask for unrelated personal files.",
+   "cards": [
+    {
+     "h": "UPI payment",
+     "k1": "Keep",
+     "v1": "Date, exact time, amount, UTR, beneficiary UPI ID, and bank alert.",
+     "k2": "Avoid",
+     "v2": "Requesting the citizen’s PIN or full banking password."
+    },
+    {
+     "h": "Phishing SMS",
+     "k1": "Keep",
+     "v1": "Sender ID, message, visible URL, date, and any action taken.",
+     "k2": "Avoid",
+     "v2": "Opening the suspicious URL again just to inspect it."
+    },
+    {
+     "h": "Job or investment group",
+     "k1": "Keep",
+     "v1": "Group name or link, admin contacts, app URL, chat, and each receipt.",
+     "k2": "Avoid",
+     "v2": "Leaving the group before relevant identifiers are safely recorded."
+    },
+    {
+     "h": "Fake social profile",
+     "k1": "Keep",
+     "v1": "Profile URL, username, dated screenshots, and threatening messages.",
+     "k2": "Avoid",
+     "v2": "Sharing the harmful post publicly to seek witnesses."
+    },
+    {
+     "h": "Ransomware",
+     "k1": "Keep",
+     "v1": "A photo of the note, time noticed, file extension, and device details.",
+     "k2": "Avoid",
+     "v2": "Restarting or wiping the computer without qualified guidance."
+    },
+    {
+     "h": "Child safeguarding",
+     "k1": "Keep",
+     "v1": "Non-explicit identifiers and where to report a harmful account.",
+     "k2": "Avoid",
+     "v2": "Copying or forwarding sexual material involving a child."
+    }
+   ],
+   "thinkk": "Quality test",
+   "think": "Is the record complete, original where possible, dated, linked to the incident, and stored safely? A file sent repeatedly through chat apps may lose context or metadata. A First Responder should not alter evidence, analyse devices beyond their competence, or make claims about what a court will accept."
+  },
+  "lab": {
+   "title": "Guided lab: build an evidence log",
+   "intro": "Use a trainer-created fictional case pack containing screenshots, a transaction receipt, and a sample message thread. Never use real victims’ private images or live account credentials.",
+   "stations": [
+    {
+     "h": "Find the missing context",
+     "k": "Station 1",
+     "p": "Compare three versions of the same fake-payment screenshot: cropped, complete, and complete with the transaction receipt. Identify what each shows and what is missing. Explain why preserving the original source remains important."
+    },
+    {
+     "h": "Fill a log with five items",
+     "k": "Station 2",
+     "p": "Record item number, description, event time, saved time, source device, person saving it, and storage location. Mark whether an item is an original or a working copy. Keep the case ID consistent across every entry."
+    },
+    {
+     "h": "Explain safe transfer",
+     "k": "Station 3",
+     "p": "Role-play a citizen who wants to send their entire photo gallery to the volunteer. Politely decline unnecessary data, identify the few relevant records, and explain that official submission should occur through the authorised portal or investigator."
+    }
+   ],
+   "expect": "The learner selects relevant records, preserves context, fills a traceable log, distinguishes originals from copies, and refuses unnecessary or sensitive material."
+  },
+  "cases": {
+   "title": "Practise preserving a case pack",
+   "intro": "The observer gives feedback on completeness, accuracy, privacy, and whether the learner stays within the First Responder role.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The one-line screenshot",
+     "p": "A citizen sends a cropped message reading “Send ₹5,000 now”. The sender’s identity and date are cut off. Ask what additional context should be saved from the original chat without contacting the suspect."
+    },
+    {
+     "k": "Case B",
+     "h": "The chain of payments",
+     "p": "A fake investment app shows a profit, and a citizen has seven payment receipts. They want to keep only the newest UTR. Explain why each transfer must be logged with its date, amount, and reference."
+    },
+    {
+     "k": "Case C",
+     "h": "The private image threat",
+     "p": "A citizen offers to forward intimate images as proof of extortion. Explain why you do not need to view or store them. Help preserve the threat messages and profile identifiers and route the person to official help."
+    }
+   ],
+   "rubric": [
+    "Identified originals and relevant context",
+    "Recorded dates, times, and references accurately",
+    "Kept the evidence log clear and traceable",
+    "Protected privacy and obtained consent",
+    "Avoided tampering, unnecessary sharing, or investigation"
+   ],
+   "discuss": "Why might one clear screenshot still be insufficient? Who should retain the original device and files?"
+  },
+  "sheet": {
+   "title": "Basic evidence log",
+   "intro": "Use one record per item. This practice form describes evidence without reproducing sensitive content or attaching real personal files.",
+   "questions": [
+    "What is the case ID and item number?",
+    "What is the item, and what does it help establish?",
+    "What incident date and time does it relate to?",
+    "When, where, and by whom was it saved?",
+    "Is it the original record or a working copy?",
+    "Where is it stored, and which authorised channel needs it?"
+   ],
+   "scripth": "Evidence quality check",
+   "script": "Before a citizen submits an item, ask: “Does it show enough context? Is the date or time clear? Is the sender, profile, or transaction reference visible? Is the original still preserved? Have we avoided including unrelated private information?”",
+   "selfcheck": "Can you produce a five-item log without altering files, keeping intimate content, or requesting passwords?"
+  }
+ },
+ "6": {
+  "steps": {
+   "title": "Select the right reporting route",
+   "intro": "A useful report reaches the right organisation quickly and contains enough facts for action. The First Responder explains options and helps the citizen submit; police, banks, and other competent authorities make official decisions.",
+   "steps": [
+    {
+     "h": "Distinguish danger, loss, and advice",
+     "p": "Immediate risk to life or safety calls for emergency response through 112. Online financial loss should be reported promptly through 1930 and the bank. Other cybercrime can be filed on cybercrime.gov.in and referred to police or a platform as appropriate."
+    },
+    {
+     "h": "Prepare facts before filing",
+     "p": "Record date, time, incident category, a short factual description, relevant account or profile identifiers, and transaction references where applicable. The citizen should keep control of identity documents and login details required by the portal."
+    },
+    {
+     "h": "Submit through an official channel",
+     "p": "Use a manually typed or verified official web address. The citizen completes any authentication and consent themselves. Review the information together before submission. For a financial-fraud call, complete the related portal complaint promptly as instructed."
+    },
+    {
+     "h": "Keep the reference and plan follow-up",
+     "p": "Write the complaint acknowledgement, receiving organisation, submission time, and next step. Explain that a report is not an automatic refund, FIR, takedown, or case closure. Give the citizen a safe follow-up route and refer legal questions to qualified services."
+    }
+   ],
+   "check": "Differentiate: A citizen has a suspicious SMS but no loss; another has just lost money; a third is in immediate physical danger. Explain why each begins with a different route even if all involve cybercrime."
+  },
+  "cards": {
+   "title": "Match the problem to the right service",
+   "intro": "Avoid random search results and unverified phone numbers. Use the current official portal or a verified contact supplied by the bank, platform, or authority.",
+   "cards": [
+    {
+     "h": "Financial fraud",
+     "k1": "Start",
+     "v1": "1930 and bank fraud support promptly.",
+     "k2": "Next",
+     "v2": "Complete the National Cyber Crime Reporting Portal case."
+    },
+    {
+     "h": "Immediate personal danger",
+     "k1": "Start",
+     "v1": "112 and local police.",
+     "k2": "Next",
+     "v2": "Safeguarding or specialist referral with the mentor."
+    },
+    {
+     "h": "Child-related abuse",
+     "k1": "Start",
+     "v1": "Police or 1098 safeguarding support as appropriate.",
+     "k2": "Next",
+     "v2": "Use the portal route without forwarding abuse material."
+    },
+    {
+     "h": "Fake profile / harassment",
+     "k1": "Start",
+     "v1": "Platform reporting and cybercrime.gov.in.",
+     "k2": "Next",
+     "v2": "Preserve links, follow up, and escalate threats."
+    },
+    {
+     "h": "Suspicious telecom message",
+     "k1": "Start",
+     "v1": "Chakshu on Sanchar Saathi for suspected fraud communication.",
+     "k2": "Next",
+     "v2": "If a crime or loss occurred, also use cybercrime channels."
+    },
+    {
+     "h": "Organisational incident",
+     "k1": "Start",
+     "v1": "Organisation’s incident-response contact and relevant authorities.",
+     "k2": "Next",
+     "v2": "CERT-In reporting obligations are handled by the responsible organisation."
+    }
+   ],
+   "thinkk": "Boundaries matter",
+   "think": "Awareness of legal provisions does not make a volunteer a lawyer or investigating officer. Do not promise an FIR, freeze, arrest, or refund. For legal interpretation, ask the citizen to contact police or qualified legal aid. Verify official forms and helplines before every public training batch."
+  },
+  "lab": {
+   "title": "Guided lab: a mock portal complaint",
+   "intro": "Use printed screenshots or a training-only form. Do not create a false complaint on a live government portal or use another person’s OTP.",
+   "stations": [
+    {
+     "h": "Write a factual summary",
+     "k": "Station 1",
+     "p": "Convert an emotional account into four clear sentences: what happened, when, money or harm, and what remains active. Separate facts from assumptions. Avoid dramatic labels such as “definitely hacked” when the case evidence is incomplete."
+    },
+    {
+     "h": "Complete fictional fields",
+     "k": "Station 2",
+     "p": "Using fictional names and details, select an incident category, add dates, transaction references, suspect identifiers if known, and a short description. Mark absent information as unknown rather than inventing a value."
+    },
+    {
+     "h": "Explain what happens next",
+     "k": "Station 3",
+     "p": "Practise giving a citizen the complaint reference, a copy of their submitted details, safe follow-up instructions, and a warning about recovery scams. Explain the difference between a portal acknowledgement and a police decision."
+    }
+   ],
+   "expect": "The learner selects the proper official channel, fills a mock report accurately, avoids invented facts, and explains the limits of the First Responder role."
+  },
+  "cases": {
+   "title": "Route and explain three complaints",
+   "intro": "For each role-play, the observer checks whether the responder chose the right first channel and gave realistic expectations.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The ₹12,000 transfer",
+     "p": "A citizen sent money after a fake bank call 30 minutes ago. They want to finish writing a long statement before calling anyone. Show how to prioritise 1930 and the bank, then organise the portal details."
+    },
+    {
+     "k": "Case B",
+     "h": "The false social account",
+     "p": "A local teacher finds a fake profile asking parents for donations. No one has reported paying yet. Explain preservation, platform reporting, and portal filing without calling this a completed bank fraud."
+    },
+    {
+     "k": "Case C",
+     "h": "The clinic infection",
+     "p": "A clinic reports computers locked by ransomware. The receptionist asks a volunteer to contact the attacker and negotiate. Explain the organisation’s escalation to authorised technical staff, police, and applicable incident-reporting channels."
+    }
+   ],
+   "rubric": [
+    "Chose the correct reporting channel",
+    "Prepared accurate, relevant facts",
+    "Avoided fake links and unsafe authentication",
+    "Recorded acknowledgement and next steps",
+    "Explained legal and recovery limits honestly"
+   ],
+   "discuss": "Which action must happen before lengthy paperwork? What does a complaint acknowledgement actually prove?"
+  },
+  "sheet": {
+   "title": "Reporting and escalation record",
+   "intro": "Complete this mock referral record after making a safe category and urgency decision. Do not include real credentials or unrelated identity documents.",
+   "questions": [
+    "What type of incident is being reported?",
+    "Which channel must receive the first report, and why?",
+    "What date, time, and transaction or profile details are needed?",
+    "What facts are known, and what remains unknown?",
+    "What acknowledgement or case reference was received?",
+    "Who owns the next step, and when will follow-up occur?"
+   ],
+   "scripth": "After-reporting script",
+   "script": "“We have sent the report through [official channel] at [time], and your reference is [number]. Keep it safely with your evidence. This does not guarantee a refund or immediate police action. Here is how you can check progress and where you can seek further help.”",
+   "selfcheck": "Can you distinguish a helpline report, a portal acknowledgement, and a police FIR?"
+  }
+ },
+ "7": {
+  "steps": {
+   "title": "Help a distressed person feel safe to act",
+   "intro": "People may feel ashamed, confused, angry, or frightened after cybercrime. Your first response should make the next practical step possible without blame or pressure.",
+   "steps": [
+    {
+     "h": "Create a calm, private start",
+     "p": "Introduce yourself and explain your limited volunteer role. Ask whether it is safe and comfortable to talk. Listen without interrupting or demanding proof. Use the person’s preferred language and offer extra time where needed."
+    },
+    {
+     "h": "Acknowledge without promising",
+     "p": "Say, “I am sorry this happened. You did the right thing by asking for help.” Do not say money will return, the offender will be arrested, or a platform will remove the post. Avoid “Why did you fall for that?”"
+    },
+    {
+     "h": "Explain one action at a time",
+     "p": "If anyone is in danger, seek emergency help. If money just moved, support the 1930 and bank contact. Otherwise explain evidence and reporting in short steps. Ask permission before recording details or involving a family member."
+    },
+    {
+     "h": "Close with choice and follow-up",
+     "p": "Repeat what has been done, who will do the next task, and when. Offer a written note in accessible language. Check whether the person has safe support. If they express thoughts of self-harm or serious immediate distress, activate emergency or mental-health help and your safeguarding procedure."
+    }
+   ],
+   "check": "Rewrite: “You should have known better and the police will recover everything.” Turn this into two respectful, honest sentences. What question would you ask before involving the citizen’s family?"
+  },
+  "cards": {
+   "title": "Change the communication, not the respect",
+   "intro": "The same incident may need a different explanation for a senior citizen, a child, a person with disability, or someone who fears family reaction.",
+   "cards": [
+    {
+     "h": "Senior citizen",
+     "k1": "Need",
+     "v1": "Time, simple steps, and patient repetition.",
+     "k2": "Approach",
+     "v2": "Avoid jargon; check understanding without speaking down."
+    },
+    {
+     "h": "Person with disability",
+     "k1": "Need",
+     "v1": "Accessible communication or assistance.",
+     "k2": "Approach",
+     "v2": "Ask what format helps; never assume inability to decide."
+    },
+    {
+     "h": "Child or teenager",
+     "k1": "Need",
+     "v1": "Safety and child-appropriate explanation.",
+     "k2": "Approach",
+     "v2": "Follow safeguarding duties and involve responsible services."
+    },
+    {
+     "h": "Sextortion victim",
+     "k1": "Need",
+     "v1": "Privacy, non-judgement, and safety.",
+     "k2": "Approach",
+     "v2": "Do not ask to see images; explain reporting options."
+    },
+    {
+     "h": "Small shopkeeper",
+     "k1": "Need",
+     "v1": "Immediate protection from further business loss.",
+     "k2": "Approach",
+     "v2": "Confirm payment in the shopkeeper’s own account."
+    },
+    {
+     "h": "Person fearing exposure",
+     "k1": "Need",
+     "v1": "Control over who is informed.",
+     "k2": "Approach",
+     "v2": "Explain confidentiality limits and seek consent wherever lawful."
+    }
+   ],
+   "thinkk": "Respect and safety",
+   "think": "Avoid taking over the citizen’s phone, money, or decision-making. Offer choices in understandable language. Confidentiality is important, but immediate danger and child-protection duties may require authorised escalation; never promise absolute secrecy."
+  },
+  "lab": {
+   "title": "Guided lab: practise the calm method",
+   "intro": "The facilitator demonstrates both a blaming conversation and a supportive conversation using a fictional victim statement. Learners identify why one response increases trust and the other can stop reporting.",
+   "stations": [
+    {
+     "h": "Listen and rephrase",
+     "k": "Station 1",
+     "p": "Listen to a one-minute statement without interruption. Reflect the facts and emotion: “You are worried about the money and the calls have continued.” Avoid assumptions, lectures, or blaming language. Ask one open question."
+    },
+    {
+     "h": "Get consent and explain limits",
+     "k": "Station 2",
+     "p": "Role-play asking permission to make notes and to include a family member. Explain what information will be shared, with whom, and why. If the scenario involves a child at immediate risk, describe the safeguarding exception clearly and calmly."
+    },
+    {
+     "h": "Give a two-minute next-step plan",
+     "k": "Station 3",
+     "p": "Offer no more than three actions, in urgency order. Ask the citizen to repeat the first action. Finish with an acknowledgement, a way to check progress, and a specific follow-up expectation."
+    }
+   ],
+   "expect": "The learner listens without blame, obtains consent, adapts communication, responds to safety concerns, and leaves the citizen with a realistic, understandable plan."
+  },
+  "cases": {
+   "title": "Support someone in a difficult moment",
+   "intro": "Use fictional scenarios. Observers give feedback on the responder’s language, boundaries, safety awareness, and clarity rather than dramatic acting.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "“My family will be angry”",
+     "p": "An older adult lost savings in an investment scam and feels ashamed. They refuse to call their son. Explain how to respect that choice while helping with urgent reporting and practical support."
+    },
+    {
+     "k": "Case B",
+     "h": "“They will share my photo”",
+     "p": "A young adult is threatened with publication of an intimate image. They are crying and ask whether to pay. Check safety, avoid requesting the image, advise against payment, and explain confidential reporting options."
+    },
+    {
+     "k": "Case C",
+     "h": "“I do not want to live”",
+     "p": "A citizen says the scam has ruined their life and they may hurt themselves. The exercise must stop normal paperwork. Explain how to remain with them and activate 112 or appropriate urgent mental-health support and mentor escalation."
+    }
+   ],
+   "rubric": [
+    "Used calm and respectful words",
+    "Listened and confirmed understanding",
+    "Asked consent and protected privacy",
+    "Recognised immediate distress or danger",
+    "Provided honest, manageable next steps"
+   ],
+   "discuss": "Which phrases reduced shame? When must safety interrupt the normal reporting sequence?"
+  },
+  "sheet": {
+   "title": "Citizen support and follow-up plan",
+   "intro": "Record only what the citizen consents to share, except where safeguarding or law requires appropriate escalation. Use fictional information in training.",
+   "questions": [
+    "How does the citizen describe what happened and how they feel?",
+    "Is the person safe and able to continue the conversation?",
+    "What language or accessibility support would help?",
+    "What immediate action has the citizen agreed to?",
+    "Who may be contacted, and what consent was given?",
+    "What written next step and follow-up time were agreed?"
+   ],
+   "scripth": "A respectful closing script",
+   "script": "“Thank you for telling me. What happened is not a reason to blame yourself. We have [completed action] and the next step is [task]. You can keep these details safely. I cannot promise a result, but I can explain the reporting process and available support.”",
+   "selfcheck": "Can you give urgent advice while leaving the citizen in control of their own decisions?"
+  }
+ },
+ "8": {
+  "steps": {
+   "title": "Recognise, contain, and hand over safely",
+   "intro": "A First Responder may notice warning signs before a technical team arrives. The useful skill is choosing safe immediate actions and knowing when to stop, not trying to remove malware or investigate systems.",
+   "steps": [
+    {
+     "h": "Recognise the type of problem",
+     "p": "Ransomware may lock files; spyware may secretly monitor activity; a malicious APK may abuse SMS or Accessibility permissions; account compromise may send messages from the citizen’s identity. Ask what changed and when."
+    },
+    {
+     "h": "Stop active exposure without causing more harm",
+     "p": "For an active remote session, help end the connection or safely disconnect the affected device from the network. If banking details may be exposed, use a separate trusted device to contact the bank. For an organisation, alert its authorised IT or incident-response staff immediately."
+    },
+    {
+     "h": "Preserve basic facts for specialists",
+     "p": "Record device type, account or app, symptoms, first-noticed time, strange alerts, suspicious links, and ransom note details. Do not reboot, wipe, uninstall, or run unknown “cleaner” tools before qualified advice when evidence or recovery could be affected."
+    },
+    {
+     "h": "Recover through trusted channels",
+     "p": "Use official account-recovery pages from a clean device, review sessions and recovery details, enable strong authentication, and warn contacts. Organisational recovery and backups belong to authorised staff. Report fraud and crime through official channels."
+    }
+   ],
+   "check": "Explain: Why are isolating a ransomware-infected computer and recovering a stolen WhatsApp account different tasks? Which one should a volunteer leave to a technical team?"
+  },
+  "cards": {
+   "title": "Identify the warning sign and response",
+   "intro": "One symptom can have several causes. Do not diagnose malware simply because a phone is slow. Combine symptoms with a suspicious event or unauthorised access.",
+   "cards": [
+    {
+     "h": "Ransom note on a PC",
+     "k1": "Meaning",
+     "v1": "Possible ransomware affecting files.",
+     "k2": "First step",
+     "v2": "Isolate from networks safely and alert authorised support."
+    },
+    {
+     "h": "Unexpected WhatsApp logout",
+     "k1": "Meaning",
+     "v1": "Possible takeover or session issue.",
+     "k2": "First step",
+     "v2": "Start official recovery and warn contacts about fake requests."
+    },
+    {
+     "h": "Remote access still running",
+     "k1": "Meaning",
+     "v1": "A stranger may control the screen.",
+     "k2": "First step",
+     "v2": "End or isolate access safely; contact bank if exposed."
+    },
+    {
+     "h": "Unfamiliar SMS permission",
+     "k1": "Meaning",
+     "v1": "Possible risky app privileges.",
+     "k2": "First step",
+     "v2": "Note app details and seek safe remediation guidance."
+    },
+    {
+     "h": "Login alert from unknown device",
+     "k1": "Meaning",
+     "v1": "Possible unauthorised account access.",
+     "k2": "First step",
+     "v2": "Review sessions through official account settings."
+    },
+    {
+     "h": "Backup not tested",
+     "k1": "Meaning",
+     "v1": "Recovery may fail even if copies exist.",
+     "k2": "First step",
+     "v2": "Arrange a safe restoration test before any incident."
+    }
+   ],
+   "thinkk": "",
+   "think": "Do not turn first response into experimentation: Avoid unknown malware-removal downloads, ransom negotiation, random restarts, or changes to a clinic or office system. The correct action is often to isolate, document, notify qualified staff, and protect exposed accounts."
+  },
+  "lab": {
+   "title": "Guided lab: containment without damage",
+   "intro": "Use screenshots, test accounts, and disconnected demonstration devices. Never deliberately infect a class device or practise on a production system.",
+   "stations": [
+    {
+     "h": "Recognise and describe",
+     "k": "Station 1",
+     "p": "Compare a fictional ransom note, a suspicious app-permission screen, and an unfamiliar-login alert. For each, write a neutral observation rather than an unsupported diagnosis, and identify the first party to notify."
+    },
+    {
+     "h": "Rehearse account recovery",
+     "k": "Station 2",
+     "p": "On a demonstration account, locate the sign-out-all-sessions, password-change, recovery-options, and two-step-verification functions. Explain how a citizen can reach these through official menus on a trusted device."
+    },
+    {
+     "h": "Draw a safe backup plan",
+     "k": "Station 3",
+     "p": "For a small clinic with one computer, list the files that matter, an offline or off-site backup, and an authorised person who tests restoration. Explain the 3-2-1 idea without attempting a real restore during the exercise."
+    }
+   ],
+   "expect": "The learner identifies the likely incident, avoids damaging recovery steps, selects a safe isolation or account action, and refers technical work to an authorised specialist."
+  },
+  "cases": {
+   "title": "Handle a device or account emergency",
+   "intro": "Each responder gets one new fact midway through the role-play. Observers score safe containment, boundaries, and correct routing.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The clinic ransom note",
+     "p": "A small clinic’s computer displays a ransom note. Staff want to restart every PC and try an internet tool. Explain immediate isolation, protection of backups, documentation, and escalation to the clinic’s authorised IT team."
+    },
+    {
+     "k": "Case B",
+     "h": "The banking APK",
+     "p": "A citizen installed a traffic-challan APK after a message. It requested SMS and Accessibility permissions. Inject: “A new bank debit has appeared.” Explain safe network disconnection and urgent financial reporting from another device."
+    },
+    {
+     "k": "Case C",
+     "h": "The social account takeover",
+     "p": "A student’s social account posts investment links without permission. They still control the recovery email. Demonstrate an official recovery plan, session review, two-step verification, and a warning to followers."
+    }
+   ],
+   "rubric": [
+    "Identified active harm and affected system",
+    "Chose safe containment, not destructive action",
+    "Protected financial and recovery accounts",
+    "Recorded useful facts for specialists",
+    "Escalated to authorised people and channels"
+   ],
+   "discuss": "When is disconnecting from a network helpful? Why can an unplanned factory reset make an investigation harder?"
+  },
+  "sheet": {
+   "title": "Device and account response card",
+   "intro": "Complete using a fictional case. This form supports safe triage and handover; it is not a technical forensics worksheet.",
+   "questions": [
+    "Which device or account is affected, and when was it noticed?",
+    "What visible symptoms or alerts have been observed?",
+    "Is remote access, data loss, or financial activity still occurring?",
+    "What safe containment action was taken and at what time?",
+    "What facts or evidence were left intact for specialists?",
+    "Who was notified, and what recovery step is authorised next?"
+   ],
+   "scripth": "The safe handover script",
+   "script": "“This device or account shows [observable symptoms] since [time]. The current risk is [active access or loss]. We have [safe action] without wiping or changing evidence. The owner or authorised technical team should now [next step], while any related financial fraud is reported promptly.”",
+   "selfcheck": "Can you separate volunteer guidance from technical recovery and explain why both matter?"
+  }
+ },
+ "9": {
+  "steps": {
+   "title": "Secure the connected devices around you",
+   "intro": "A smart device is a small computer connected to a phone, router, cloud service, or control system. Teach a household or small business to identify these connections and reduce common risks without disrupting essential equipment.",
+   "steps": [
+    {
+     "h": "Make a simple device inventory",
+     "p": "List the router, CCTV or baby camera, smart television, voice assistant, printer, payment soundbox, and other connected devices. Note who owns and updates them. Unrecognised or unsupported devices deserve review."
+    },
+    {
+     "h": "Change defaults and control access",
+     "p": "Use unique device and Wi-Fi passwords, enable strong Wi-Fi security such as WPA2 or WPA3, update the firmware, and turn off unnecessary remote access or WPS where appropriate. Use a separate guest or smart-device network when available."
+    },
+    {
+     "h": "Check privacy and update support",
+     "p": "Review whether cameras share footage to the cloud, who can log in, and whether the manufacturer still issues security updates. Avoid placing cameras in private spaces. Remove old accounts when devices change owners."
+    },
+    {
+     "h": "Stop at the OT safety boundary",
+     "p": "Operational technology controls pumps, machines, lifts, power, and other physical systems. A volunteer must not unplug, reset, or change such equipment. Report a suspected issue to the responsible operator and follow site safety procedures."
+    }
+   ],
+   "check": "Make a list: Name four connected devices in a local shop or home. Which stores private information? Which could affect physical safety? Who should authorise changes to a factory controller?"
+  },
+  "cards": {
+   "title": "Distinguish home devices from control systems",
+   "intro": "The same word “connected” covers very different risks. Use the environment and possible harm to decide what a volunteer may safely advise.",
+   "cards": [
+    {
+     "h": "Home Wi-Fi router",
+     "k1": "Risk",
+     "v1": "Factory admin password or outdated firmware.",
+     "k2": "Advice",
+     "v2": "Owner changes settings using the official guide."
+    },
+    {
+     "h": "Room CCTV camera",
+     "k1": "Risk",
+     "v1": "Shared passwords or exposed cloud footage.",
+     "k2": "Advice",
+     "v2": "Review app accounts, updates, and viewing permissions."
+    },
+    {
+     "h": "Payment soundbox",
+     "k1": "Risk",
+     "v1": "Fake spoken confirmation or tampering.",
+     "k2": "Advice",
+     "v2": "Verify incoming payments in the merchant’s own bank app."
+    },
+    {
+     "h": "Public USB charging",
+     "k1": "Risk",
+     "v1": "Untrusted cable or port.",
+     "k2": "Advice",
+     "v2": "Use a personal charger and a normal power outlet."
+    },
+    {
+     "h": "Water pump controller",
+     "k1": "Risk",
+     "v1": "Network access affects physical operations.",
+     "k2": "Advice",
+     "v2": "Notify the operator; do not change controls."
+    },
+    {
+     "h": "Hospital equipment",
+     "k1": "Risk",
+     "v1": "Unauthorised changes could affect patient safety.",
+     "k2": "Advice",
+     "v2": "Escalate through clinical and technical management."
+    }
+   ],
+   "thinkk": "Decision test",
+   "think": "Could changing the device harm a person or stop an essential service? If yes, do not troubleshoot it as a volunteer. For ordinary home devices, give guidance through manufacturer instructions; for OT, leave changes to trained and authorised operators."
+  },
+  "lab": {
+   "title": "Guided lab: the smart-home check",
+   "intro": "Use a demonstration router interface or printed screenshots. Do not connect to neighbours’ routers, bypass passwords, scan public devices, or change production networks.",
+   "stations": [
+    {
+     "h": "List what is connected",
+     "k": "Station 1",
+     "p": "From a fictional home network diagram, list the router, two cameras, a television, and a phone. Decide which devices should receive updates and which accounts need strong unique passwords. Identify one unsupported device."
+    },
+    {
+     "h": "Review a router checklist",
+     "k": "Station 2",
+     "p": "Use a demonstration screen to locate Wi-Fi security mode, admin password, firmware updates, WPS, guest network, and remote administration. Explain what to check and who should approve the change."
+    },
+    {
+     "h": "Practise a safety escalation",
+     "k": "Station 3",
+     "p": "A workshop poster shows a water pump controller connected directly to the internet. Learners must describe the concern in plain language and report it to the plant in-charge without touching the equipment."
+    }
+   ],
+   "expect": "The learner inventories common devices, spots weak defaults and exposure, suggests owner-authorised home changes, and recognises the point where OT safety requires specialist escalation."
+  },
+  "cases": {
+   "title": "Connected devices in the community",
+   "intro": "Role-play a homeowner, a shopkeeper, and a facility worker. Emphasise practical advice and respect for operational ownership.",
+   "cases": [
+    {
+     "k": "Case A",
+     "h": "The shared camera password",
+     "p": "A family gives the camera-app password to several guests and never changes it. One guest no longer lives there. Explain how the owner can review accounts, update credentials, and check whether the camera receives security updates."
+    },
+    {
+     "k": "Case B",
+     "h": "The shop’s payment alert",
+     "p": "A merchant hears a payment sound but does not see the transaction in their own bank records. Explain why a sound or customer screenshot alone is insufficient and how to check safely."
+    },
+    {
+     "k": "Case C",
+     "h": "The factory pump",
+     "p": "A worker says the pump controller has unusual remote-login alerts and wants to turn it off immediately. Explain the physical-safety risk, escalation route, and why unauthorised intervention is inappropriate."
+    }
+   ],
+   "rubric": [
+    "Identified device ownership and exposure",
+    "Recommended basic privacy and access controls",
+    "Recognised unsafe remote or default settings",
+    "Avoided unauthorised OT changes",
+    "Explained follow-up and specialist referral"
+   ],
+   "discuss": "Which action would be harmless at home but dangerous in a factory? What does the device owner need to know?"
+  },
+  "sheet": {
+   "title": "Smart-device safety inspection card",
+   "intro": "Use the form with permission from the device owner. Do not write actual Wi-Fi passwords or access tokens on it.",
+   "questions": [
+    "What is the device, model, location, and owner?",
+    "Which accounts or networks can access it?",
+    "Are default credentials, WPS, or remote access still enabled?",
+    "When was firmware updated, and is support still available?",
+    "What private data or physical process could be affected?",
+    "Which change is safe for the owner, and what needs a specialist?"
+   ],
+   "scripth": "A five-minute owner conversation",
+   "script": "“Let us list what connects to your network. Who can log in, and when was each device last updated? We should change factory credentials and review unnecessary access using the manufacturer’s instructions. If this device controls machinery or safety equipment, we must contact the responsible operator.”",
+   "selfcheck": "Can you advise on a home router and refuse to interfere with an industrial controller?"
+  }
+ }
+}

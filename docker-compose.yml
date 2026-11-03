@@ -1,0 +1,53 @@
+# CSFR learning platform: local demo stack.
+#   Moodle (learning platform) .. http://localhost:8000
+#   Landing page (public site) .. http://localhost:8090
+#   Test mailbox (Mailpit) ...... http://localhost:8025
+name: csfr-lms
+
+services:
+  db:
+    image: mariadb:11.4
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MARIADB_DATABASE: moodle
+      MARIADB_USER: moodle
+      MARIADB_PASSWORD: ${DB_PASSWORD}
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  web:
+    image: moodlehq/moodle-php-apache:8.3
+    restart: unless-stopped
+    depends_on: [db, mail]
+    # The setup scripts read the demo accounts' password from .env (never committed).
+    environment:
+      DEMO_USER_PASSWORD: ${DEMO_USER_PASSWORD}
+    ports:
+      - "8000:80"
+    volumes:
+      - moodlecode:/var/www/html
+      - moodledata:/var/www/moodledata
+      - ./docker/apache-site.conf:/etc/apache2/sites-enabled/000-default.conf:ro
+      - ./docker/php-csfr.ini:/usr/local/etc/php/conf.d/zz-csfr.ini:ro
+      - ./setup:/opt/csfr-setup:ro
+
+  mail:
+    image: axllent/mailpit:latest
+    restart: unless-stopped
+    ports:
+      - "8025:8025"
+
+  landing:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "8090:80"
+    volumes:
+      - ./landing:/usr/share/nginx/html:ro
+
+volumes:
+  dbdata:
+  moodledata:
+  moodlecode:

@@ -1,0 +1,706 @@
+/* CSFR programme pages (Programme admin, a learner, My progress). Ink tokens come from theme_csfr. */
+
+.csfr-app {
+    max-width: 78rem;
+    color: var(--csfr-ink-2);
+}
+.csfr-muted {
+    color: var(--csfr-muted);
+}
+.csfr-note {
+    max-width: 72ch;
+    margin: 1rem 0 0;
+    color: var(--csfr-muted);
+    font-size: .875rem;
+}
+.csfr-lede {
+    margin: 0;
+    color: var(--csfr-muted);
+    font-size: 1.0625rem;
+}
+.csfr-app__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.csfr-app__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.csfr-section {
+    margin-top: 3rem;
+}
+.csfr-section > h2,
+.csfr-next > h2 {
+    margin-bottom: .75rem;
+    color: var(--csfr-ink);
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Figures: a number and what it counts, parted by hairlines. */
+.csfr-figures {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--csfr-ink);
+}
+.csfr-figure {
+    display: grid;
+    gap: .375rem;
+    padding: 1rem 1.5rem 0;
+    border-left: 1px solid var(--csfr-rule);
+}
+.csfr-figure:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+.csfr-figure strong {
+    color: var(--csfr-ink);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-variant-numeric: tabular-nums;
+}
+.csfr-figure span {
+    color: var(--csfr-muted);
+}
+
+/* Pills carry state and nothing else: teal is done, ink is on, an outline is still to do. */
+.csfr-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: .15rem .6rem;
+    border-radius: 999px;
+    background: var(--csfr-paper-3);
+    color: var(--csfr-ink);
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.csfr-pill--done {
+    background: var(--csfr-teal-soft);
+    color: var(--csfr-teal-ink);
+}
+.csfr-pill--on {
+    background: var(--csfr-ink);
+    color: var(--csfr-paper);
+}
+.csfr-pill--todo {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--csfr-rule);
+    color: var(--csfr-muted);
+}
+
+/* The 60-hour bar: four segments sized 15, 15, 24 and 6, each filled by what is done. */
+.csfr-hours__track {
+    display: flex;
+    gap: 3px;
+    height: .875rem;
+}
+.csfr-hours__seg {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    background: var(--csfr-paper-3);
+}
+.csfr-hours__fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--csfr-ink);
+}
+.csfr-hours__seg.is-done .csfr-hours__fill {
+    background: var(--csfr-teal);
+}
+.csfr-hours__labels {
+    display: flex;
+    gap: 3px;
+    margin-top: .5rem;
+}
+.csfr-hours__label {
+    display: grid;
+    min-width: 0;
+}
+.csfr-hours__name {
+    overflow: hidden;
+    color: var(--csfr-ink);
+    font-size: .875rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.csfr-hours__num {
+    color: var(--csfr-muted);
+    font-size: .8125rem;
+    font-variant-numeric: tabular-nums;
+}
+.csfr-hours--compact {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+.csfr-hours--compact .csfr-hours__track {
+    width: 8rem;
+    height: .5rem;
+    gap: 2px;
+}
+.csfr-hours__total {
+    min-width: 2.25rem;
+    color: var(--csfr-ink);
+    font-size: .875rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Where learners are: one bar per stage, the certified bar in teal. */
+.csfr-funnel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--csfr-ink);
+}
+.csfr-funnel li {
+    display: grid;
+    grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr) 3rem;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--csfr-rule);
+}
+.csfr-funnel__label {
+    color: var(--csfr-ink);
+}
+.csfr-funnel__track {
+    position: relative;
+    height: 1.25rem;
+    border-radius: 3px;
+    background: var(--csfr-paper-2);
+}
+.csfr-funnel__fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    border-radius: 3px;
+    background: var(--csfr-ink);
+}
+.csfr-funnel__fill.is-done {
+    background: var(--csfr-teal);
+}
+.csfr-funnel__n {
+    color: var(--csfr-ink);
+    font-weight: 700;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Tables: an ink rule on top, hairlines between rows, quiet heads. */
+.csfr-scroll {
+    overflow-x: auto;
+}
+table.csfr-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    border-top: 1px solid var(--csfr-ink);
+    font-variant-numeric: tabular-nums;
+}
+table.csfr-table th,
+table.csfr-table td {
+    padding: .7rem .75rem .7rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--csfr-rule);
+    vertical-align: middle;
+    background: transparent;
+}
+table.csfr-table th {
+    color: var(--csfr-muted);
+    font-size: .875rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+table.csfr-table td {
+    color: var(--csfr-ink-2);
+}
+table.csfr-table tbody tr:hover td {
+    background: var(--csfr-paper-2);
+}
+.csfr-name {
+    color: var(--csfr-ink);
+    font-weight: 600;
+}
+
+/* Filters over the learner table. */
+.csfr-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+.csfr-filters .form-select {
+    width: auto;
+}
+.csfr-filters .form-control {
+    width: 16rem;
+}
+.csfr-empty {
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: .75rem;
+    background: var(--csfr-paper-2);
+    color: var(--csfr-ink-2);
+}
+
+/* Ruled rows: lessons, classroom days, practicum logs, consent. */
+.csfr-rows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--csfr-ink);
+}
+.csfr-rows li {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    min-height: 2.75rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--csfr-rule);
+}
+.csfr-rows__n {
+    flex: 0 0 1.75rem;
+    color: var(--csfr-muted);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+.csfr-rows__date {
+    flex-basis: 3.75rem;
+    font-weight: 600;
+}
+.csfr-rows__title {
+    flex: 1;
+    min-width: 0;
+    color: var(--csfr-ink);
+}
+.csfr-rows__title a {
+    color: var(--csfr-ink);
+    font-weight: 600;
+}
+.csfr-rows__meta {
+    font-size: .875rem;
+    white-space: nowrap;
+}
+
+/* My progress and a learner's head: the hours, and beside them what to do next or who this is. */
+.csfr-home__head,
+.csfr-learner__head {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: end;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+.csfr-bigfig {
+    margin: .75rem 0 1rem;
+    color: var(--csfr-ink);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.csfr-bigfig strong {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.045em;
+    font-variant-numeric: tabular-nums;
+}
+.csfr-learner__progress .csfr-pill {
+    margin-bottom: .25rem;
+}
+.csfr-next {
+    padding: 1.5rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: .75rem;
+    background: var(--csfr-paper-2);
+}
+.csfr-next > h2 {
+    margin-bottom: .25rem;
+    color: var(--csfr-muted);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.csfr-next__what {
+    margin: 0 0 1.25rem;
+    color: var(--csfr-ink);
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+}
+.csfr-facts {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .375rem 1.25rem;
+    margin: 0;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: .75rem;
+    background: var(--csfr-paper-2);
+}
+.csfr-facts dt {
+    color: var(--csfr-muted);
+    font-weight: 400;
+}
+.csfr-facts dd {
+    margin: 0;
+    color: var(--csfr-ink);
+    font-weight: 600;
+}
+.csfr-cols {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 0 2.5rem;
+}
+.csfr-cert {
+    display: grid;
+    justify-items: start;
+    gap: .75rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: .75rem;
+    background: var(--csfr-paper-2);
+}
+.csfr-cert p {
+    margin: 0;
+}
+
+@media (max-width: 60rem) {
+    .csfr-figures {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 1.5rem;
+    }
+    .csfr-figure:nth-child(3) {
+        padding-left: 0;
+        border-left: 0;
+    }
+    .csfr-home__head,
+    .csfr-learner__head,
+    .csfr-cols {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .csfr-funnel li {
+        grid-template-columns: minmax(0, 1fr) 2.5rem;
+    }
+    .csfr-funnel__track {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+    .csfr-hours__name {
+        font-size: .75rem;
+    }
+}
+
+/* Moodle's own table rules put side borders on every cell; these tables keep horizontal rules only. */
+table.csfr-table > thead > tr > th,
+table.csfr-table > tbody > tr > td,
+table.csfr-table > tbody > tr > th {
+    border-width: 0 0 1px 0 !important;
+    border-style: solid !important;
+    border-color: var(--csfr-rule) !important;
+}
+table.csfr-table {
+    border-width: 1px 0 0 0 !important;
+    border-style: solid !important;
+    border-color: var(--csfr-ink) !important;
+}
+
+@media (max-width: 40rem) {
+    .csfr-rows li {
+        flex-wrap: wrap;
+        row-gap: .125rem;
+    }
+    .csfr-rows__meta {
+        order: 3;
+        flex-basis: 100%;
+        padding-left: 2.5rem;
+    }
+    .csfr-bigfig strong {
+        font-size: 3rem;
+    }
+}
+table.csfr-table > thead,
+table.csfr-table > tbody,
+table.csfr-table > thead > tr,
+table.csfr-table > tbody > tr {
+    border-width: 0 !important;
+}
+
+/* On a phone, table rows stay on one line and scroll sideways; the learner's name stays pinned. */
+@media (max-width: 40rem) {
+    table.csfr-table th,
+    table.csfr-table td {
+        white-space: nowrap;
+    }
+    table.csfr-table--learners th:first-child,
+    table.csfr-table--learners td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        padding-right: 1rem;
+        background: var(--csfr-paper);
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+   Handbook layer: the HOD's handbook look on the programme pages. White cards on cream, the 60-hour bar in four
+   colours (one per part, as in the handbook's legend), module tiles with the mustard number badge, teal = done.
+   ------------------------------------------------------------------------------------------------------------------ */
+.csfr-app h1, .csfr-app h2, .csfr-bigfig, .csfr-figure strong, .csfr-next__what, .csfr-tile__n {
+    font-family: var(--csfr-display);
+    letter-spacing: 0;
+}
+.csfr-section {
+    padding: 1.25rem 1.5rem 1.5rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: 1rem;
+    background: var(--csfr-card);
+    box-shadow: var(--csfr-shadow);
+}
+.csfr-section > h2 {
+    font-size: 1.5rem;
+}
+.csfr-cols .csfr-section,
+.csfr-section + .csfr-section {
+    margin-top: 1.5rem;
+}
+.csfr-rows,
+.csfr-funnel,
+table.csfr-table,
+.csfr-figures {
+    border-top-color: var(--csfr-rule) !important;
+}
+
+/* The 60-hour bar: classroom navy, online teal, field practicum terracotta, portfolio and viva mustard. */
+.csfr-hours__track {
+    height: 1.125rem;
+    gap: 4px;
+}
+.csfr-hours__seg {
+    border-radius: 999px;
+    background: var(--csfr-paper-3);
+}
+.csfr-hours__fill {
+    border-radius: 999px;
+}
+.csfr-hours__seg--classroom .csfr-hours__fill { background: var(--csfr-ink); }
+.csfr-hours__seg--online .csfr-hours__fill { background: var(--csfr-teal); }
+.csfr-hours__seg--practicum .csfr-hours__fill { background: var(--csfr-terra); }
+.csfr-hours__seg--portfolio .csfr-hours__fill { background: var(--csfr-mustard); }
+.csfr-hours__seg.is-done .csfr-hours__fill { background-image: linear-gradient(0deg, transparent, transparent); }
+.csfr-hours__label .csfr-hours__name::before {
+    content: "";
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    margin-right: .4rem;
+    border-radius: 50%;
+    vertical-align: .05em;
+}
+.csfr-hours__label--classroom .csfr-hours__name::before { background: var(--csfr-ink); }
+.csfr-hours__label--online .csfr-hours__name::before { background: var(--csfr-teal); }
+.csfr-hours__label--practicum .csfr-hours__name::before { background: var(--csfr-terra); }
+.csfr-hours__label--portfolio .csfr-hours__name::before { background: var(--csfr-mustard); }
+.csfr-hours--compact .csfr-hours__track {
+    height: .625rem;
+}
+.csfr-bigfig {
+    color: var(--csfr-ink);
+}
+.csfr-bigfig strong {
+    color: var(--csfr-terra);
+}
+
+/* Next step: the handbook's mustard highlight. */
+.csfr-next {
+    border: 0;
+    border-radius: 1rem;
+    background: var(--csfr-mustard-soft);
+    box-shadow: var(--csfr-shadow);
+}
+.csfr-next > h2 {
+    color: var(--csfr-mustard-ink);
+}
+
+/* Pills: done teal, on navy, to do outline, in the handbook's rounder shape. */
+.csfr-pill {
+    padding: .2rem .7rem;
+    font-size: .875rem;
+}
+
+/* Module tiles on My progress. */
+.csfr-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: .75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.csfr-tile {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: .75rem;
+    row-gap: .5rem;
+    padding: 1rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: .875rem;
+    background: var(--csfr-paper);
+    transition: transform .2s cubic-bezier(.16, 1, .3, 1), box-shadow .2s cubic-bezier(.16, 1, .3, 1);
+}
+.csfr-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--csfr-shadow);
+}
+.csfr-tile__n {
+    grid-row: span 2;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .6rem;
+    background: var(--csfr-mustard);
+    color: var(--csfr-mustard-ink);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.csfr-tile--done {
+    border-color: transparent;
+    background: var(--csfr-teal-soft);
+}
+.csfr-tile--done .csfr-tile__n {
+    background: var(--csfr-teal);
+    color: #fff;
+}
+.csfr-tile__title a,
+.csfr-tile__title {
+    color: var(--csfr-ink);
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+}
+.csfr-tile__title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.csfr-tile {
+    position: relative;
+}
+.csfr-tile__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+    font-size: .875rem;
+}
+
+/* Your data: three big, plain-language actions. */
+.csfr-datalinks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .75rem;
+    margin-top: 1rem;
+}
+.csfr-datalink {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    min-height: 3.5rem;
+    padding: .75rem 1rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: .75rem;
+    background: var(--csfr-paper);
+    color: var(--csfr-ink);
+    font-weight: 600;
+    text-decoration: none;
+}
+.csfr-datalink:hover {
+    border-color: var(--csfr-teal);
+    color: var(--csfr-teal-ink);
+}
+.csfr-datalink .fa {
+    color: var(--csfr-teal);
+    font-size: 1.25rem;
+}
+
+/* Programme admin: figures and funnel as cards in the handbook colours. */
+.csfr-figures {
+    gap: 1rem;
+    border-top: 0;
+}
+.csfr-figure,
+.csfr-figure:first-child {
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--csfr-rule);
+    border-radius: 1rem;
+    background: var(--csfr-card);
+    box-shadow: var(--csfr-shadow);
+}
+.csfr-figure:nth-child(2) strong { color: var(--csfr-teal); }
+.csfr-figure:nth-child(3) strong { color: var(--csfr-terra); }
+.csfr-funnel__track {
+    border-radius: 999px;
+    background: var(--csfr-paper-2);
+}
+.csfr-funnel__fill {
+    border-radius: 999px;
+    background: var(--csfr-ink);
+}
+.csfr-funnel__fill.is-done {
+    background: var(--csfr-teal);
+}
+.csfr-facts,
+.csfr-cert,
+.csfr-empty {
+    border-radius: 1rem;
+    background: var(--csfr-card);
+    box-shadow: var(--csfr-shadow);
+}
+
+@media (max-width: 60rem) {
+    .csfr-figures {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .csfr-figure:nth-child(3) {
+        padding-left: 1.5rem;
+    }
+    .csfr-datalinks {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Handouts: the handbook's pages as full-width pictures, one under the other, like turning pages. */
+.csfr-handout {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+.csfr-handout img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .75rem;
+    background: var(--csfr-card);
+    box-shadow: var(--csfr-shadow);
+}
+.csfr-handout__print {
+    margin: .5rem 0 0;
+    color: var(--csfr-muted);
+    font-size: .9375rem;
+    text-align: center;
+}
