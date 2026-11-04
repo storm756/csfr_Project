@@ -3,6 +3,13 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Refine the landing hero hierarchy (Codex)
+- **First page only:** redesigned the landing hero in `landing/index.html` and `landing/styles.css` with a compact
+  partner-logo strip, a smaller editorial course introduction, a clearer eyebrow/description, and a softer balanced
+  triage card. Later landing sections are unchanged.
+- **Visual goal:** reduce the oversized title and competing blocks while keeping the practical “What first?” feature
+  visible in the first viewport. Desktop and mobile remain responsive.
+
 ## 2026-11-04 — Bring landing triage into the first viewport (Codex)
 - **First screen:** reshaped the hero in `landing/index.html` and `landing/styles.css` into a responsive two-column
   composition: logos across the top, the programme pitch on the left, and the existing “Something just happened”
