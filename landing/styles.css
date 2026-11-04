@@ -55,10 +55,12 @@ a:hover { text-decoration-color: var(--color-accent); }
 .nav__links .btn { min-height: 40px; padding: 0 var(--space-md); font-weight: 600; }
 
 /* Hero: light, centered, with the practical triage interaction kept in the same first-page flow. */
-.hero--light { display: flex; flex-direction: column; justify-content: center; padding-block: var(--space-xl); background: var(--color-paper); color: var(--color-ink); }
+.hero--light { min-height: calc(100dvh - var(--nav-h)); display: flex; align-items: center; justify-content: center; padding-block: var(--space-lg); background: var(--color-paper); color: var(--color-ink); }
 .hero__center { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-md); }
-.hero__center h1 { max-width: 18ch; line-height: 1.05; color: var(--color-ink); font-size: var(--text-display); }
-.hero__center .lead { color: var(--color-ink-2); max-width: 52ch; }
+.hero__split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(24rem, .95fr); gap: var(--gap-columns); align-items: center; width: 100%; margin-top: var(--space-md); }
+.hero__copy { display: grid; justify-items: center; gap: var(--space-md); }
+.hero__copy h1 { max-width: 18ch; line-height: 1.02; color: var(--color-ink); font-size: clamp(3.2rem, 5vw, 5.8rem); }
+.hero__copy .lead { color: var(--color-ink-2); max-width: 52ch; }
 .hero__stats { display: flex; gap: var(--space-xl); margin: 0; padding: var(--space-sm) 0; border-top: var(--rule-hair) solid var(--color-rule); border-bottom: var(--rule-hair) solid var(--color-rule); list-style: none; }
 .hero__stats li { display: grid; gap: var(--space-2xs); font-size: var(--text-sm); color: var(--color-muted); }
 .hero__stats strong { font-size: var(--text-2xl); font-weight: 700; color: var(--color-ink); letter-spacing: -0.02em; }
@@ -68,7 +70,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 .hero--light .btn--quiet:hover { background: var(--color-paper-3); }
 .actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: center; }
 
-.hero__triage { width: min(100%, 52rem); margin: var(--space-2xl) auto 0; }
+.hero__triage { width: 100%; }
 
 /* Triage: part of the first landing-page flow so visitors see the course's practical promise immediately. */
 .triage { display: grid; gap: var(--space-md); padding: var(--space-xl); background: var(--color-ink); color: var(--color-paper); border-radius: var(--radius-card); }
@@ -208,7 +210,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 /* Hero logos: the four partner marks centered in the hero. */
 .hero__logos { display: flex; align-items: center; justify-content: center; gap: var(--space-2xl); margin: 0; padding: 0; list-style: none; }
 .hero__logos li { display: grid; place-items: center; }
-.hero__logos img { display: block; height: 6rem; width: auto; object-fit: contain; }
+.hero__logos img { display: block; height: 5.5rem; width: auto; object-fit: contain; mix-blend-mode: multiply; }
 
 /* Certificate highlights: the three value props. */
 .cert-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-columns); margin: 0 0 var(--space-2xl); padding: 0; list-style: none; }
@@ -236,7 +238,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 .footer__logos img { display: block; height: 2.5rem; width: auto; object-fit: contain; }
 
 /* Mobile hero logos. */
-@media (max-width: 60rem) { .hero__logos { flex-wrap: wrap; gap: var(--space-md); } .hero__logos img { height: 3.5rem; } .hero__triage { width: 100%; } }
+@media (max-width: 60rem) { .hero__logos { flex-wrap: wrap; gap: var(--space-md); } .hero__logos img { height: 3.5rem; } .hero__split { grid-template-columns: minmax(0, 1fr); } .hero__triage { width: 100%; } }
 
 /* Handbook layer: the HOD's handbook look on the public page (mustard helpline, white cards, teal and terracotta). */
 .helpline { background: var(--color-mustard); color: var(--color-ink); font-weight: 500; }

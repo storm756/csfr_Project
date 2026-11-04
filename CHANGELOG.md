@@ -3,6 +3,13 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Bring landing triage into the first viewport (Codex)
+- **First screen:** reshaped the hero in `landing/index.html` and `landing/styles.css` into a responsive two-column
+  composition: logos across the top, the programme pitch on the left, and the existing “Something just happened”
+  interaction beside it. On small screens it stacks cleanly.
+- **Logo treatment:** applied a non-destructive multiply blend to the supplied logo images so their white source
+  rectangles visually sit on the cream page without editing or degrading the original assets.
+
 ## 2026-11-04 — Keep the landing triage interaction on the first page (Codex)
 - **Landing first screen:** moved the existing “Something just happened. What first?” interactive triage panel into
   the hero flow in `landing/index.html` and adjusted `landing/styles.css`. The partner-logo row, title, statistics and
