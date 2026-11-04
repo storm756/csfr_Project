@@ -60,7 +60,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 .hero__split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(25rem, 1.1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; width: 100%; margin-top: var(--space-sm); }
 .hero__copy { display: grid; justify-items: start; gap: var(--space-md); padding-left: clamp(0rem, 2vw, 2rem); text-align: left; }
 .hero__eyebrow, .triage__eyebrow { margin: 0; color: var(--color-accent-soft-ink); font-size: var(--text-xs); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.hero__copy h1 { max-width: 12ch; line-height: .98; color: var(--color-ink); font-size: clamp(3rem, 5vw, 5.2rem); }
+.hero__copy h1 { max-width: 12ch; line-height: .98; color: var(--color-ink); font-size: clamp(2.8rem, 4.6vw, 4.8rem); }
 .hero__copy .lead { color: var(--color-ink-2); max-width: 52ch; }
 .hero__stats { display: flex; gap: clamp(var(--space-md), 3vw, var(--space-xl)); margin: 0; padding: var(--space-sm) 0; border-top: var(--rule-hair) solid var(--color-rule); border-bottom: var(--rule-hair) solid var(--color-rule); list-style: none; }
 .hero__stats li { display: grid; gap: var(--space-2xs); font-size: var(--text-sm); color: var(--color-muted); }
@@ -211,8 +211,8 @@ a:hover { text-decoration-color: var(--color-accent); }
 
 /* Hero logos: the four partner marks centered in the hero. */
 .hero__logos { display: flex; align-items: center; justify-content: center; gap: clamp(var(--space-md), 4vw, var(--space-2xl)); width: 100%; margin: 0; padding: var(--space-xs) 0 var(--space-md); border-bottom: 1px solid var(--color-rule); list-style: none; }
-.hero__logos li { display: grid; place-items: center; width: clamp(7rem, 12vw, 10.5rem); height: 4.7rem; }
-.hero__logos img { display: block; max-width: 100%; max-height: 4.5rem; width: auto; object-fit: contain; mix-blend-mode: multiply; }
+.hero__logos li { display: grid; place-items: center; width: clamp(8rem, 14vw, 12.5rem); height: 5.8rem; }
+.hero__logos img { display: block; max-width: 100%; max-height: 5.6rem; width: auto; object-fit: contain; mix-blend-mode: multiply; }
 
 /* Certificate highlights: the three value props. */
 .cert-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-columns); margin: 0 0 var(--space-2xl); padding: 0; list-style: none; }
@@ -240,7 +240,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 .footer__logos img { display: block; height: 2.5rem; width: auto; object-fit: contain; }
 
 /* Mobile hero logos. */
-@media (max-width: 60rem) { .hero__logos { flex-wrap: wrap; gap: var(--space-sm); } .hero__logos li { width: 7rem; height: 3.6rem; } .hero__logos img { max-height: 3.4rem; } .hero__split { grid-template-columns: minmax(0, 1fr); } .hero__copy { justify-items: center; padding-left: 0; text-align: center; } .hero__copy h1 { max-width: 15ch; } .hero__triage { width: 100%; } }
+@media (max-width: 60rem) { .hero__logos { flex-wrap: wrap; gap: var(--space-sm); } .hero__logos li { width: 8rem; height: 4.7rem; } .hero__logos img { max-height: 4.5rem; } .hero__split { grid-template-columns: minmax(0, 1fr); } .hero__copy { justify-items: center; padding-left: 0; text-align: center; } .hero__copy h1 { max-width: 15ch; } .hero__triage { width: 100%; } }
 
 /* Handbook layer: the HOD's handbook look on the public page (mustard helpline, white cards, teal and terracotta). */
 .helpline { background: var(--color-mustard); color: var(--color-ink); font-weight: 500; }

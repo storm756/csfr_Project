@@ -3,6 +3,12 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Enlarge landing partner logos and tighten hero copy (Codex)
+- **First page only:** removed the extra CyberPeace/SAKEC eyebrow and the “Taught in Module 4” caption from
+  `landing/index.html`, then increased the four partner-logo slots and tightened the title scale in
+  `landing/styles.css`. This gives the supplied logos more visual presence while keeping the hero within the same
+  first-page composition.
+
 ## 2026-11-04 — Refine the landing hero hierarchy (Codex)
 - **First page only:** redesigned the landing hero in `landing/index.html` and `landing/styles.css` with a compact
   partner-logo strip, a smaller editorial course introduction, a clearer eyebrow/description, and a softer balanced
