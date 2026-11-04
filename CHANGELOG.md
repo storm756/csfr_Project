@@ -3,6 +3,49 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Landing page redesign for AICTE meeting (Claude, Opus 4.6)
+- **Hero overhaul:** replaced the dark split-layout hero with a clean white centered layout. All four partner
+  logos (AICTE, SAKEC, NCSRC, CyberPeace) displayed large and centered at the top. Title, description, stats
+  and enrol button all fit in one viewport without scrolling. Removed the "CyberPeace x SAKEC" wordmark from
+  navbar, simplified to just "CCFR".
+- **Triage widget relocated:** moved the interactive incident-triage control out of the hero into its own
+  band section below the fold, styled as a dark card on a light band background.
+- **"What you will get" section:** replaced the old "Your certificate" heading. Added three highlight cards:
+  Joint Certificate, 2 Academic Credits (NSQF Level 4), and Qualification Title. Below the cards, a certificate
+  image slideshow auto-rotates every 3 seconds with manual dot navigation (both front and back of certificate).
+- **Partner logos and people:** updated "Who runs it" section with the four new logos (AICTE, SAKEC, NCSRC,
+  CyberPeace) in a 4-column grid, replacing old SAKEC/CyberPeace-CoE/NTRO logos. Added Maj. Vineet Kumar's
+  actual photo, replacing the "VK" monogram placeholder.
+- **Removed sections:** helpline banner ("Lost money? Call 1930"), free two-hour workshops section,
+  "A QR code never pays you" advisories section.
+- **Footer:** added the four partner logos, removed advisories link, simplified wordmark.
+- **New assets:** `landing/img/` now includes aicte.webp, sakec-logo.webp, ncsrc.webp, cyberpeace-logo.webp,
+  vineet-kumar-photo.webp, cert-front.jpg, cert-back.jpg.
+- **Files:** `landing/index.html`, `landing/styles.css`, 7 new images in `landing/img/`.
+
+## 2026-11-04 — Custom assessment viewer, bypass SCORM player (Claude, Opus 4.6)
+- **Custom assess.php:** created `custom/local/csfr/assess.php`, a PHP wrapper that serves the teammate's
+  HTML/JS assessment content as full-page Moodle content under the embedded layout, without the SCORM player
+  chrome (no iframe, no "Review mode", no TOC toggle, no "All modules"/"Theme" buttons). Requires Moodle login,
+  validates module param against a whitelist, serves sub-resources (CSS/JS/images) through a `?f=` parameter
+  with security checks (realpath must be within the assess directory). Rewrites relative paths in the HTML.
+- **Assessment source files:** copied all 10 SCORM source directories (m01-m09, m11) to
+  `custom/local/csfr/assess/` for direct serving. Each contains index.html, css/ccfr.css, js/scorm-api.js,
+  js/engine.js, js/questions.js, modules.js.
+- **SCORM height reporter:** added a postMessage-based height reporter script to all 10 SCORM source HTML files
+  (`setup/scorm/src/m01-m09,m11/index.html`) and created `setup/scorm/update_packages.php` to re-package and
+  re-parse SCORM packages in Moodle after source changes.
+- **SCORM player CSS:** extended `custom/theme/csfr/scss/post.scss` with rules to hide Review mode heading,
+  TOC toggle, page header, fixed heights, and navigation chrome on the SCORM player page.
+- **Moodle left panel cleanup:** added course-index drawer CSS in `post.scss` to remove completion checkboxes,
+  collapse toggles, and activity type icons for a cleaner NetAcad-style left panel. Updated
+  `hook_callbacks.php` to remove portfolio/viva/certificate activities from the course index.
+- **Home page:** removed LinkedIn showcase card and portfolio/viva/certificate cards from `home.php`.
+- **Files:** `custom/local/csfr/assess.php` (new), `custom/local/csfr/assess/` (new, 10 module dirs),
+  `setup/scorm/update_packages.php` (new), `custom/theme/csfr/scss/post.scss`,
+  `custom/theme/csfr/classes/hook_callbacks.php`, `custom/local/csfr/home.php`,
+  `custom/local/csfr/classes/learner.php`, `setup/scorm/src/*/index.html` (10 files).
+
 ## 2026-11-04 — Add a reproducible Windows startup batch file (Codex)
 - **Startup:** added `START-SITE.bat` at the project root. After Docker Desktop is opened, it waits for the Docker
   engine, runs `docker compose up -d`, and opens Moodle and the landing page. Updated `README.md` so the documented

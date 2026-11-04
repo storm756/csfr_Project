@@ -47,7 +47,7 @@ $PAGE->set_context(context_system::instance());
 $PAGE->set_url(new moodle_url('/local/csfr/home.php'));
 $PAGE->set_pagelayout('report');
 $PAGE->set_title(get_string('myprogress', 'local_csfr'));
-$PAGE->set_heading(get_string('yourcertificate', 'local_csfr'));
+$PAGE->set_heading(get_string('myprogress', 'local_csfr'));
 $PAGE->add_body_class('csfr-page');
 $PAGE->set_primary_active_tab('csfrhome');
 
@@ -119,8 +119,7 @@ JS;
 
 echo html_writer::div(
     html_writer::div(sections::modules($learner, true) . sections::assessments($learner), 'csfr-cols__main') .
-    html_writer::div(sections::practicum($learner, true) . sections::attendance($learner) .
-        sections::certificate($learner, true), 'csfr-cols__side'),
+    html_writer::div(sections::attendance($learner), 'csfr-cols__side'),
     'csfr-cols');
 
 // Your data under the DPDP Act: Moodle's own export and deletion requests, and the consent page.

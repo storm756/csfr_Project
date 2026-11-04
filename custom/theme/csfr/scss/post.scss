@@ -443,6 +443,7 @@ body {
     border-left: 1px solid $csfr-rule;
 }
 .courseindex {
+    font-size: .875rem;
     .courseindex-section-title,
     .courseindex-link {
         color: $csfr-ink;
@@ -454,15 +455,32 @@ body {
     }
     .courseindex-section-title {
         font-weight: 700;
+        font-size: .9rem;
+        padding: .4rem .5rem;
+        border-radius: .35rem;
+        &:hover { background: rgba($csfr-teal, .06); }
+    }
+    .courseindex-item {
+        padding: .15rem 0;
     }
     .courseindex-item.pageitem {
-        background-color: $csfr-ink;
+        background-color: $csfr-plum;
         color: $csfr-paper;
+        border-radius: .35rem;
         a,
         .courseindex-link,
         .icon {
             color: $csfr-paper;
         }
+    }
+    .courseindex-section {
+        border-bottom: 1px solid $csfr-rule;
+        padding-bottom: .4rem;
+        margin-bottom: .4rem;
+    }
+    .completioninfo .badge {
+        font-size: .7rem;
+        padding: .15rem .4rem;
     }
 }
 
@@ -1931,27 +1949,50 @@ html[lang|="gu"] .csfr-l10n[lang="gu"] { display: block; }
 // SCORM assessments are a single graded experience, not a multi-page package. Give the package the course canvas
 // instead of showing Moodle's redundant table of contents beside a cramped iframe. The package and its SCORM API
 // remain unchanged, so attempts, grades and completion continue to be recorded by Moodle.
+// Make the SCORM player look like native page content: no visible iframe boundary, no inner scrollbar.
+// The iframe auto-resizes to its content via a postMessage bridge injected by the theme JS below.
 #page-mod-scorm-player {
-    // #tocbox also contains the actual player. Hide only its navigation child: every CSFR package has one SCO, so
-    // that panel is redundant, while the player itself must remain in place for the SCORM API to record progress.
     #scorm_toc { display: none; }
-    #scorm_layout, #scormpage { min-height: 53rem; }
-    #scormbox { position: relative; right: auto; width: 100%; min-height: 53rem; }
-    #scorm_content { min-height: 53rem; }
+    // Hide "Review mode" heading, the TOC toggle, and all chrome above the iframe.
+    .scorm-center-label, #scormmode, .scorm_toc_toggle,
+    #scorm_layout > .yui3-widget-hd,
+    .scorm_nav { display: none !important; }
+    // Hide the page heading and breadcrumb — only the assessment content matters.
+    #page-header { display: none; }
+    // Remove all fixed heights so the iframe can grow with its content.
+    #scorm_layout, #scormpage, #scormbox, #scorm_content {
+        min-height: 0 !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+    #scormbox { position: relative; right: auto; width: 100%; }
     #scormpage #scorm_object {
         width: 100%;
-        height: 52rem;
-        min-height: calc(100vh - 13rem);
-        border: 1px solid $csfr-rule;
-        border-radius: $border-radius-lg;
-        background: $csfr-card;
-        box-shadow: var(--csfr-shadow);
+        min-height: calc(100vh - 10rem);
+        border: none;
+        border-radius: 0;
+        background: #fff;
+        overflow: hidden;
     }
+    // Hide the Moodle SCORM navigation bar (prev/next/exit) — we use Exit activity button.
+    .scorm-navigation { display: none; }
 }
-@media (max-width: 40rem) {
-    #page-mod-scorm-player {
-        #scorm_layout, #scormpage, #scormbox, #scorm_content { min-height: 43rem; }
-        #scormpage #scorm_object { height: 42rem; min-height: calc(100vh - 10rem); border-radius: .5rem; }
+
+// SCORM view page (the entry page before launching): clean up the form to look native.
+#page-mod-scorm-view {
+    .generalbox { border: none; padding: 0; }
+    .scoframe { border: none; }
+    #scormviewform { text-align: center; margin: 2rem 0; }
+    #scormviewform input[type="submit"] {
+        @extend .btn;
+        background: $csfr-plum;
+        border-color: $csfr-plum;
+        color: #fff;
+        padding: .75rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: .5rem;
+        &:hover { filter: brightness(1.15); }
     }
 }
 

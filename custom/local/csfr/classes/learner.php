@@ -178,8 +178,12 @@ class learner {
     public function assessments(): array {
         global $DB;
         $out = [];
-        $parts = [['csfr_posttest', 'quiz', 20], ['csfr_practical', 'assign', 30], ['csfr_portfolio', 'assign', 30],
-            ['csfr_viva', 'assign', 20]];
+        $modweight = round(50 / 9, 1);
+        $parts = [];
+        for ($i = 1; $i <= 9; $i++) {
+            $parts[] = ["csfr_assess$i", 'scorm', $modweight];
+        }
+        $parts[] = ['csfr_final', 'scorm', 50];
         foreach ($parts as [$idnumber, $mod, $weight]) {
             $cm = $this->dashboard->module($idnumber);
             if (!$cm) {
@@ -265,19 +269,8 @@ class learner {
                 return [get_string('nextstep_check', 'local_csfr', $m->n), $m->checkurl];
             }
         }
-        foreach ($this->practicum() as $log) {
-            if ($log->state === 'todo' || $log->state === 'needsrework') {
-                return [get_string('nextstep_log', 'local_csfr', $log->name), $log->url];
-            }
-        }
-        if ($row->posttest === null) {
-            return [get_string('nextstep_posttest', 'local_csfr'), $this->link($this->dashboard->module('csfr_posttest'))[0]];
-        }
-        if (!$row->portfolio) {
-            return [get_string('nextstep_portfolio', 'local_csfr'), $this->link($this->dashboard->module('csfr_portfolio'))[0]];
-        }
         if ($row->certificate === '') {
-            return [get_string('nextstep_viva', 'local_csfr'), null];
+            return [get_string('nextstep_cert', 'local_csfr'), $this->certificate()->url];
         }
         return [get_string('nextstep_cert', 'local_csfr'), $this->certificate()->url];
     }

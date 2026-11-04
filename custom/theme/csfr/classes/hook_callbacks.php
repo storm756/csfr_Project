@@ -97,6 +97,20 @@ class hook_callbacks {
 JS;
         $hook->add_html($html);
 
+        // SCORM iframe height sync: make the SCORM content iframe auto-resize to its content so there is no
+        // inner scrollbar and the assessment looks like native page content.
+        if (strpos($PAGE->pagetype, 'mod-scorm-player') !== false) {
+            $hook->add_html(<<<'HEIGHTJS'
+<script>
+window.addEventListener('message', function (e) {
+  if (!e.data || e.data.type !== 'csfr-height') return;
+  var iframe = document.getElementById('scorm_object');
+  if (iframe) { iframe.style.height = (e.data.h + 40) + 'px'; }
+});
+</script>
+HEIGHTJS);
+        }
+
         // Show translated copies of course navigation labels in every Moodle region which repeats them. This runs
         // only for the three CSFR learner languages and deliberately does not touch question/lesson body text.
         $labels = self::course_labels(current_language());
