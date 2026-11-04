@@ -29,6 +29,9 @@ Commands below are for PowerShell. In Git Bash, put `MSYS_NO_PATHCONV=1 ` in fro
    ```
 
    Run it again after any rehearsal: once Asha has answered, the consent pages don't show again.
+   To prepare Asha as a fully completed showcase learner with dummy marks, practicum records and a certificate, run:
+   `docker compose exec -u www-data web php /opt/csfr-setup/demo-showcase-complete.php`
+   This changes only `demo.learner`; the certificate data is explicitly demo-only.
 2. Open http://localhost:8000 once so the first page in the meeting loads quickly.
 3. You'll need two sign-ins at once: a normal Chrome window for the learner and an Incognito window
    (Ctrl+Shift+N) for the programme lead. Moodle keeps one sign-in per browser.

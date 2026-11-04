@@ -3,6 +3,13 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Full demo completion for Asha Desai
+
+- **What:** Added `setup/demo-showcase-complete.php` to complete only Asha's visible activities, checks, SCORM assessments and practicum records, refresh aggregate completion, and issue her certificate if missing.
+- **Where:** `setup/demo-showcase-complete.php`; command documented in `README.md`.
+- **Why:** The HOD showcase needs to demonstrate the complete My progress, assessment and certificate journey.
+- **Safety:** All values are dummy demo data and the script targets only `demo.learner`; it does not alter real learner records or production certificate rules.
+
 ## 2026-11-04 — Enlarge landing partner logos and tighten hero copy (Codex)
 - **First page only:** removed the extra CyberPeace/SAKEC eyebrow and the “Taught in Module 4” caption from
   `landing/index.html`, then increased the four partner-logo slots and tightened the title scale in
