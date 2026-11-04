@@ -3,6 +3,12 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-04 — Keep the landing triage interaction on the first page (Codex)
+- **Landing first screen:** moved the existing “Something just happened. What first?” interactive triage panel into
+  the hero flow in `landing/index.html` and adjusted `landing/styles.css`. The partner-logo row, title, statistics and
+  actions stay first; the practical interaction now follows them in the same first-page section instead of appearing
+  as a disconnected second section. All later landing sections were left unchanged.
+
 ## 2026-11-04 — Landing page redesign for AICTE meeting (Claude, Opus 4.6)
 - **Hero overhaul:** replaced the dark split-layout hero with a clean white centered layout. All four partner
   logos (AICTE, SAKEC, NCSRC, CyberPeace) displayed large and centered at the top. Title, description, stats
