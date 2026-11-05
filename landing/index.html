@@ -17,8 +17,8 @@
     <nav aria-label="Main">
       <ul class="nav__links">
         <li><a href="#verify">Verify a certificate</a></li>
-        <li class="keep login"><a href="https://leonard-although-thumb-bin.trycloudflare.com/login/index.php">Log in</a></li>
-        <li class="keep"><a class="btn btn--quiet" href="https://leonard-although-thumb-bin.trycloudflare.com/login/signup.php">Register</a></li>
+        <li class="keep login"><a href="http://localhost:8000/login/index.php">Log in</a></li>
+        <li class="keep"><a class="btn btn--quiet" href="http://localhost:8000/login/signup.php">Register</a></li>
       </ul>
     </nav>
   </div>
@@ -44,7 +44,7 @@
             <li><strong>Free</strong> No cost</li>
           </ul>
           <div class="actions">
-            <a class="btn" href="https://leonard-although-thumb-bin.trycloudflare.com/login/signup.php">Enrol now - it is free</a>
+            <a class="btn" href="http://localhost:8000/login/signup.php">Enrol now - it is free</a>
             <a class="btn btn--quiet" href="#certificate">Programme overview</a>
           </div>
         </div>
@@ -205,7 +205,7 @@
         <h2 id="verify-h">Check a certificate is real</h2>
         <p class="lead">Every certificate carries a code. Anyone can check it here.</p>
       </div>
-      <form class="verify__form" action="https://leonard-although-thumb-bin.trycloudflare.com/mod/customcert/verify_certificate.php" method="get">
+      <form class="verify__form" action="http://localhost:8000/mod/customcert/verify_certificate.php" method="get">
         <input type="hidden" name="qrcode" value="1">
         <label for="code">Certificate code</label>
         <div class="verify__row">
@@ -232,9 +232,9 @@
     </div>
     <ul class="footer__links">
       <li><a href="#certificate">How it works</a></li>
-      <li><a href="https://leonard-although-thumb-bin.trycloudflare.com/login/index.php">Log in</a></li>
-      <li><a href="https://leonard-although-thumb-bin.trycloudflare.com/admin/tool/policy/viewall.php">Privacy notice</a></li>
-      <li><a href="https://leonard-although-thumb-bin.trycloudflare.com/admin/tool/dataprivacy/summary.php">Data retention</a></li>
+      <li><a href="http://localhost:8000/login/index.php">Log in</a></li>
+      <li><a href="http://localhost:8000/admin/tool/policy/viewall.php">Privacy notice</a></li>
+      <li><a href="http://localhost:8000/admin/tool/dataprivacy/summary.php">Data retention</a></li>
     </ul>
     <dl class="helplines" aria-label="Helplines">
       <dt><a href="tel:1930">1930</a></dt><dd>Cyber fraud</dd>
