@@ -3,6 +3,13 @@
 Newest at the top. **Every agent/person: add an entry for each change — date, what, which files, why — then
 commit and push.** See `HANDOFF.md` for the full project picture.
 
+## 2026-11-05 — Deploy landing page + Moodle tunnel for AICTE demo
+
+- **Landing page on GitHub Pages:** Added `.github/workflows/pages.yml` to auto-deploy `landing/` on push to main. Live at `https://storm756.github.io/csfr_Project/`.
+- **Moodle via Cloudflare tunnel:** `cloudflared tunnel --url http://localhost:8000` exposes the local Moodle. Changed `$CFG->wwwroot` and added `$CFG->sslproxy = true` in the container's `config.php`.
+- **Landing links updated:** All `localhost:8000` URLs in `landing/index.html` replaced with the tunnel URL.
+- **To restore after demo:** Revert wwwroot in container config.php back to `http://localhost:8000`, remove sslproxy line, revert landing links, commit and push.
+
 ## 2026-11-04 — Full demo completion for Asha Desai
 
 - **What:** Added `setup/demo-showcase-complete.php` to complete only Asha's visible activities, checks, SCORM assessments and practicum records, refresh aggregate completion, and issue her certificate if missing.
